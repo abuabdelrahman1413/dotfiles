@@ -1,0 +1,161 @@
+# sxhkd reload
+
+super + Escape
+	pkill -USR1 -x sxhkd;notify-send 'sxhkd' 'Reloaded config'
+
+#Rofi
+
+super + space
+   	rofi -modi drun -show drun -line padding 4 -hide-scrollbar -show-icons
+
+
+# Application Keybindings
+
+super + shift + Return
+   kitty
+   
+super + Return
+   tilix
+
+super + b
+	wmctrl -a firefox-esr || firefox-esr
+	
+super + f
+	wmctrl -a Thunar || thunar
+	
+super + r
+   tilix -e "ranger"
+
+super + v
+   tilix -e "nvim"
+   
+super + e 	
+	i3-msg 'workspace 4;  exec --no-startup-id geany'
+	
+super + m
+	i3-msg 'workspace 6;  exec --no-startup-id zettlr'
+	
+super + g
+	i3-msg 'workspace 8;  exec --no-startup-id gimp'
+	
+super + d 
+	i3-msg 'workspace 9;  exec --no-startup-id Discord'
+	
+super + o	
+	i3-msg 'workspace 10;  exec --no-startup-id obs'
+ 
+ 
+#########
+# Scrot #
+#########
+super + @Print
+	scrot -s -e 'mv $f ~/Screenshots'; \
+	notify-send 'Scrot' 'Selected image to ~/Screenshots'
+
+@Print
+	scrot -e 'mv $f ~/Screenshots'; \
+	notify-send 'Scrot' 'Image saved to ~/Screenshots'
+	
+## redshift
+super + alt + r
+	~/bin/redshift-on
+	
+super + alt + b
+	~/bin/redshift-off
+
+#workspaces
+
+super + {1-9,0}
+    i3-msg workspace {1-9,10}
+
+# The 
+# super + shift+{1-9,0}
+#    i3-msg move container to workspace number {1-9,10}
+
+# the following is if you want to follow your app to the new ws
+super + shift + 1
+	i3-msg 'move container to workspace 1; workspace 1'
+
+super + shift + 2
+	i3-msg 'move container to workspace 2; workspace 2'
+
+super + shift + 3
+	i3-msg 'move container to workspace 3; workspace 3'
+	
+super + shift + 4
+	i3-msg 'move container to workspace 4; workspace 4'
+	
+super + shift + 5
+	i3-msg 'move container to workspace 5; workspace 5'
+	
+super + shift + 6
+	i3-msg 'move container to workspace 6; workspace 6'
+	
+super + shift + 7
+	i3-msg 'move container to workspace 7; workspace 7'
+	
+super + shift + 8
+	i3-msg 'move container to workspace 8; workspace 8'
+	
+super + shift + 9
+	i3-msg 'move container to workspace 9; workspace 9'
+	
+super + shift + 0
+	i3-msg 'move container to workspace 10; workspace 10'
+    
+#movement
+
+super+{h,j,k,l}
+    i3-msg focus {left,down,up,right}
+
+super+shift+{h,j,k,l}
+    i3-msg move {left,down,up,right}
+    
+super+{Left,Down,Up,Right}
+    i3-msg focus {left,down,up,right}
+    
+super+shift+{Left,Down,Up,Right}
+    i3-msg move {left,down,up,right}
+
+## audio
+
+# Change volume, chunky
+super + shift + k
+    ~/bin/changevolume up
+    
+super + shift + j
+	~/bin/changevolume down
+	
+super + shift + m
+	~/bin/changevolume mute
+
+
+#i3 Specific Keybindings
+
+super + alt + f
+    i3-msg fullscreen toggle
+
+super + alt + space
+    i3-msg floating toggle
+
+super + control + space
+    i3-msg focus mode_toggle
+
+super + alt + a
+    i3-msg focus parent
+    
+super + shift + q
+     i3-msg exit
+
+super + q
+    i3-msg kill
+
+super + alt + c
+    i3-msg reload
+
+super + alt + r
+    i3-msg restart; notify-send 'i3' 'Restarted'
+
+super + ctrl + {Left,Down,Up,Right}
+    i3-msg resize {grow width 3 px or 3 ppt, shrink height 3 px or 3 ppt, grow height 3 px or 3 ppt, shrink width 3 px or 3 ppt}
+

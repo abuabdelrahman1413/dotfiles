@@ -1,0 +1,8 @@
+[Default Applications]
+application/x-shellscript=code.desktop
+text/plain=code.desktop
+
+[Added Associations]
+application/x-shellscript=code.desktop;
+text/plain=code.desktop;
+application/vnd.ms-publisher=code.desktop;

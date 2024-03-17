@@ -1,0 +1,10 @@
+2024-03-17 11:24:36.781 [info] Extension host with pid 15180 started
+2024-03-17 11:24:36.866 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-03-17 11:24:36.920 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2024-03-17 11:24:36.925 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-03-17 11:24:36.947 [info] Eager extensions activated
+2024-03-17 11:24:36.962 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-03-17 11:24:36.963 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-03-17 11:24:36.970 [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons, startup: false, activationEvent: 'onStartupFinished'
+2024-03-17 11:25:05.342 [info] Extension host terminating: renderer closed the MessagePort
+2024-03-17 11:25:05.353 [info] Extension host with pid 15180 exiting with code 0

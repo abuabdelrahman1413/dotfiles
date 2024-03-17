@@ -1,0 +1,4 @@
+2024-03-17 10:59:10.096 [info] Extension host with pid 11513 started
+2024-03-17 10:59:10.207 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-03-17 10:59:10.217 [info] Extension host terminating: renderer closed the MessagePort
+2024-03-17 10:59:10.218 [info] Extension host with pid 11513 exiting with code 0
