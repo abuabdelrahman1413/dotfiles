@@ -1,0 +1,301 @@
+16:53:19.605: Using EGL/X11
+16:53:19.605: CPU Name: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz
+16:53:19.605: CPU Speed: 2508.406MHz
+16:53:19.606: Physical Cores: 4, Logical Cores: 8
+16:53:19.606: Physical Memory: 7842MB Total, 3962MB Free
+16:53:19.606: Kernel Version: Linux 6.10.10-zen1-1-zen
+16:53:19.606: Distribution: ArcoLinux Unknown
+16:53:19.606: Desktop Environment: XFCE (XFCE)
+16:53:19.606: Session Type: x11
+16:53:19.606: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+16:53:19.608: Qt Version: 6.7.2 (runtime), 6.7.2 (compiled)
+16:53:19.608: Portable mode: false
+16:53:19.694: OBS 30.2.1-1 (linux)
+16:53:19.694: ---------------------------------
+16:53:19.695: ---------------------------------
+16:53:19.695: audio settings reset:
+16:53:19.695: 	samples per sec: 48000
+16:53:19.695: 	speakers:        2
+16:53:19.695: 	max buffering:   960 milliseconds
+16:53:19.695: 	buffering type:  dynamically increasing
+16:53:19.707: ---------------------------------
+16:53:19.707: Initializing OpenGL...
+16:53:19.832: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 4000 (IVB GT2)
+16:53:19.832: OpenGL loaded successfully, version 4.2 (Core Profile) Mesa 24.2.2-arch1.1, shading language 4.20
+16:53:20.036: ---------------------------------
+16:53:20.036: video settings reset:
+16:53:20.036: 	base resolution:   1366x768
+16:53:20.036: 	output resolution: 1092x614
+16:53:20.036: 	downscale filter:  Bicubic
+16:53:20.036: 	fps:               30/1
+16:53:20.036: 	format:            NV12
+16:53:20.036: 	YUV mode:          Rec. 709/Partial
+16:53:20.036: NV12 texture support enabled
+16:53:20.036: P010 texture support not available
+16:53:20.041: Audio monitoring device:
+16:53:20.041: 	name: Default
+16:53:20.041: 	id: default
+16:53:20.041: ---------------------------------
+16:53:20.056: Failed to load 'en-US' text for module: 'decklink-captions.so'
+16:53:20.070: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+16:53:20.081: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+16:53:20.081: Failed to initialize module 'decklink.so'
+16:53:20.408: [pipewire] No capture sources available
+16:53:20.453: v4l2loopback not installed, virtual camera not registered
+16:53:20.665: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+16:53:20.665: 
+16:53:21.127: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+16:53:21.127: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+16:53:21.127: FFmpeg VAAPI H264 encoding not supported
+16:53:21.128: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+16:53:21.128: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+16:53:21.128: FFmpeg VAAPI AV1 encoding not supported
+16:53:21.128: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+16:53:21.128: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+16:53:21.128: FFmpeg VAAPI HEVC encoding not supported
+16:53:21.313: ---------------------------------
+16:53:21.313:   Loaded Modules:
+16:53:21.313:     text-freetype2.so
+16:53:21.313:     rtmp-services.so
+16:53:21.313:     obs-x264.so
+16:53:21.313:     obs-webrtc.so
+16:53:21.313:     obs-vst.so
+16:53:21.313:     obs-transitions.so
+16:53:21.313:     obs-qsv11.so
+16:53:21.313:     obs-outputs.so
+16:53:21.313:     obs-libfdk.so
+16:53:21.313:     obs-filters.so
+16:53:21.313:     obs-ffmpeg.so
+16:53:21.313:     linux-v4l2.so
+16:53:21.313:     linux-pulseaudio.so
+16:53:21.313:     linux-pipewire.so
+16:53:21.313:     linux-jack.so
+16:53:21.313:     linux-capture.so
+16:53:21.313:     linux-alsa.so
+16:53:21.313:     image-source.so
+16:53:21.313:     frontend-tools.so
+16:53:21.313:     decklink-output-ui.so
+16:53:21.313:     decklink-captions.so
+16:53:21.313: ---------------------------------
+16:53:21.313: ---------------------------------
+16:53:21.313: Available Encoders:
+16:53:21.313:   Video Encoders:
+16:53:21.313: 	- ffmpeg_svt_av1 (SVT-AV1)
+16:53:21.313: 	- ffmpeg_aom_av1 (AOM AV1)
+16:53:21.313: 	- obs_x264 (x264)
+16:53:21.313:   Audio Encoders:
+16:53:21.313: 	- ffmpeg_aac (FFmpeg AAC)
+16:53:21.313: 	- ffmpeg_opus (FFmpeg Opus)
+16:53:21.313: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+16:53:21.313: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+16:53:21.313: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+16:53:21.313: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+16:53:21.313: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+16:53:21.313: 	- libfdk_aac (libfdk AAC)
+16:53:21.313: ==== Startup complete ===============================================
+16:53:21.321: No scene file found, creating default scene
+16:53:21.360: All scene data cleared
+16:53:21.360: ------------------------------------------------
+16:53:21.372: pulse-input: Server name: 'pulseaudio 17.0'
+16:53:21.372: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+16:53:21.373: pulse-input: Started recording from 'bluez_sink.14_16_9E_B4_FE_AB.a2dp_sink.monitor' (default)
+16:53:21.373: pulse-input: Server name: 'pulseaudio 17.0'
+16:53:21.373: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+16:53:21.373: pulse-input: Started recording from 'alsa_input.pci-0000_00_1b.0.analog-stereo' (default)
+16:53:21.375: Switched to scene 'Scene'
+16:53:21.375: Failed to glob scene collections
+16:53:21.914: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+16:53:21.914: 
+16:53:23.245: [rtmp-services plugin] Successfully updated file 'services.json' (version 264)
+16:53:23.246: [rtmp-services plugin] Successfully updated package (version 264)
+16:53:59.976: ReadOne on org.freedesktop.portal.Settings returned an invalid reply
+16:53:59.977: ReadOne on org.freedesktop.portal.Settings returned an invalid reply
+16:54:00.083:   OpenType support missing for "Open Sans", script 11
+16:54:00.087:   OpenType support missing for "Arial", script 11
+16:54:00.089:   OpenType support missing for "Droid Sans", script 11
+16:54:00.122:   OpenType support missing for "Open Sans", script 12
+16:54:00.125:   OpenType support missing for "Arial", script 12
+16:54:00.131:   OpenType support missing for "Open Sans", script 16
+16:54:00.135:   OpenType support missing for "Arial", script 16
+16:54:00.135:   OpenType support missing for "Droid Sans", script 16
+16:54:00.135:   OpenType support missing for "Noto Sans", script 16
+16:54:00.137:   OpenType support missing for "DejaVu Sans", script 16
+16:54:00.139:   OpenType support missing for "Verdana", script 16
+16:54:00.140:   OpenType support missing for "Nimbus Sans", script 16
+16:54:00.141:   OpenType support missing for "URW Gothic", script 16
+16:54:00.141:   OpenType support missing for "Nimbus Sans Narrow", script 16
+16:54:00.143:   OpenType support missing for "Font Awesome 6 Brands", script 16
+16:54:00.144:   OpenType support missing for "Font Awesome 6 Free", script 16
+16:54:00.145:   OpenType support missing for "Font Awesome v4 Compatibility", script 16
+16:54:00.146:   OpenType support missing for "Zekton", script 16
+16:54:00.148:   OpenType support missing for "Noto Nastaliq Urdu", script 16
+16:54:00.150:   OpenType support missing for "Source Sans 3", script 16
+16:54:00.152:   OpenType support missing for "SourceSans3VF", script 16
+16:54:00.153:   OpenType support missing for "Source Sans Pro", script 16
+16:54:00.155:   OpenType support missing for "Source Sans Variable", script 16
+16:54:00.156:   OpenType support missing for "Hack", script 16
+16:54:00.157:   OpenType support missing for "Noto Sans Adlam Unjoined", script 16
+16:54:00.158:   OpenType support missing for "Noto Sans Adlam", script 16
+16:54:00.165:   OpenType support missing for "Noto Sans Duployan", script 16
+16:54:00.167:   OpenType support missing for "Noto Sans Mongolian", script 16
+16:54:00.168:   OpenType support missing for "Noto Sans Warang Citi", script 16
+16:54:00.169:   OpenType support missing for "Xirod", script 16
+16:54:00.170:   OpenType support missing for "Noto Sans Hebrew", script 16
+16:54:00.171:   OpenType support missing for "Noto Sans Syriac Eastern", script 16
+16:54:00.171:   OpenType support missing for "Noto Sans Thaana", script 16
+16:54:00.172:   OpenType support missing for "Roboto Mono", script 16
+16:54:00.175:   OpenType support missing for "Noto Sans Math", script 16
+16:54:00.176:   OpenType support missing for "Noto Sans Syriac", script 16
+16:54:00.177:   OpenType support missing for "Noto Sans Syriac Western", script 16
+16:54:00.178:   OpenType support missing for "Times New Roman", script 16
+16:54:00.180:   OpenType support missing for "Courier New", script 16
+16:54:00.181:   OpenType support missing for "DejaVu Math TeX Gyre", script 16
+16:54:00.183:   OpenType support missing for "DejaVu Sans Mono", script 16
+16:54:00.184:   OpenType support missing for "DejaVu Serif", script 16
+16:54:00.187:   OpenType support missing for "JetBrainsMonoNL Nerd Font", script 16
+16:54:00.189:   OpenType support missing for "JetBrainsMonoNL Nerd Font Mono", script 16
+16:54:00.191:   OpenType support missing for "JetBrainsMonoNL Nerd Font Propo", script 16
+16:54:00.194:   OpenType support missing for "JetBrainsMono Nerd Font", script 16
+16:54:00.196:   OpenType support missing for "JetBrainsMono Nerd Font Mono", script 16
+16:54:00.198:   OpenType support missing for "JetBrainsMono Nerd Font Propo", script 16
+16:54:00.201:   OpenType support missing for "Noto Serif Tangut", script 16
+16:54:00.203:   OpenType support missing for "Roboto", script 16
+16:54:00.204:   OpenType support missing for "Roboto Condensed", script 16
+16:54:00.206:   OpenType support missing for "Noto Kufi Arabic", script 16
+16:54:00.207:   OpenType support missing for "Noto Sans Myanmar", script 16
+16:54:00.209:   OpenType support missing for "Noto Sans Gujarati", script 16
+16:54:00.211:   OpenType support missing for "Noto Sans Gujarati UI", script 16
+16:54:00.213:   OpenType support missing for "Noto Serif Gujarati", script 16
+16:54:00.215:   OpenType support missing for "Noto Serif Myanmar", script 16
+16:54:00.217:   OpenType support missing for "Noto Sans Malayalam", script 16
+16:54:00.218:   OpenType support missing for "Noto Sans Malayalam UI", script 16
+16:54:00.219:   OpenType support missing for "Noto Serif Malayalam", script 16
+16:54:00.221:   OpenType support missing for "Noto Serif Tibetan", script 16
+16:54:00.223:   OpenType support missing for "Noto Sans Ethiopic", script 16
+16:54:00.224:   OpenType support missing for "Noto Sans Hanifi Rohingya", script 16
+16:54:00.224:   OpenType support missing for "Noto Sans Lisu", script 16
+16:54:00.227:   OpenType support missing for "Noto Serif Ethiopic", script 16
+16:54:00.228:   OpenType support missing for "Noto Sans Sora Sompeng", script 16
+16:54:00.229:   OpenType support missing for "Liberation Mono", script 16
+16:54:00.229:   OpenType support missing for "Liberation Sans", script 16
+16:54:00.230:   OpenType support missing for "Liberation Serif", script 16
+16:54:00.231:   OpenType support missing for "Arial Black", script 16
+16:54:00.232:   OpenType support missing for "Source Code Pro", script 16
+16:54:00.234:   OpenType support missing for "Noto Naskh Arabic", script 16
+16:54:00.235:   OpenType support missing for "Noto Naskh Arabic UI", script 16
+16:54:00.237:   OpenType support missing for "Noto Sans Mono", script 16
+16:54:00.240:   OpenType support missing for "Noto Serif", script 16
+16:54:00.241:   OpenType support missing for "Noto Sans Arabic", script 16
+16:54:00.243:   OpenType support missing for "Noto Sans Arabic UI", script 16
+16:54:00.246:   OpenType support missing for "Noto Serif Display", script 16
+16:54:00.247:   OpenType support missing for "Noto Sans Armenian", script 16
+16:54:00.248:   OpenType support missing for "Noto Sans Symbols 2", script 16
+16:54:00.249:   OpenType support missing for "Noto Serif Armenian", script 16
+16:54:00.249:   OpenType support missing for "Noto Sans Newa", script 16
+16:54:00.250:   OpenType support missing for "Noto Serif Ahom", script 16
+16:54:00.251:   OpenType support missing for "Noto Serif Balinese", script 16
+16:54:00.253:   OpenType support missing for "Noto Serif Sinhala", script 16
+16:54:00.254:   OpenType support missing for "Noto Sans Balinese", script 16
+16:54:00.255:   OpenType support missing for "Noto Sans Devanagari", script 16
+16:54:00.255:   OpenType support missing for "Noto Sans Kaithi", script 16
+16:54:00.256:   OpenType support missing for "Noto Sans Lepcha", script 16
+16:54:00.257:   OpenType support missing for "Noto Sans Oriya", script 16
+16:54:00.258:   OpenType support missing for "Noto Sans Sharada", script 16
+16:54:00.260:   OpenType support missing for "Noto Sans Sinhala", script 16
+16:54:00.262:   OpenType support missing for "Noto Sans Sinhala UI", script 16
+16:54:00.263:   OpenType support missing for "Noto Sans Tifinagh", script 16
+16:54:00.265: Last log entry repeated for 1 more lines
+16:54:00.265:   OpenType support missing for "Noto Sans Tifinagh Adrar", script 16
+16:54:00.265:   OpenType support missing for "Noto Sans Tifinagh Agraw Imazighen", script 16
+16:54:00.266:   OpenType support missing for "Noto Sans Tifinagh Ahaggar", script 16
+16:54:00.267:   OpenType support missing for "Noto Sans Tifinagh Air", script 16
+16:54:00.268:   OpenType support missing for "Noto Sans Tifinagh Azawagh", script 16
+16:54:00.269:   OpenType support missing for "Noto Sans Tifinagh Ghat", script 16
+16:54:00.270:   OpenType support missing for "Noto Sans Tifinagh Hawad", script 16
+16:54:00.271:   OpenType support missing for "Noto Sans Tifinagh Rhissa Ixa", script 16
+16:54:00.272:   OpenType support missing for "Noto Sans Tifinagh SIL", script 16
+16:54:00.273:   OpenType support missing for "Noto Sans Tifinagh Tawellemmet", script 16
+16:54:00.274:   OpenType support missing for "Noto Sans Zanabazar Square", script 16
+16:54:00.276:   OpenType support missing for "Noto Serif Devanagari", script 16
+16:54:00.277:   OpenType support missing for "Noto Sans Caucasian Albanian", script 16
+16:54:00.278:   OpenType support missing for "Noto Sans Cham", script 16
+16:54:00.280:   OpenType support missing for "Noto Sans Georgian", script 16
+16:54:00.316:   OpenType support missing for "Open Sans", script 20
+16:54:00.320:   OpenType support missing for "Arial", script 20
+16:54:49.638: Settings changed (hotkeys)
+16:54:49.638: ------------------------------------------------
+16:54:54.156: ReadOne on org.freedesktop.portal.Settings returned an invalid reply
+16:54:54.158: ReadOne on org.freedesktop.portal.Settings returned an invalid reply
+16:55:05.166: ReadOne on org.freedesktop.portal.Settings returned an invalid reply
+16:55:05.169: ReadOne on org.freedesktop.portal.Settings returned an invalid reply
+16:55:19.157: Settings changed (general)
+16:55:19.157: ------------------------------------------------
+16:55:21.451: ==== Shutting down ==================================================
+16:55:21.460: pulse-input: Stopped recording from 'bluez_sink.14_16_9E_B4_FE_AB.a2dp_sink.monitor'
+16:55:21.461: pulse-input: Got 12413 packets with 5296000 frames
+16:55:21.461: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_1b.0.analog-stereo'
+16:55:21.461: pulse-input: Got 12001 packets with 5295336 frames
+16:55:21.494: All scene data cleared
+16:55:21.494: ------------------------------------------------
+16:55:21.617: [Scripting] Total detached callbacks: 0
+16:55:21.618: Freeing OBS context data
+16:55:21.688: == Profiler Results =============================
+16:55:21.688: run_program_init: 2178.18 ms
+16:55:21.688:  ┣OBSApp::AppInit: 22.893 ms
+16:55:21.688:  ┃ ┗OBSApp::InitLocale: 1.333 ms
+16:55:21.688:  ┗OBSApp::OBSInit: 1886.22 ms
+16:55:21.688:    ┣obs_startup: 2.438 ms
+16:55:21.688:    ┗OBSBasic::OBSInit: 1796.74 ms
+16:55:21.688:      ┣OBSBasic::InitBasicConfig: 0.339 ms
+16:55:21.688:      ┣OBSBasic::ResetAudio: 0.301 ms
+16:55:21.688:      ┣OBSBasic::ResetVideo: 345.988 ms
+16:55:21.689:      ┃ ┗obs_init_graphics: 340.579 ms
+16:55:21.689:      ┃   ┗shader compilation: 203.157 ms
+16:55:21.689:      ┣OBSBasic::InitOBSCallbacks: 0.007 ms
+16:55:21.689:      ┣OBSBasic::InitHotkeys: 0.032 ms
+16:55:21.689:      ┣obs_load_all_modules2: 1271.11 ms
+16:55:21.689:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+16:55:21.689:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+16:55:21.689:      ┃ ┣obs_init_module(decklink.so): 0.464 ms
+16:55:21.689:      ┃ ┣obs_init_module(frontend-tools.so): 129.795 ms
+16:55:21.689:      ┃ ┣obs_init_module(image-source.so): 0.015 ms
+16:55:21.689:      ┃ ┣obs_init_module(linux-alsa.so): 0.004 ms
+16:55:21.689:      ┃ ┣obs_init_module(linux-capture.so): 1.844 ms
+16:55:21.689:      ┃ ┣obs_init_module(linux-jack.so): 0.005 ms
+16:55:21.689:      ┃ ┣obs_init_module(linux-pipewire.so): 26.208 ms
+16:55:21.689:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.006 ms
+16:55:21.689:      ┃ ┣obs_init_module(linux-v4l2.so): 8.693 ms
+16:55:21.689:      ┃ ┣obs_init_module(obs-ffmpeg.so): 465.383 ms
+16:55:21.689:      ┃ ┃ ┗nvenc_check: 0.563 ms
+16:55:21.689:      ┃ ┣obs_init_module(obs-filters.so): 0.053 ms
+16:55:21.689:      ┃ ┣obs_init_module(obs-libfdk.so): 0.003 ms
+16:55:21.689:      ┃ ┣obs_init_module(obs-outputs.so): 0.008 ms
+16:55:21.689:      ┃ ┣obs_init_module(obs-qsv11.so): 1.869 ms
+16:55:21.689:      ┃ ┣obs_init_module(obs-transitions.so): 0.014 ms
+16:55:21.689:      ┃ ┣obs_init_module(obs-vst.so): 0.005 ms
+16:55:21.689:      ┃ ┣obs_init_module(obs-webrtc.so): 0.007 ms
+16:55:21.689:      ┃ ┣obs_init_module(obs-x264.so): 0.004 ms
+16:55:21.689:      ┃ ┣obs_init_module(rtmp-services.so): 0.228 ms
+16:55:21.689:      ┃ ┗obs_init_module(text-freetype2.so): 0.102 ms
+16:55:21.689:      ┣OBSBasic::InitService: 2.976 ms
+16:55:21.689:      ┣OBSBasic::ResetOutputs: 0.331 ms
+16:55:21.689:      ┣OBSBasic::CreateHotkeys: 0.033 ms
+16:55:21.689:      ┣OBSBasic::InitPrimitives: 0.344 ms
+16:55:21.689:      ┗OBSBasic::Load: 53.97 ms
+16:55:21.689: obs_hotkey_thread(25 ms): min=0.08 ms, median=0.412 ms, max=93.405 ms, 99th percentile=1.809 ms, 99.979% below 25 ms
+16:55:21.689: audio_thread(Audio): min=0.011 ms, median=0.12 ms, max=0.34 ms, 99th percentile=0.224 ms
+16:55:21.689: obs_graphics_thread(33.3333 ms): min=0.054 ms, median=1.241 ms, max=34.383 ms, 99th percentile=2.422 ms, 99.9726% below 33.333 ms
+16:55:21.689:  ┣tick_sources: min=0 ms, median=0.014 ms, max=0.062 ms, 99th percentile=0.023 ms
+16:55:21.689:  ┣output_frame: min=0.029 ms, median=0.202 ms, max=3.301 ms, 99th percentile=0.329 ms
+16:55:21.689:  ┃ ┗gs_context(video->graphics): min=0.029 ms, median=0.201 ms, max=3.296 ms, 99th percentile=0.328 ms
+16:55:21.689:  ┃   ┣render_video: min=0.019 ms, median=0.05 ms, max=0.184 ms, 99th percentile=0.102 ms
+16:55:21.689:  ┃   ┃ ┗render_main_texture: min=0.015 ms, median=0.044 ms, max=0.179 ms, 99th percentile=0.09 ms
+16:55:21.689:  ┃   ┗gs_flush: min=0.003 ms, median=0.133 ms, max=3.202 ms, 99th percentile=0.22 ms
+16:55:21.689:  ┗render_displays: min=0.003 ms, median=0.985 ms, max=34.306 ms, 99th percentile=2.137 ms
+16:55:21.689: OBSBasicSettings::LoadThemeList: min=0.051 ms, median=0.052 ms, max=0.077 ms, 99th percentile=0.077 ms
+16:55:21.689: =================================================
+16:55:21.689: == Profiler Time Between Calls ==================
+16:55:21.689: obs_hotkey_thread(25 ms): min=25.152 ms, median=25.502 ms, max=118.494 ms, 49.6851% within ±2% of 25 ms (0% lower, 50.3149% higher)
+16:55:21.689: obs_graphics_thread(33.3333 ms): min=29.686 ms, median=33.334 ms, max=36.984 ms, 99.5885% within ±2% of 33.333 ms (0.192044% lower, 0.219479% higher)
+16:55:21.689: =================================================
+16:55:21.701: Number of memory leaks: 0

@@ -1,0 +1,6 @@
+1
+/usr/share/backgrounds/arcolinux/dlanham-threadtroll-3200x2000.jpg
+/usr/share/backgrounds/archlinux-login-backgrounds/att-03.jpg
+/usr/share/backgrounds/archlinux-login-backgrounds/att-04.jpg
+/usr/share/backgrounds/arco/arco-login-plasma.jpg
+/usr/share/backgrounds/arco/arco-wallpaper.jpg
