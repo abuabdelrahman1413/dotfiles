@@ -105,3 +105,8 @@ map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
 map("n", "<leader>wk", function()
   vim.cmd("WhichKey " .. vim.fn.input "WhichKey: ")
 end, { desc = "whichkey query lookup" })
+
+
+-- start live server
+-- Map the toggle function to <leader>ls
+map("n", "<leader>ls", "<cmd>LiveServerToggle<CR>", { desc = "live server toggle" })
