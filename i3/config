@@ -13,15 +13,18 @@ for_window [class="^.*"] border pixel 1
 
 set $mod Mod4
 # set $mod Mod1
-
+exec_always autotiling
+exec --no-startup-id numlockx off
 exec --no-startup-id picom
 exec_always --no-startup-id feh --bg-scale ~/wallpapers/0135.jpg
 exec --no-startup-id xrdb -merge ~/.Xresources
 exec_always --no-startup-id setxkbmap -option ctrl:nocaps
+#Wifi Applet
+exec --no-startup-id nm-applet
 
 # kill any hanging polybar processes
 exec_always killall polybar
-exec_always --no-startup-id ~/.config/polybar/lauch_polybar.sh
+# exec_always --no-startup-id ~/.config/polybar/lauch_polybar.sh
 
 bindsym Print exec maim "/home/$USER/Pictures/$(date).jpg"
 bindsym $mod+Print exec maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date).jpg"
@@ -31,6 +34,9 @@ bindsym Shift+Print exec maim --select "/home/$USER/Pictures/$(date).jpg"
 bindsym Ctrl+Print exec maim | xclip -selection clipboard -t image/png
 bindsym Ctrl+$mod+Print exec maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec maim --select | xclip -selection clipboard -t image/png
+
+# logout
+bindsym $mod+x exec dm-logout
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -57,8 +63,8 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 2
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 2
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
@@ -163,32 +169,14 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-
-bindsym $mod+r mode "resize"
+# Increase width
+bindsym $mod+equal resize grow width 10 px or 10 ppt
+# Decrease width
+bindsym $mod+minus resize shrink width 10 px or 10 ppt
+# Increase height
+bindsym $mod+Shift+equal resize grow height 10 px or 10 ppt
+# Decrease height
+bindsym $mod+Shift+minus resize shrink height 10 px or 10 ppt
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -227,3 +215,26 @@ client.unfocused         $overlay0 $base  $text    $rosewater $overlay0
 client.urgent            $peach    $base  $peach   $overlay0  $peach
 client.placeholder       $overlay0 $base  $text    $overlay0  $overlay0
 client.background        $base
+
+# split orientation
+bindsym $mod+v split h;exec notify-send 'tile vertically'
+bindsym $mod+i split v;exec notify-send 'tile horizontally'
+bindsym $mod+q split toggle
+
+exec --no-startup-id ~/.config/lang-layout.sh
+
+# bar i3blocks
+bar {
+    status_command i3blocks
+    position bottom
+    colors {
+        background $base
+        statusline $text
+        separator $overlay0
+        focused_workspace $mantle $mantle $rosewater
+        active_workspace $overlay0 $overlay0 $rosewater
+        inactive_workspace $overlay0 $overlay0 $overlay0
+        urgent_workspace $peach $peach $overlay0
+    }
+}
+

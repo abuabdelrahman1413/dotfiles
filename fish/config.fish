@@ -237,3 +237,9 @@ colorscript random
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
+
+# Start Tmux automatically if not already running
+#if test -z "$TMUX"
+  #tmux
+#end
+
