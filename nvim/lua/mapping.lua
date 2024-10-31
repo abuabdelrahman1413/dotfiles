@@ -1,112 +1,75 @@
+-- Set <space> as the leader key
+-- See `:help mapleader`
+--  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+-- For conciseness
+-- noremap mean no remap
+-- silent mean no message
+local opts = { noremap = true, silent = true }
+-- alias set keymap
 local map = vim.keymap.set
+-- Disable the spacebar key's default behavior in Normal and Visual modes
+map({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
-map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
-map("i", "<C-e>", "<End>", { desc = "move end of line" })
-map("i", "<C-h>", "<Left>", { desc = "move left" })
-map("i", "<C-l>", "<Right>", { desc = "move right" })
-map("i", "<C-j>", "<Down>", { desc = "move down" })
-map("i", "<C-k>", "<Up>", { desc = "move up" })
+-- C-s to save file
+map("n", "<C-s>", ":w<CR>", opts)
+-- C-a to select all
+map("n", "<C-a>", "ggVG", opts)
 
-map("n", "<C-h>", "<C-w>h", { desc = "switch window left" })
-map("n", "<C-l>", "<C-w>l", { desc = "switch window right" })
-map("n", "<C-j>", "<C-w>j", { desc = "switch window down" })
-map("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
+-- Vertical scroll and center cursor C-d C-u
+map("n", "<C-d>", "<C-d>zz", opts)
+map("n", "<C-u>", "<C-u>zz", opts)
 
-map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
+-- Find and center
+map("n", "n", "nzzzv", opts)
+map("n", "N", "Nzzzv", opts)
 
-map("n", "<C-s>", "<cmd>w<CR>", { desc = "general save file" })
-map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "general copy whole file" })
+-- Resize with arrows
+map("n", "<Up>", ":resize -2<CR>", opts)
+map("n", "<Down>", ":resize +2<CR>", opts)
+map("n", "<Left>", ":vertical resize -2<CR>", opts)
+map("n", "<Right>", ":vertical resize +2<CR>", opts)
 
-map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "toggle line number" })
-map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
-map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "toggle nvcheatsheet" })
+-- Buffers
+map("n", "<Tab>", ":bnext<CR>", opts)
+map("n", "<S-Tab>", ":bprevious<CR>", opts)
+map("n", "<leader>bd", ":bd<CR>", opts) -- close buffer
+map("n", "<leader>bn", "<cmd> enew <CR>", opts) -- new buffer
 
-map("n", "<leader>fm", function()
-  require("conform").format { lsp_fallback = true }
-end, { desc = "general format file" })
+-- Window management
+map("n", "<leader>v", "<C-w>v", opts) -- split window vertically
+map("n", "<leader>h", "<C-w>s", opts) -- split window horizontally
+map("n", "<leader>se", "<C-w>=", opts) -- make split windows equal width & height
+map("n", "<leader>ds", ":close<CR>", opts) -- close current split window
+-- Navigate between splits
+map("n", "<C-k>", ":wincmd k<CR>", opts)
+map("n", "<C-j>", ":wincmd j<CR>", opts)
+map("n", "<C-h>", ":wincmd h<CR>", opts)
+map("n", "<C-l>", ":wincmd l<CR>", opts)
 
--- global lsp mappings
-map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP diagnostic loclist" })
+-- Tabs
+map("n", "<leader>to", ":tabnew<CR>", opts) -- open new tab
+map("n", "<leader>td", ":tabclose<CR>", opts) -- close current tab
+map("n", "<leader>tn", ":tabn<CR>", opts) --  go to next tab
+map("n", "<leader>tp", ":tabp<CR>", opts) --  go to previous tab
 
--- tabufline
-map("n", "<leader>b", "<cmd>enew<CR>", { desc = "buffer new" })
+-- Toggle line wrapping
+map("n", "<leader>lw", "<cmd>set wrap!<CR>", opts)
 
-map("n", "<tab>", function()
-  require("nvchad.tabufline").next()
-end, { desc = "buffer goto next" })
+-- Press jk fast to exit insert mode
+map("i", "jk", "<ESC>", opts)
+map("i", "kj", "<ESC>", opts)
 
-map("n", "<S-tab>", function()
-  require("nvchad.tabufline").prev()
-end, { desc = "buffer goto prev" })
+-- Stay in indent mode
+map("v", "<", "<gv", opts)
+map("v", ">", ">gv", opts)
 
-map("n", "<leader>x", function()
-  require("nvchad.tabufline").close_buffer()
-end, { desc = "buffer close" })
+-- Diagnostic keymaps
+map("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" })
+map("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnostic message" })
+map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
+map("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 
--- Comment
-map("n", "<leader>/", "gcc", { desc = "toggle comment", remap = true })
-map("v", "<leader>/", "gc", { desc = "toggle comment", remap = true })
-
--- nvimtree
-map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
-map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window" })
-
--- telescope
-map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "telescope live grep" })
-map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "telescope find buffers" })
-map("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "telescope help page" })
-map("n", "<leader>ma", "<cmd>Telescope marks<CR>", { desc = "telescope find marks" })
-map("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>", { desc = "telescope find oldfiles" })
-map("n", "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", { desc = "telescope find in current buffer" })
-map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "telescope git commits" })
-map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "telescope git status" })
-map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "telescope pick hidden term" })
-
-map("n", "<leader>th", function()
-  require("nvchad.themes").open()
-end, { desc = "telescope nvchad themes" })
-
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "telescope find files" })
-map(
-  "n",
-  "<leader>fa",
-  "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
-  { desc = "telescope find all files" }
-)
-
--- terminal
-map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
-
--- new terminals
-map("n", "<leader>h", function()
-  require("nvchad.term").new { pos = "sp" }
-end, { desc = "terminal new horizontal term" })
-
-map("n", "<leader>v", function()
-  require("nvchad.term").new { pos = "vsp" }
-end, { desc = "terminal new vertical term" })
-
--- toggleable
-map({ "n", "t" }, "<A-v>", function()
-  require("nvchad.term").toggle { pos = "vsp", id = "vtoggleTerm" }
-end, { desc = "terminal toggleable vertical term" })
-
-map({ "n", "t" }, "<A-h>", function()
-  require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
-end, { desc = "terminal toggleable horizontal term" })
-
-map({ "n", "t" }, "<A-i>", function()
-  require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
-end, { desc = "terminal toggle floating term" })
-
--- whichkey
-map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
-
-map("n", "<leader>wk", function()
-  vim.cmd("WhichKey " .. vim.fn.input "WhichKey: ")
-end, { desc = "whichkey query lookup" })
-
-
--- start live server
--- Map the toggle function to <leader>ls
-map("n", "<leader>ls", "<cmd>LiveServerToggle<CR>", { desc = "live server toggle" })
+-- open and close Neotree
+map("n", "\\", ":Neotree toggle<CR>", opts)
