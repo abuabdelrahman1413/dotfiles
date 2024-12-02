@@ -1,0 +1,62 @@
+
+#!/usr/bin/env bash
+
+# Copyright (C) 2014 Julien Bonjean <julien@bonjean.info>
+# Copyright (C) 2014 Alexander Keller <github@nycroth.com>
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+#------------------------------------------------------------------------
+
+# Mixer and control selection
+MIXER="default"                # Audio mixer (default for ALSA)
+SCONTROL="Master"              # Control for volume (use `Master` for primary volume control)
+STEP="5%"                      # Volume change step in percentage
+
+#------------------------------------------------------------------------
+
+# Get volume and mute status
+volume() {
+  amixer -D $MIXER get $SCONTROL | grep -oP '\[\d+%\]' | head -1 | tr -d '[]%'
+}
+
+mute_status() {
+  amixer -D $MIXER get $SCONTROL | grep -oP '\[on\]|\[off\]' | head -1 | tr -d '[]'
+}
+
+# Format output for the i3blocks bar
+format() {
+  local vol=$(volume)
+  local mute=$(mute_status)
+
+  if [[ $mute == "off" ]]; then
+    echo "MUTE"
+  else
+    echo "${vol}%"
+  fi
+}
+
+#------------------------------------------------------------------------
+
+# Handle mouse button clicks
+case $BLOCK_BUTTON in
+  1) amixer -D $MIXER set $SCONTROL toggle ;;             # Left click: Toggle mute
+  4) amixer -D $MIXER set $SCONTROL ${STEP}+ unmute ;;    # Scroll up: Increase volume
+  5) amixer -D $MIXER set $SCONTROL ${STEP}- unmute ;;    # Scroll down: Decrease volume
+esac
+
+#------------------------------------------------------------------------
+
+# Output volume and handle urgency
+output=$(format)
+echo "$output"  # Full text
+echo "$output"  # Short text
+
+if [[ $(volume) -le 5 ]]; then
+  exit 33  # Urgent if volume is 5% or lower
+fi
+
+exit 0

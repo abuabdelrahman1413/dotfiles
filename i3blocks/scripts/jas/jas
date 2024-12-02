@@ -1,0 +1,33 @@
+#!/bin/bash
+
+METHOD="brightnessctl"
+
+# Handle mouse events
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+    brightnessctl set +10% > /dev/null 2>&1
+elif [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
+    brightnessctl set 10%- > /dev/null 2>&1
+fi
+
+URGENT_VALUE=1
+
+if [[ "${METHOD}" = "brightnessctl" ]]; then
+    # Use the correct field for percentage
+    curBrightness=$(brightnessctl -m | awk -F, '{print $4}' | tr -d '%')
+fi
+
+# Handle edge cases where brightness might be 0
+if [[ -z "${curBrightness}" || "${curBrightness}" -le 0 ]]; then
+    brightnessctl set 10% > /dev/null 2>&1
+    curBrightness=$(brightnessctl -m | awk -F, '{print $4}' | tr -d '%')
+fi
+
+# Display brightness
+echo "${curBrightness}%"
+echo "${curBrightness}%"
+echo ""
+
+# Exit with urgency if below threshold
+if [[ "${curBrightness}" -le "${URGENT_VALUE}" ]]; then
+    exit 33
+fi

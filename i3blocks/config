@@ -1,0 +1,75 @@
+# i3blocks configuration file
+
+# Global properties
+separator_block_width=18
+markup="pango"
+
+# Memory Block
+[memory]
+command=/home/mohammed/.config/i3blocks/scripts/memory/memory
+label=󰍛 
+interval=30
+color=#9c9c9c
+
+# Temperature Block
+[temperature]
+command=/home/mohammed/.config/i3blocks/scripts/temperature/temperature
+label=
+color=#8bfddb
+interval=10
+
+# CPU Usage Block
+[cpu_usage]
+command=/home/mohammed/.config/i3blocks/scripts/cpu_usage/cpu_usage
+interval=10
+label= 
+
+# JAS Block
+[jas]
+command=/home/mohammed/.config/i3blocks/scripts/jas/jas
+color=#f1fa8c
+label=󰃟  
+markup="pango"
+interval=once
+signal=10
+
+# Battery Status Block
+[baterkos]
+command=/home/mohammed/.config/i3blocks/scripts/battery/battery
+interval=10
+label= 
+color=#50fa7b
+
+# Spotify Block
+[spotify]
+label=
+command=python3 /home/mohammed/.config/i3blocks/scripts/spotify/spotify.py
+color=#50fab0
+interval=5
+
+# Volume Block
+[volume]
+command=/home/mohammed/.config/i3blocks/scripts/volume/volume
+label=󰕾 
+interval=1
+signal=10
+color=#ff79c6
+markup=pango
+
+# Time Block
+[time]
+command=date '+%A %d.%m. %H:%M:%S'
+label=󰃰 
+interval=1
+color=#f8f8f2
+
+# Shutdown Menu Block
+[shutdown_menu]
+full_text=
+command=sh /home/mohammed/.local/bin/power-menu.sh &
+min_width=16
+color=#ff5555
+
+# Separator Block
+[separator]
+#full_text=⠀
