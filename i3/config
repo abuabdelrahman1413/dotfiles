@@ -11,6 +11,7 @@
 
 set $mod Mod4
 
+exec --no-startup-id xinput enable $(xinput list | grep -i touchpad | grep -o 'id=[0-9]*' | cut -d= -f2)
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # Set the font for i3 and i3bar
@@ -50,7 +51,7 @@ floating_modifier $mod
 #tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty tmux
+bindsym $mod+Return exec --no-startup-id kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -61,7 +62,6 @@ bindsym $mod+q kill
 # There also is i2-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+x exec betterlockscreen -l dim
 # change focus
 set $movemouse "sh -c 'eval `xdotool getactivewindow getwindowgeometry --shell`; xdotool mousemove $((X+WIDTH/2)) $((Y+HEIGHT/2))'"
 # bindsym $mod+h focus left; exec --no-startup-id $movemouse
@@ -225,15 +225,14 @@ bindsym $mod+Print exec --no-startup-id scrot -u "/home/mohammed/Pictures/Screen
 # bindsym Shift+Print exec --no-startup-id bash "/home/mohammed/.config/i3/flameshot_toggle.sh"
 # rofi in i3
 #exec_always --no-startup-id bash "/home/mohammed/.config/i3/autostart.sh"
+
 # xfce4 menu in xfce
-bindsym $mod+space exec --no-startup-id xfce4-popup-whiskermenu
-
-
+# bindsym $mod+space exec --no-startup-id xfce4-popup-whiskermenu
 # rofi setup ***********************************************************
-#bindsym $mod+space exec --no-startup-id rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/forest/scripts/rofi/launcher.rasi
+bindsym $mod+space exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
 bindsym $mod+u exec --no-startup-id rofi -show window -no-config -no-lazy-grab -show window -modi drun -theme ~/.config/polybar/forest/scripts/rofi/launcher.rasi
-bindsym $mod+e exec --no-startup-id rofi -modi emoji -show emoji -theme ~/.config/polybar/forest/scripts/rofi/launcher.rasi
-bindsym $mod+Shift+d exec --no-startup-id bash ~/.config/polybar/forest/scripts/powermenu.sh
+bindsym $mod+e exec --no-startup-id rofi -modi emoji -show emoji -theme ~/dotfiles/rofi/launchers/type-1/style-1.rasi
+bindsym $mod+x exec --no-startup-id bash ~/.config/rofi/powermenu/type-1/powermenu.sh
 
 # start Terminal ********************************************************
 bindsym $mod+Enter exec --no-startup-id st
@@ -248,21 +247,8 @@ bindsym $mod+Next exec --no-startup-id bash ~/.local/bin/backlight down
 bindsym XF86MonBrightnessDown exec --no-startup-id bash ~/.local/bin/backlight down
 bindsym XF86MonBrightnessUp exec --no-startup-id bash ~/.local/bin/backlight up
 
-# notification controls
-bindsym $mod+n exec --no-startup-id wired --drop all
-bindsym $mod+i exec --no-startup-id wired --drop latest
-bindsym $mod+l exec --no-startup-id wired --show 1
-bindsym $mod+y exec --no-startup-id wired --dnd on
-bindsym $mod+p exec --no-startup-id wired --dnd off
-
 bindsym XF86AudioRaiseVolume exec  --no-startup-id amixer -D default set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D default set Master 5%- unmute
-bindsym XF86AudioMute exec --no-startup-id ~/.local/bin/volume mute
-
-bindsym $mod+Home exec --no-startup-id ~/.local/bin/volume up
-bindsym $mod+End exec --no-startup-id ~/.local/bin/volume down
-bindsym $mod+m exec --no-startup-id ~/.local/bin/volume mute
-
 
 #enable autotiling *****************************************************
 exec_always  --no-startup-id autotiling
@@ -311,25 +297,25 @@ set $overlay0  #6e738d
 set $surface2  #5b6078
 set $surface1  #494d64
 set $surface0  #363a4f
-set $base      #24273a
+set $base      #1D273A
 set $mantle    #1e2030
 set $crust     #181926
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar {
-#         status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks -c ~/.config/i3blocks/config
-# 	position top
-# 	tray_padding 4
-# 	separator_symbol ""
-# 	font pango:JetBrainsMono Nerd Font 10
-# 	colors {
-#         	background $base
-#         	statusline $text
-#         	separator  $rosewater
+bar {
+        status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks -c ~/.config/i3blocks/config
+	position bottom
+	tray_padding 4
+	separator_symbol ""
+	font pango:JetBrainsMono Nerd Font 10
+	colors {
+        	background $base
+        	statusline $text
+        	separator  $rosewater
 
-#         	###	           border	    	bg  	   	text
-# 		focused_workspace  $blue	    	$blue		$text
-#         	inactive_workspace $yellow			$yellow	    	$text
-#         	urgent_workspace   $red		    	$red		$base
-#         	}
-# }
+        	###	           border	    	bg  	   	text
+		focused_workspace  $blue	    	$blue		$text
+        	inactive_workspace $yellow			$yellow	    	$text
+        	urgent_workspace   $red		    	$red		$base
+        	}
+}

@@ -3,6 +3,8 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+-- remap Escape
+keymap.set("i", "jj", "<Esc>") -- save and quit
 -- General keymaps
 keymap.set("n", "<leader>wq", ":wq<CR>") -- save and quit
 keymap.set("n", "<leader>qq", ":q!<CR>") -- quit without saving

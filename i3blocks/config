@@ -66,7 +66,7 @@ color=#f8f8f2
 # Shutdown Menu Block
 [shutdown_menu]
 full_text=
-command=sh /home/mohammed/.local/bin/power-menu.sh &
+command=/home/mohammed/.config/rofi/powermenu/type-1/powermenu.sh
 min_width=16
 color=#ff5555
 
