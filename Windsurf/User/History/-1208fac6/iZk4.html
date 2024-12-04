@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OOP in Js</title>
+  </head>
+  <body>
+  </body>
+
+    <script >
+      class Animal {
+      constructor(name, color) {
+          this.name = name;
+          this.color = color;
+        }
+
+        move() {
+          console.log(`Moving ${this.name}`);
+        }
+
+        sound() {
+          console.log("Sound");
+        }
+      }
+
+      let lion = new Animal("Lion", "Yellow")
+      lion.move();
+      console.log(lion.name)
+    </script>
+</html>

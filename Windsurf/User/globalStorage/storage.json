@@ -1,10 +1,10 @@
 {
     "userDataProfilesMigration": true,
     "profileAssociations": {
-        "workspaces": {},
-        "emptyWindows": {
-            "1733236729780": "__default__profile__"
-        }
+        "workspaces": {
+            "file:///home/mohammed/Projects/JS/Advanced_js_Tarmeez": "__default__profile__"
+        },
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "telemetry.sqmId": "",
@@ -12,12 +12,12 @@
     "telemetry.devDeviceId": "27a83247-0351-4da3-ae71-4c62f0723ec5",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
-        "emptyWindows": [
+        "folders": [
             {
-                "backupFolder": "1733236729780"
+                "folderUri": "file:///home/mohammed/Projects/JS/Advanced_js_Tarmeez"
             }
-        ]
+        ],
+        "emptyWindows": []
     },
     "windowControlHeight": 35,
     "theme": "vs-dark",
@@ -51,7 +51,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/mohammed/.config/Windsurf/Backups/1733236729780",
+            "folder": "file:///home/mohammed/Projects/JS/Advanced_js_Tarmeez",
+            "backupPath": "/home/mohammed/.config/Windsurf/Backups/c8da48770a7ec74e2e4f0b8b0effa448",
             "uiState": {
                 "mode": 1,
                 "x": 0,
