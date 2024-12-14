@@ -7,6 +7,7 @@ Show CPU usage.
 # Dependencies
 
 * `mpstat`
+* `sysstat`
 
 # Config
 
