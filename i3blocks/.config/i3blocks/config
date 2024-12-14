@@ -14,7 +14,7 @@ color=#9c9c9c
 # Temperature Block
 [temperature]
 command=/home/mohammed/.config/i3blocks/scripts/temperature/temperature
-label=
+label=  
 color=#8bfddb
 interval=10
 
@@ -22,7 +22,7 @@ interval=10
 [cpu_usage]
 command=/home/mohammed/.config/i3blocks/scripts/cpu_usage/cpu_usage
 interval=10
-label= 
+label=   
 
 # JAS Block
 [jas]
@@ -37,7 +37,7 @@ signal=10
 [baterkos]
 command=/home/mohammed/.config/i3blocks/scripts/battery/battery
 interval=10
-label= 
+label=   
 color=#50fa7b
 
 # Spotify Block

@@ -118,7 +118,7 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+f exec --no-startup-id thunar
 
 # open brave
-bindsym $mod+b exec --no-startup-id brave-browser
+bindsym $mod+b exec --no-startup-id brave
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -224,7 +224,7 @@ bindsym $mod+Print exec --no-startup-id scrot -u "/home/mohammed/Pictures/Screen
 
 # bindsym Shift+Print exec --no-startup-id bash "/home/mohammed/.config/i3/flameshot_toggle.sh"
 # rofi in i3
-#exec_always --no-startup-id bash "/home/mohammed/.config/i3/autostart.sh"
+exec_always --no-startup-id bash "/home/mohammed/.config/i3/autostart.sh"
 
 # xfce4 menu in xfce
 # bindsym $mod+space exec --no-startup-id xfce4-popup-whiskermenu
