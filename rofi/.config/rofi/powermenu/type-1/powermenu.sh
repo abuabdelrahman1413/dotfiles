@@ -18,13 +18,23 @@ uptime="`uptime -p | sed -e 's/up //g'`"
 host=`hostname`
 
 # Options
-shutdown=' Shutdown'
-reboot=' Reboot'
-lock=' Lock'
-suspend=' Suspend'
-logout=' Logout'
-yes=' Yes'
-no=' No'
+# shutdown=' Shutdown'
+# reboot=' Reboot'
+# lock=' Lock'
+# suspend=' Suspend'
+# logout=' Logout'
+# yes=' Yes'
+# no=' No'
+
+
+# Options alternative due icons not work
+shutdown='Shutdown'
+reboot='Reboot'
+lock='Lock'
+suspend='Suspend'
+logout='Logout'
+yes='Yes'
+no='No'
 
 # Rofi CMD
 rofi_cmd() {
@@ -105,6 +115,6 @@ case ${chosen} in
 		run_cmd --suspend
         ;;
     $logout)
-		run_cmd --logout
+		systemctl restart lightdm
         ;;
 esac

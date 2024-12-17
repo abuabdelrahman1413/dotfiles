@@ -32,7 +32,6 @@ return {
         'jsonls',      -- JSON language server
         'pyright',     -- Python language server
         'yamlls',      -- YAML language server
-        'jdtls',       -- Java development tools (language server for Java)
       }
     })
 

@@ -18,7 +18,7 @@ return {
       -- Set the visual theme for the status line.
       -- Themes like "catppuccin" make the status line visually match your colorscheme.
       -- More themes are available at the mentioned URL.
-      theme = "catppuccin", -- Options: "auto", "tokyonight", "catppuccin", "codedark", "nord"
+      theme = "dracula-nvim", -- Options: "auto", "tokyonight", "catppuccin", "codedark", "nord"
     },
     
     sections = {

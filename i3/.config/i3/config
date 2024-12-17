@@ -34,7 +34,7 @@ font pango:FiraCode Nerd Font 12
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -115,7 +115,7 @@ bindsym $mod+a focus parent
 
 # Applications ========================================================
 #open file manager
-bindsym $mod+Shift+f exec --no-startup-id thunar
+bindsym $mod+Shift+f exec --no-startup-id caja
 
 # open brave
 bindsym $mod+b exec --no-startup-id brave-browser
@@ -258,8 +258,6 @@ bindsym $mod+Shift+minus move scratchpad
 
 # Show the first scratchpad window *************************************
 # bindsym $mod+minus scratchpad show
-# prevent kwallet start
-exec --no-startup-id kwalletd
 
 
 # COLORS #######################################################################
