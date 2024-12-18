@@ -9,13 +9,13 @@ markup="pango"
 command=/home/mohammed/.config/i3blocks/scripts/memory/memory
 label=󰍛 
 interval=30
-color=#9c9c9c
+color=#6272a4  # Dracula comment
 
 # Temperature Block
 [temperature]
 command=/home/mohammed/.config/i3blocks/scripts/temperature/temperature
 label=  
-color=#8bfddb
+color=#8be9fd  # Dracula cyan
 interval=10
 
 # CPU Usage Block
@@ -23,11 +23,12 @@ interval=10
 command=/home/mohammed/.config/i3blocks/scripts/cpu_usage/cpu_usage
 interval=10
 label=   
+color=#ffb86c  # Dracula orange
 
 # JAS Block
 [jas]
 command=/home/mohammed/.config/i3blocks/scripts/jas/jas
-color=#f1fa8c
+color=#f1fa8c  # Dracula yellow
 label=󰃟  
 markup="pango"
 interval=once
@@ -38,13 +39,13 @@ signal=10
 command=/home/mohammed/.config/i3blocks/scripts/battery/battery
 interval=10
 label=   
-color=#50fa7b
+color=#50fa7b  # Dracula green
 
 # Spotify Block
 [spotify]
 label=
 command=python3 /home/mohammed/.config/i3blocks/scripts/spotify/spotify.py
-color=#50fab0
+color=#bd93f9  # Dracula purple
 interval=5
 
 # Volume Block
@@ -53,7 +54,7 @@ command=/home/mohammed/.config/i3blocks/scripts/volume/volume
 label=󰕾 
 interval=1
 signal=10
-color=#ff79c6
+color=#ff79c6  # Dracula pink
 markup=pango
 
 # Time Block
@@ -61,14 +62,14 @@ markup=pango
 command=date '+%A %d.%m. %H:%M:%S'
 label=󰃰 
 interval=1
-color=#f8f8f2
+color=#f8f8f2  # Dracula foreground
 
 # Shutdown Menu Block
 [shutdown_menu]
 full_text=
 command=/home/mohammed/.config/rofi/powermenu/type-1/powermenu.sh
 min_width=16
-color=#ff5555
+color=#ff5555  # Dracula red
 
 # Separator Block
 [separator]
