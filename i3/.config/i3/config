@@ -12,6 +12,8 @@
 set $mod Mod4
 
 exec --no-startup-id xinput enable $(xinput list | grep -i touchpad | grep -o 'id=[0-9]*' | cut -d= -f2)
+
+exec --no-startup-id xinput set-prop 14 "libinput Tapping Enabled" 1
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # Set the font for i3 and i3bar
@@ -284,3 +286,7 @@ bar {
 }
 
 bindsym $mod+d exec "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-10' -p 'dmenu%'"
+
+
+
+bindsym $mod+Shift+s sticky toggle

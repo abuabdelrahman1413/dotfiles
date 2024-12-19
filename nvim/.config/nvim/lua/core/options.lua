@@ -53,10 +53,13 @@ opt.mouse = "a"
 opt.hlsearch = true
 vim.keymap.set("n", "<ESC>", "<CMD>nohlsearch<CR>")
 
--- Folding
-opt.foldlevel = 20
+-- -- Folding
+opt.foldlevel = 99
+-- opt.foldlevelstart = 1
+-- opt.foldnestmax = 4
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()" -- Utilize Treesitter folds
+-- opt.foldtext = ""
 
 -- highlight when yank
 vim.api.nvim_create_autocmd("TextYankPost", {

@@ -28,6 +28,8 @@ return {
         html = { 'prettierd' },       -- HTML formatter. Requires "prettierd" to be installed.
         css = { 'prettierd' },        -- CSS formatter. Requires "prettierd" to be installed.
         markdown = { 'prettierd' },   -- Markdown formatter. Requires "prettierd" to be installed.
+        cpp = { 'clang-format' },   -- Markdown formatter. Requires "prettierd" to be installed.
+        java = { 'google-java-format' },
       }
     })
 
