@@ -1,8 +1,6 @@
--- LSP Support Configuration for Neovim
 return {
   -- Main LSP configuration plugin
   'neovim/nvim-lspconfig',
-  event = 'VeryLazy',  -- Lazy load this plugin for better startup time
   dependencies = {
     -- LSP Management plugin for managing and installing LSPs
     { 'williamboman/mason.nvim' },
@@ -21,7 +19,7 @@ return {
   config = function()
     -- Setup Mason to manage LSP servers, linters, and formatters
     require('mason').setup()
-    
+
     -- Setup Mason-LSPconfig to automatically install LSPs
     require('mason-lspconfig').setup({
       ensure_installed = {
@@ -35,13 +33,12 @@ return {
       }
     })
 
-    -- Setup auto-installation of Python tools (formatters and linters)
+    -- Setup auto-installation of tools (formatters and linters)
     require('mason-tool-installer').setup({
       ensure_installed = {
         'black',   -- Python code formatter
         'debugpy', -- Python debugger
         'flake8',  -- Python linter
-        'isort',   -- Python import sorter
         'mypy',    -- Python type checker
         'pylint',  -- Python linter
       },
@@ -65,62 +62,11 @@ return {
         lspconfig[server_name].setup({
           on_attach = lsp_attach,  -- Run custom attach function
           capabilities = lsp_capabilities,  -- Capabilities to enhance autocompletion and LSP features
-          root_dir = function(fname)
-            return require('lspconfig').util.root_pattern(
-              '.git', 'package.json', 'pyproject.toml', 'setup.cfg', 'Makefile'
-            )(fname) or vim.loop.cwd()  -- Use the root of the project or current working directory
+          root_dir = function()
+            return vim.loop.cwd()  -- Use the current working directory as the root
           end,
         })
-      end,
-
-      -- Special configuration for Lua server
-      ['lua_ls'] = function()
-        lspconfig.lua_ls.setup({
-          on_attach = lsp_attach,
-          capabilities = lsp_capabilities,
-          root_dir = function(fname)
-            return require('lspconfig').util.root_pattern(
-              'init.lua', 'main.lua', '?.lua', '?.lua'
-            )(fname) or vim.loop.cwd()
-          end,
-          settings = {
-            Lua = {
-              runtime = {
-                version = 'LuaJIT',  -- Ensure compatibility with Neovim's Lua runtime
-                path = vim.split(package.path, ';'),
-              },
-              diagnostics = {
-                globals = { 'vim' },  -- Define global variables for diagnostics
-              },
-              workspace = {
-                library = vim.api.nvim_get_runtime_file("", true),  -- Add Neovim's runtime path to the Lua workspace
-                checkThirdParty = false,  -- Optional; adjust as needed
-              },
-              telemetry = {
-                enable = false,  -- Disable telemetry for privacy
-              },
-            },
-          },
-        })
-      end,
-
-      -- Special configuration for Java server
-      ['jdtls'] = function()
-        lspconfig.jdtls.setup({
-          on_attach = lsp_attach,
-          capabilities = lsp_capabilities,
-          root_dir = function(fname)
-            return require('lspconfig').util.root_pattern(
-              '.git', 'pom.xml', 'build.gradle', 'settings.gradle'
-            )(fname) or vim.loop.cwd()
-          end,
-          settings = {
-            java = {
-              -- Optional `runtimes` block is omitted as it's not necessary for basic usage
-            },
-          },
-        })
-      end,
+      end
     })
 
     -- Globally configure LSP floating previews to use rounded borders
