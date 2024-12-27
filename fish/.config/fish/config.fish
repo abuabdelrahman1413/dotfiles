@@ -12,6 +12,8 @@ alias install="sudo apt install"
 alias list="apt list --upgradeable"
 alias i3="nvim ~/dotfiles/i3/.config/i3/config"
 source "$HOME/.cargo/env.fish"
+export EDITOR="nvim"
+
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
 	yazi $argv --cwd-file="$tmp"
