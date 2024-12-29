@@ -1,0 +1,1 @@
+/home/mohammed/.emacs.d/straight/repos/themes/themes/doom-acario-dark-theme.el

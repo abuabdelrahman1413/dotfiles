@@ -1,0 +1,1 @@
+/home/mohammed/.emacs.d/straight/repos/company-lsp/company-lsp.el

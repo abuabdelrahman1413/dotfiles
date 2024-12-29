@@ -1,0 +1,1 @@
+/home/mohammed/.emacs.d/straight/repos/themes/themes/doom-challenger-deep-theme.el

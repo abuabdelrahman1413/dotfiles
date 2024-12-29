@@ -1,0 +1,1 @@
+/home/mohammed/.emacs.d/straight/repos/tide/tsserver/lib.esnext.string.d.ts

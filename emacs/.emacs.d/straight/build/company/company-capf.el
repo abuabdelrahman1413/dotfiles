@@ -1,0 +1,1 @@
+/home/mohammed/.emacs.d/straight/repos/company-mode/company-capf.el

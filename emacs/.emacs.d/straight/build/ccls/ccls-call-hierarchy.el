@@ -1,0 +1,1 @@
+/home/mohammed/.emacs.d/straight/repos/emacs-ccls/ccls-call-hierarchy.el

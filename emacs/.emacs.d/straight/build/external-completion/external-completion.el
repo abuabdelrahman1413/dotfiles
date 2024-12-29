@@ -1,0 +1,1 @@
+/home/mohammed/.emacs.d/straight/repos/external-completion/external-completion.el
