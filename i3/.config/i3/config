@@ -1,16 +1,51 @@
-# i3 config file (v4)
-#
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
+# Set Mod key to "Mod4" (usually the Super/Windows key)
 set $mod Mod4
-# Enable touchbad
-exec --no-startup-id xinput set-prop 14 "libinput Tapping Enabled" 1
+set $screen1 LVDS-1
+set $screen2 VIRTUAL1
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
-font pango:FiraCode Nerd Font 12
-# Disable title bar for windows
-new_window none
+# Font settings
+font pango:DejaVu Sans Mono 12
+
+# Border settings
+for_window [class="^.*"] border pixel 2
+
+# Colors for window borders
+client.focused          #4c7899 #285577 #ffffff #ffffff   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #ffffff
+
+# Enable smart borders (only show borders with multiple windows)
+smart_borders on
+
+# Start XDG autostart .desktop files using dex
+exec --no-startup-id dex --autostart --environment i3
+
+# Start necessary applications on startup
+exec --no-startup-id xbindkeys
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id nm-applet
+exec --no-startup-id ./secondscreen.sh
+
+# PulseAudio volume controls
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# Brightness controls
+bindsym XF86MonBrightnessUp exec brightnessctl set +20%
+bindsym XF86MonBrightnessDown exec brightnessctl set 20%-
+
+# Floating window controls
+floating_modifier $mod
+
+# Move tiling windows via drag & drop
+tiling_drag modifier titlebar
 
 # Start a terminal
 bindsym $mod+Return exec kitty
@@ -18,58 +53,61 @@ bindsym $mod+Return exec kitty
 # Kill focused window
 bindsym $mod+q kill
 
-# Start dmenu (a program launcher)
+# Application launcher
 bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+Shift+Return exec --no-startup-id rofi -show combi
 
-# Change focus between windows
-bindsym $mod+j focus down; exec --no-startup-id $movemouse
-bindsym $mod+k focus up; exec --no-startup-id $movemouse
-# bindsym $mod+h focus left; exec --no-startup-id $movemouse
-# bindsym $mod+l focus right; exec --no-startup-id $movemouse
+# Change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left; exec --no-startup-id $movemouse
-bindsym $mod+Right focus right; exec --no-startup-id $movemouse
-bindsym $mod+Down focus down; exec --no-startup-id $movemouse
-bindsym $mod+Up focus up; exec --no-startup-id $movemouse
+# Move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
-# move focused window
-bindsym $mod+Shift+h move left; exec --no-startup-id $movemouse
-bindsym $mod+Shift+j move down; exec --no-startup-id $movemouse
-bindsym $mod+Shift+k move up; exec --no-startup-id $movemouse
-bindsym $mod+Shift+l move right; exec --no-startup-id $movemouse
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left; exec --no-startup-id $movemouse
-bindsym $mod+Shift+Down move down; exec --no-startup-id $movemouse
-bindsym $mod+Shift+Up move up; exec --no-startup-id $movemouse
-bindsym $mod+Shift+Right move right; exec --no-startup-id $movemouse
-
-# Split windows horizontally and vertically
-bindsym $mod+h split h
+# Split containers
+bindsym $mod+z split h
 bindsym $mod+v split v
 
-# Enter fullscreen mode for the focused container
+# Fullscreen mode
 bindsym $mod+f fullscreen toggle
 
-# Change container layout (stacking, tabbed, toggle split)
+# Layout controls
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# Toggle tiling / floating mode
+# Toggle tiling/floating
 bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
 
-# Focus the parent container
+# Focus parent/child containers
 bindsym $mod+a focus parent
 
-# rofi setup ***********************************************************
-bindsym $mod+space exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
-bindsym $mod+u exec --no-startup-id rofi -show window -no-config -no-lazy-grab -show window -modi drun -theme ~/.config/polybar/forest/scripts/rofi/launcher.rasi
-# bindsym $mod+e exec --no-startup-id rofi -modi emoji -show emoji -theme ~/dotfiles/rofi/launchers/type-1/style-1.rasi
-bindsym $mod+x exec --no-startup-id bash ~/.config/rofi/powermenu/type-1/powermenu.sh
+# Scratchpad controls
+bindsym $mod+n move scratchpad
+bindsym $mod+Shift+n scratchpad show, floating disable
 
-# Workspace bindings
+# manage Workspaces with multiple monitors
+workspace 1 output $screen1
+workspace 2 output $screen1
+workspace 3 output $screen1
+workspace 4 output $screen1
+workspace 5 output $screen1
+workspace 6 output $screen2
+workspace 7 output $screen2
+workspace 8 output $screen2
+workspace 9 output $screen2
+
+# Workspace controls
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -92,6 +130,13 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
+bindsym $mod+Control+l workspace next_on_output
+bindsym $mod+Control+h workspace prev_on_output
+
+
+bindsym $mod+Control+Right workspace next
+bindsym $mod+Control+Left workspace prev
+
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -103,43 +148,31 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# Reload the configuration file
+# Reload and restart i3
 bindsym $mod+Shift+c reload
-
-# Restart i3 (preserves your layout/session)
 bindsym $mod+Shift+r restart
+bindsym $mod+Shift+q exec i3-msg exit
 
-# Exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-# Resize windows with the keyboard
+# Resize mode
 mode "resize" {
-    bindsym j resize shrink width 10 px or 10 ppt
+    bindsym j resize shrink height 10 px or 10 ppt
     bindsym k resize grow height 10 px or 10 ppt
-    bindsym l resize shrink height 10 px or 10 ppt
-    bindsym semicolon resize grow width 10 px or 10 ppt
-
-    # Same bindings for the arrow keys
-    bindsym Left resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
-
-    # Exit resize mode
+    bindsym l resize shrink width 10 px or 10 ppt
+    bindsym h resize grow width 10 px or 10 ppt
     bindsym Return mode "default"
     bindsym Escape mode "default"
     bindsym $mod+r mode "default"
 }
 bindsym $mod+r mode "resize"
-bindsym $mod+equal resize grow width 5 px or 5 ppt
-bindsym $mod+minus resize shrink width 5 px or 5 ppt
-# Start i3bar (no toolbar in this configuration)
-# bar {
-#     status_command i3status
-# }
 
-#enable autotiling *****************************************************
-exec_always  --no-startup-id autotiling
+# زيادة حجم النافذة باستخدام +
+bindsym $mod+equal resize grow width 10 px  
 
+# تقليل حجم النافذة باستخدام -
+bindsym $mod+minus resize shrink width 10 px
 
-bindsym $mod+p exec --no-startup-id flameshot gui -c
+# Status bar
+bar {
+    status_command i3status
+}
+

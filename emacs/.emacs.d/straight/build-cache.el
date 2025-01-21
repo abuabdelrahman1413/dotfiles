@@ -1,11 +1,11 @@
 
 :tanat
 
-"29.4"
+"31.0.50"
 
-#s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ("2024-12-29 06:36:45" ("emacs") (:type git :host github :repo "radian-software/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "org-elpa" ("2024-12-29 06:36:46" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2024-12-29 06:36:46" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2024-12-29 06:36:46" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "nongnu-elpa" ("2024-12-29 06:36:46" nil (:type git :repo "https://git.savannah.gnu.org/git/emacs/nongnu.git" :depth (full single-branch) :local-repo "nongnu-elpa" :build nil :package "nongnu-elpa")) "el-get" ("2024-12-29 06:36:46" nil (:type git :host github :repo "dimitri/el-get" :build nil :files (:defaults "methods" ("recipes" "recipes/el-get.rcp") "el-get-pkg.el") :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2024-12-29 06:36:46" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "evil" ("2024-12-29 06:36:45" ("emacs" "cl-lib" "goto-chg" "nadvice") (:type git :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2024-12-29 06:36:45" ("emacs") (:type git :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-collection" ("2024-12-29 06:36:46" ("emacs" "evil" "annalist") (:type git :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2024-12-29 06:36:46" ("emacs" "cl-lib") (:type git :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "general" ("2024-12-29 06:36:46" ("emacs" "cl-lib") (:type git :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "beacon" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "Malabarba/beacon" :package "beacon" :local-repo "beacon")) "doom-themes" ("2024-12-29 06:36:46" ("emacs" "cl-lib") (:type git :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes" :package "doom-themes" :local-repo "themes")) "rainbow-mode" ("2024-12-29 06:36:46" nil (:type git :host github :repo "emacs-straight/rainbow-mode" :files ("*" (:exclude ".git")) :package "rainbow-mode" :local-repo "rainbow-mode")) "rainbow-delimiters" ("2024-12-29 06:36:46" nil (:type git :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "lsp-mode" ("2024-12-29 06:36:46" ("emacs" "dash" "f" "ht" "spinner" "markdown-mode" "lv" "eldoc") (:type git :files (:defaults "clients/*.el" "lsp-mode-pkg.el") :host github :repo "emacs-lsp/lsp-mode" :package "lsp-mode" :local-repo "lsp-mode")) "dash" ("2024-12-29 06:36:46" ("emacs") (:type git :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "f" ("2024-12-29 06:36:46" ("emacs" "s" "dash") (:type git :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "s" ("2024-12-29 06:36:46" nil (:type git :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "ht" ("2024-12-29 06:36:46" ("dash") (:type git :host github :repo "Wilfred/ht.el" :package "ht" :local-repo "ht.el")) "spinner" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "emacs-straight/spinner" :files ("*" (:exclude ".git")) :package "spinner" :local-repo "spinner")) "markdown-mode" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "lv" ("2024-12-29 06:36:46" nil (:type git :files ("lv.el" "lv-pkg.el") :host github :repo "abo-abo/hydra" :package "lv" :local-repo "hydra")) "eldoc" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "emacs-straight/eldoc" :files ("*" (:exclude ".git")) :package "eldoc" :local-repo "eldoc")) "lsp-ui" ("2024-12-29 06:36:46" ("emacs" "dash" "lsp-mode" "markdown-mode") (:type git :files (:defaults "lsp-ui-doc.html" "resources" "lsp-ui-pkg.el") :host github :repo "emacs-lsp/lsp-ui" :package "lsp-ui" :local-repo "lsp-ui")) "ccls" ("2024-12-28 18:46:13" ("emacs" "lsp-mode" "dash") (:type git :host github :repo "emacs-lsp/emacs-ccls" :package "ccls" :local-repo "emacs-ccls")) "company" ("2024-12-29 06:36:46" ("emacs") (:type git :files (:defaults "icons" ("images/small" "doc/images/small/*.png") "company-pkg.el") :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "company-lsp" ("2024-12-28 18:46:14" ("emacs" "lsp-mode" "company" "s" "dash") (:type git :host github :repo "emacsattic/company-lsp" :package "company-lsp" :local-repo "company-lsp")) "yasnippet" ("2024-12-28 18:46:14" ("cl-lib" "emacs") (:type git :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet" :package "yasnippet" :local-repo "yasnippet")) "toc-org" ("2024-12-29 06:36:46" nil (:type git :host github :repo "snosov1/toc-org" :package "toc-org" :local-repo "toc-org")) "org-bullets" ("2024-12-29 06:36:46" nil (:type git :host github :repo "integral-dw/org-bullets" :package "org-bullets" :local-repo "org-bullets")) "which-key" ("2024-12-29 06:36:47" ("emacs") (:type git :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "doom-modeline" ("2024-12-29 06:36:46" ("emacs" "compat" "nerd-icons" "shrink-path") (:type git :host github :repo "seagle0128/doom-modeline" :package "doom-modeline" :local-repo "doom-modeline")) "compat" ("2024-12-29 06:36:46" ("emacs" "seq") (:type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git")) :package "compat" :local-repo "compat")) "seq" ("2024-12-29 06:36:46" nil (:type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git")) :package "seq" :local-repo "seq")) "nerd-icons" ("2024-12-29 06:36:46" ("emacs") (:type git :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el" :package "nerd-icons" :local-repo "nerd-icons.el")) "shrink-path" ("2024-12-29 06:36:46" ("emacs" "s" "dash" "f") (:type git :host gitlab :repo "bennya/shrink-path.el" :package "shrink-path" :local-repo "shrink-path.el")) "all-the-icons" ("2024-12-29 06:36:46" ("emacs") (:type git :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el" :package "all-the-icons" :local-repo "all-the-icons.el")) "all-the-icons-dired" ("2024-12-29 06:36:46" ("emacs" "all-the-icons") (:type git :host github :repo "wyuenho/all-the-icons-dired" :package "all-the-icons-dired" :local-repo "all-the-icons-dired")) "web-mode" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "fxbois/web-mode" :package "web-mode" :local-repo "web-mode")) "emmet-mode" ("2024-12-28 18:46:14" nil (:type git :host github :repo "smihica/emmet-mode" :package "emmet-mode" :local-repo "emmet-mode")) "js2-mode" ("2024-12-28 18:46:14" ("emacs" "cl-lib") (:type git :host github :repo "mooz/js2-mode" :package "js2-mode" :local-repo "js2-mode")) "typescript-mode" ("2024-12-28 20:20:06" ("emacs") (:type git :host github :repo "emacs-typescript/typescript.el" :package "typescript-mode" :local-repo "typescript.el")) "tide" ("2024-12-28 18:46:14" ("emacs" "dash" "s" "flycheck" "cl-lib") (:type git :files (:defaults "tsserver" "tide-pkg.el") :host github :repo "ananthakumaran/tide" :package "tide" :local-repo "tide")) "flycheck" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "prettier-js" ("2024-12-28 18:46:14" nil (:type git :host github :repo "prettier/prettier-emacs" :package "prettier-js" :local-repo "prettier-emacs")) "sudo-edit" ("2024-12-29 06:36:47" ("emacs" "cl-lib") (:type git :host github :repo "nflath/sudo-edit" :package "sudo-edit" :local-repo "sudo-edit")) "counsel" ("2024-12-29 06:36:46" ("emacs" "ivy" "swiper") (:type git :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "ivy" ("2024-12-29 06:36:46" ("emacs") (:files (:defaults "doc/ivy-help.org" (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "swiper" ("2024-12-29 06:36:46" ("emacs" "ivy") (:files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "all-the-icons-ivy-rich" ("2024-12-29 06:36:46" ("emacs" "ivy-rich" "all-the-icons") (:type git :host github :repo "seagle0128/all-the-icons-ivy-rich" :package "all-the-icons-ivy-rich" :local-repo "all-the-icons-ivy-rich")) "ivy-rich" ("2024-12-29 06:36:46" ("emacs" "ivy") (:type git :host github :repo "Yevgnen/ivy-rich" :package "ivy-rich" :local-repo "ivy-rich")) "eshell-syntax-highlighting" ("2024-12-29 06:36:47" ("emacs") (:type git :host github :repo "akreisher/eshell-syntax-highlighting" :package "eshell-syntax-highlighting" :local-repo "eshell-syntax-highlighting")) "vterm" ("2024-12-29 06:36:47" ("emacs") (:type git :files ("CMakeLists.txt" "elisp.c" "elisp.h" "emacs-module.h" "etc" "utf8.c" "utf8.h" "vterm.el" "vterm-module.c" "vterm-module.h" "vterm-pkg.el") :host github :repo "akermu/emacs-libvterm" :package "vterm" :local-repo "emacs-libvterm")) "vterm-toggle" ("2024-12-29 06:36:47" ("emacs" "vterm") (:type git :host github :repo "jixiuf/vterm-toggle" :package "vterm-toggle" :local-repo "vterm-toggle")) "dashboard" ("2024-12-29 06:36:46" ("emacs") (:type git :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard" :package "dashboard" :local-repo "emacs-dashboard")) "diminish" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "myrjola/diminish.el" :package "diminish" :local-repo "diminish.el")) "projectile" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile")) "company-box" ("2024-12-29 06:36:46" ("emacs" "dash" "company" "frame-local") (:type git :files (:defaults "images" "company-box-pkg.el") :host github :repo "sebastiencs/company-box" :package "company-box" :local-repo "company-box")) "frame-local" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "sebastiencs/frame-local" :package "frame-local" :local-repo "frame-local")) "rustic" ("2024-12-28 18:46:14" ("emacs" "rust-mode" "dash" "f" "let-alist" "markdown-mode" "project" "s" "spinner" "xterm-color" "flycheck") (:type git :host github :repo "emacs-rustic/rustic" :package "rustic" :local-repo "rustic")) "rust-mode" ("2024-12-28 18:46:14" ("emacs") (:type git :host github :repo "rust-lang/rust-mode" :package "rust-mode" :local-repo "rust-mode")) "let-alist" ("2024-12-28 18:46:14" ("emacs") (:type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git")) :package "let-alist" :local-repo "let-alist")) "project" ("2024-12-28 19:21:54" ("emacs" "xref") (:type git :host github :repo "emacs-straight/project" :files ("*" (:exclude ".git")) :package "project" :local-repo "project")) "xref" ("2024-12-28 19:21:54" ("emacs") (:type git :host github :repo "emacs-straight/xref" :files ("*" (:exclude ".git")) :package "xref" :local-repo "xref")) "xterm-color" ("2024-12-28 18:46:14" ("emacs") (:type git :host github :repo "atomontage/xterm-color" :package "xterm-color" :local-repo "xterm-color")) "eglot" ("2024-12-28 19:21:54" ("emacs" "compat" "eldoc" "external-completion" "flymake" "jsonrpc" "project" "seq" "track-changes" "xref") (:type git :host github :repo "emacs-straight/eglot" :files ("*" (:exclude ".git")) :package "eglot" :local-repo "eglot")) "external-completion" ("2024-12-28 19:21:54" nil (:type git :host github :repo "emacs-straight/external-completion" :files ("*" (:exclude ".git")) :package "external-completion" :local-repo "external-completion")) "flymake" ("2024-12-28 19:21:54" ("emacs" "eldoc" "project") (:type git :host github :repo "emacs-straight/flymake" :files ("*" (:exclude ".git")) :package "flymake" :local-repo "flymake")) "jsonrpc" ("2024-12-28 19:21:54" ("emacs") (:type git :host github :repo "emacs-straight/jsonrpc" :files ("*" (:exclude ".git")) :package "jsonrpc" :local-repo "jsonrpc")) "track-changes" ("2024-12-28 19:21:54" ("emacs") (:type git :host github :repo "emacs-straight/track-changes" :files ("*" (:exclude ".git")) :package "track-changes" :local-repo "track-changes")) "company-web" ("2024-12-29 06:36:46" ("company" "dash" "cl-lib" "web-completion-data") (:type git :host github :repo "osv/company-web" :package "company-web" :local-repo "company-web")) "web-completion-data" ("2024-12-29 06:36:46" nil (:type git :files ("*.el" "html-stuff" "web-completion-data-pkg.el") :host github :repo "osv/web-completion-data" :package "web-completion-data" :local-repo "web-completion-data")) "go-mode" ("2024-12-29 06:36:46" ("emacs") (:type git :files ("go-mode.el" "go-mode-pkg.el") :host github :repo "dominikh/go-mode.el" :package "go-mode" :local-repo "go-mode.el")) "neotree" ("2024-12-29 06:36:46" ("cl-lib") (:type git :files (:defaults "icons" "neotree-pkg.el") :host github :repo "jaypei/emacs-neotree" :package "neotree" :local-repo "emacs-neotree")) "python-mode" ("2024-12-29 06:36:46" ("emacs") (:type git :files ("python-mode.el" ("completion" "completion/pycomplete.*") "python-mode-pkg.el") :host gitlab :repo "python-mode-devs/python-mode" :package "python-mode" :local-repo "python-mode")) "lsp-pyright" ("2024-12-28 20:20:05" ("emacs" "lsp-mode" "dash" "ht") (:type git :host github :repo "emacs-lsp/lsp-pyright" :package "lsp-pyright" :local-repo "lsp-pyright")) "use-package" ("2024-12-29 06:36:46" ("emacs" "bind-key") (:type git :host github :repo "emacs-straight/use-package" :files ("*" (:exclude ".git")) :package "use-package" :local-repo "use-package")) "bind-key" ("2024-12-29 06:36:46" ("emacs") (:type git :host github :repo "emacs-straight/bind-key" :files ("*" (:exclude ".git")) :package "bind-key" :local-repo "bind-key")) "dired-open" ("2024-12-29 06:36:46" ("dash" "dired-hacks-utils" "emacs") (:type git :files ("dired-open.el" "dired-open-pkg.el") :host github :repo "Fuco1/dired-hacks" :package "dired-open" :local-repo "dired-hacks")) "dired-hacks-utils" ("2024-12-29 06:36:46" ("dash" "emacs") (:files ("dired-hacks-utils.el" "dired-hacks-utils-pkg.el") :package "dired-hacks-utils" :local-repo "dired-hacks" :type git :repo "Fuco1/dired-hacks" :host github)) "peep-dired" ("2024-12-29 06:36:46" nil (:type git :host github :repo "asok/peep-dired" :package "peep-dired" :local-repo "peep-dired"))))
+#s(hash-table test equal data ("org-elpa" ("2025-01-01 14:07:38" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2025-01-01 14:07:38" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2025-01-01 14:07:38" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "nongnu-elpa" ("2025-01-01 14:07:38" nil (:type git :repo "https://git.savannah.gnu.org/git/emacs/nongnu.git" :depth (full single-branch) :local-repo "nongnu-elpa" :build nil :package "nongnu-elpa")) "el-get" ("2025-01-01 14:07:38" nil (:type git :host github :repo "dimitri/el-get" :build nil :files (:defaults "methods" ("recipes" "recipes/el-get.rcp") "el-get-pkg.el") :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2025-01-01 14:07:38" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2025-01-01 14:07:37" ("emacs") (:type git :host github :repo "radian-software/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "evil" ("2025-01-01 14:07:37" ("emacs" "cl-lib" "goto-chg" "nadvice") (:type git :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2025-01-01 14:07:37" ("emacs") (:type git :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-collection" ("2025-01-01 14:07:37" ("emacs" "evil" "annalist") (:type git :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2025-01-01 14:07:37" ("emacs" "cl-lib") (:type git :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "general" ("2025-01-01 14:07:37" ("emacs" "cl-lib") (:type git :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "all-the-icons" ("2025-01-01 14:07:37" ("emacs") (:type git :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el" :package "all-the-icons" :local-repo "all-the-icons.el")) "all-the-icons-dired" ("2025-01-01 14:07:37" ("emacs" "all-the-icons") (:type git :host github :repo "wyuenho/all-the-icons-dired" :package "all-the-icons-dired" :local-repo "all-the-icons-dired")) "beacon" ("2025-01-01 14:07:37" ("emacs") (:type git :host github :repo "Malabarba/beacon" :package "beacon" :local-repo "beacon")) "dashboard" ("2025-01-01 14:07:37" ("emacs") (:type git :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard" :package "dashboard" :local-repo "emacs-dashboard")) "use-package" ("2025-01-01 14:07:38" ("emacs" "bind-key") (:type git :host github :repo "emacs-straight/use-package" :files ("*" (:exclude ".git")) :package "use-package" :local-repo "use-package")) "bind-key" ("2025-01-01 14:07:38" ("emacs") (:type git :host github :repo "emacs-straight/bind-key" :files ("*" (:exclude ".git")) :package "bind-key" :local-repo "bind-key")) "lsp-mode" ("2025-01-01 14:07:38" ("emacs" "dash" "f" "ht" "spinner" "markdown-mode" "lv" "eldoc") (:type git :files (:defaults "clients/*.el" "lsp-mode-pkg.el") :host github :repo "emacs-lsp/lsp-mode" :package "lsp-mode" :local-repo "lsp-mode")) "dash" ("2025-01-01 14:07:38" ("emacs") (:type git :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "f" ("2025-01-01 14:07:38" ("emacs" "s" "dash") (:type git :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "s" ("2025-01-01 14:07:38" nil (:type git :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "ht" ("2025-01-01 14:07:38" ("dash") (:type git :host github :repo "Wilfred/ht.el" :package "ht" :local-repo "ht.el")) "spinner" ("2025-01-01 14:07:38" ("emacs") (:type git :host github :repo "emacs-straight/spinner" :files ("*" (:exclude ".git")) :package "spinner" :local-repo "spinner")) "markdown-mode" ("2025-01-01 14:07:38" ("emacs") (:type git :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "lv" ("2025-01-01 14:07:38" nil (:type git :files ("lv.el" "lv-pkg.el") :host github :repo "abo-abo/hydra" :package "lv" :local-repo "hydra")) "eldoc" ("2025-01-01 14:07:38" ("emacs") (:type git :host github :repo "emacs-straight/eldoc" :files ("*" (:exclude ".git")) :package "eldoc" :local-repo "eldoc")) "lsp-ui" ("2025-01-01 14:07:38" ("emacs" "dash" "lsp-mode" "markdown-mode") (:type git :files (:defaults "lsp-ui-doc.html" "resources" "lsp-ui-pkg.el") :host github :repo "emacs-lsp/lsp-ui" :package "lsp-ui" :local-repo "lsp-ui")) "company" ("2025-01-01 14:07:38" ("emacs") (:type git :files (:defaults "icons" ("images/small" "doc/images/small/*.png") "company-pkg.el") :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "company-box" ("2025-01-01 14:07:38" ("emacs" "dash" "company" "frame-local") (:type git :files (:defaults "images" "company-box-pkg.el") :host github :repo "sebastiencs/company-box" :package "company-box" :local-repo "company-box")) "frame-local" ("2025-01-01 14:07:38" ("emacs") (:type git :host github :repo "sebastiencs/frame-local" :package "frame-local" :local-repo "frame-local")) "flycheck" ("2025-01-01 14:07:38" ("emacs") (:type git :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "go-mode" ("2025-01-01 14:07:38" ("emacs") (:type git :files ("go-mode.el" "go-mode-pkg.el") :host github :repo "dominikh/go-mode.el" :package "go-mode" :local-repo "go-mode.el")) "python-mode" ("2025-01-01 14:07:38" ("emacs") (:type git :files ("python-mode.el" ("completion" "completion/pycomplete.*") "python-mode-pkg.el") :host gitlab :repo "python-mode-devs/python-mode" :package "python-mode" :local-repo "python-mode")) "web-mode" ("2025-01-01 14:07:38" ("emacs") (:type git :host github :repo "fxbois/web-mode" :package "web-mode" :local-repo "web-mode")) "company-web" ("2025-01-01 14:07:38" ("company" "dash" "cl-lib" "web-completion-data") (:type git :host github :repo "osv/company-web" :package "company-web" :local-repo "company-web")) "web-completion-data" ("2025-01-01 14:07:38" nil (:type git :files ("*.el" "html-stuff" "web-completion-data-pkg.el") :host github :repo "osv/web-completion-data" :package "web-completion-data" :local-repo "web-completion-data")) "diminish" ("2025-01-01 14:07:38" ("emacs") (:type git :host github :repo "myrjola/diminish.el" :package "diminish" :local-repo "diminish.el")) "dired-open" ("2025-01-01 14:07:38" ("dash" "dired-hacks-utils" "emacs") (:type git :files ("dired-open.el" "dired-open-pkg.el") :host github :repo "Fuco1/dired-hacks" :package "dired-open" :local-repo "dired-hacks")) "dired-hacks-utils" ("2025-01-01 14:07:38" ("dash" "emacs") (:files ("dired-hacks-utils.el" "dired-hacks-utils-pkg.el") :package "dired-hacks-utils" :local-repo "dired-hacks" :type git :repo "Fuco1/dired-hacks" :host github)) "peep-dired" ("2025-01-01 14:07:38" nil (:type git :host github :repo "asok/peep-dired" :package "peep-dired" :local-repo "peep-dired")) "doom-modeline" ("2025-01-01 14:07:38" ("emacs" "compat" "nerd-icons" "shrink-path") (:type git :host github :repo "seagle0128/doom-modeline" :package "doom-modeline" :local-repo "doom-modeline")) "compat" ("2025-01-01 14:07:38" ("emacs" "seq") (:type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git")) :package "compat" :local-repo "compat")) "seq" ("2025-01-01 14:07:38" nil (:type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git")) :package "seq" :local-repo "seq")) "nerd-icons" ("2025-01-01 14:07:38" ("emacs") (:type git :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el" :package "nerd-icons" :local-repo "nerd-icons.el")) "shrink-path" ("2025-01-01 14:07:38" ("emacs" "s" "dash" "f") (:type git :host gitlab :repo "bennya/shrink-path.el" :package "shrink-path" :local-repo "shrink-path.el")) "counsel" ("2025-01-01 14:07:38" ("emacs" "ivy" "swiper") (:type git :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "ivy" ("2025-01-01 14:07:38" ("emacs") (:files (:defaults "doc/ivy-help.org" (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "swiper" ("2025-01-01 14:07:38" ("emacs" "ivy") (:files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "all-the-icons-ivy-rich" ("2025-01-01 14:07:38" ("emacs" "ivy-rich" "all-the-icons") (:type git :host github :repo "seagle0128/all-the-icons-ivy-rich" :package "all-the-icons-ivy-rich" :local-repo "all-the-icons-ivy-rich")) "ivy-rich" ("2025-01-01 14:07:38" ("emacs" "ivy") (:type git :host github :repo "Yevgnen/ivy-rich" :package "ivy-rich" :local-repo "ivy-rich")) "neotree" ("2025-01-01 14:07:39" ("cl-lib") (:type git :files (:defaults "icons" "neotree-pkg.el") :host github :repo "jaypei/emacs-neotree" :package "neotree" :local-repo "emacs-neotree")) "toc-org" ("2025-01-01 14:07:39" nil (:type git :host github :repo "snosov1/toc-org" :package "toc-org" :local-repo "toc-org")) "org-bullets" ("2025-01-01 14:07:39" nil (:type git :host github :repo "integral-dw/org-bullets" :package "org-bullets" :local-repo "org-bullets")) "projectile" ("2025-01-01 14:07:39" ("emacs") (:type git :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile")) "rainbow-mode" ("2025-01-01 14:07:39" nil (:type git :host github :repo "emacs-straight/rainbow-mode" :files ("*" (:exclude ".git")) :package "rainbow-mode" :local-repo "rainbow-mode")) "rainbow-delimiters" ("2025-01-01 14:07:39" nil (:type git :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "doom-themes" ("2025-01-01 14:07:39" ("emacs" "cl-lib") (:type git :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes" :package "doom-themes" :local-repo "themes")) "eshell-syntax-highlighting" ("2025-01-01 14:07:39" ("emacs") (:type git :host github :repo "akreisher/eshell-syntax-highlighting" :package "eshell-syntax-highlighting" :local-repo "eshell-syntax-highlighting")) "vterm" ("2025-01-01 14:07:39" ("emacs") (:type git :files ("CMakeLists.txt" "elisp.c" "elisp.h" "emacs-module.h" "etc" "utf8.c" "utf8.h" "vterm.el" "vterm-module.c" "vterm-module.h" "vterm-pkg.el") :host github :repo "akermu/emacs-libvterm" :package "vterm" :local-repo "emacs-libvterm")) "vterm-toggle" ("2025-01-01 14:07:39" ("emacs" "vterm") (:type git :host github :repo "jixiuf/vterm-toggle" :package "vterm-toggle" :local-repo "vterm-toggle")) "sudo-edit" ("2025-01-01 14:07:39" ("emacs" "cl-lib") (:type git :host github :repo "nflath/sudo-edit" :package "sudo-edit" :local-repo "sudo-edit")) "which-key" ("2025-01-01 14:07:39" ("emacs") (:type git :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key"))))
 
-#s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-x straight-ert-print-hack straight-autoloads straight) (autoload 'straight-remove-unused-repos "straight" "Remove unused repositories from the repos and build directories.
+#s(hash-table test equal data ("straight" ((straight-x straight-ert-print-hack straight-autoloads straight) (autoload 'straight-remove-unused-repos "straight" "Remove unused repositories from the repos and build directories.
 A repo is considered \"unused\" if it was not explicitly requested via
 `straight-use-package' during the current Emacs session.
 If FORCE is non-nil do not prompt before deleting repos.
@@ -723,7 +723,53 @@ This creates global key definition functions for the evil states.
 Specifying SHORT-NAMES as non-nil will create non-prefixed function
 aliases such as `nmap' for `general-nmap'.
 
-(fn &optional SHORT-NAMES _)") (register-definition-prefixes "general" '("general-")) (provide 'general-autoloads)) "beacon" ((beacon beacon-autoloads) (autoload 'beacon-blink "beacon" "Blink the beacon at the position of the cursor.
+(fn &optional SHORT-NAMES _)") (register-definition-prefixes "general" '("general-")) (provide 'general-autoloads)) "all-the-icons" ((all-the-icons-autoloads all-the-icons-faces all-the-icons) (autoload 'all-the-icons-icon-for-dir "all-the-icons" "Get the formatted icon for DIR.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+Note: You want chevron, please use `all-the-icons-icon-for-dir-with-chevron'.
+
+(fn DIR &rest ARG-OVERRIDES)") (autoload 'all-the-icons-icon-for-file "all-the-icons" "Get the formatted icon for FILE.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn FILE &rest ARG-OVERRIDES)") (autoload 'all-the-icons-icon-for-mode "all-the-icons" "Get the formatted icon for MODE.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn MODE &rest ARG-OVERRIDES)") (autoload 'all-the-icons-icon-for-url "all-the-icons" "Get the formatted icon for URL.
+If an icon for URL isn't found in `all-the-icons-url-alist', a globe is used.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn URL &rest ARG-OVERRIDES)") (autoload 'all-the-icons-install-fonts "all-the-icons" "Helper function to download and install the latests fonts based on OS.
+When PFX is non-nil, ignore the prompt and just install
+
+(fn &optional PFX)" t) (autoload 'all-the-icons-insert "all-the-icons" "Interactive icon insertion function.
+When Prefix ARG is non-nil, insert the propertized icon.
+When FAMILY is non-nil, limit the candidates to the icon set matching it.
+
+(fn &optional ARG FAMILY)" t) (register-definition-prefixes "all-the-icons" '("all-the-icons-")) (provide 'all-the-icons-autoloads)) "all-the-icons-dired" ((all-the-icons-dired all-the-icons-dired-autoloads) (autoload 'all-the-icons-dired-mode "all-the-icons-dired" "Display all-the-icons icon for each file in a Dired buffer.
+
+This is a minor mode.  If called interactively, toggle the
+`All-The-Icons-Dired mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate the variable `all-the-icons-dired-mode'.
+
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
+
+(fn &optional ARG)" t) (register-definition-prefixes "all-the-icons-dired" '("all-the-icons-dired-")) (provide 'all-the-icons-dired-autoloads)) "beacon" ((beacon beacon-autoloads) (autoload 'beacon-blink "beacon" "Blink the beacon at the position of the cursor.
 Unlike `beacon-blink-automated', the beacon will blink
 unconditionally (even if `beacon-mode' is disabled), and this can
 be invoked as a user command or called from Lisp code." t) (defvar beacon-mode nil "Non-nil if Beacon mode is enabled.
@@ -734,87 +780,191 @@ either customize it (see the info node `Easy Customization')
 or call the function `beacon-mode'.") (custom-autoload 'beacon-mode "beacon" nil) (autoload 'beacon-mode "beacon" "Toggle Beacon mode on or off.
 
 This is a global minor mode.  If called interactively, toggle the
-`Beacon mode' mode.  If the prefix argument is positive, enable
-the mode, and if it is zero or negative, disable the mode.
+`Beacon mode' mode.  If the prefix argument is positive, enable the
+mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
 evaluate `(default-value \\='beacon-mode)'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-(fn &optional ARG)" t) (register-definition-prefixes "beacon" '("beacon-")) (provide 'beacon-autoloads)) "doom-themes" ((doom-monokai-octagon-theme doom-themes-autoloads doom-ayu-dark-theme doom-ephemeral-theme doom-acario-dark-theme doom-peacock-theme doom-monokai-classic-theme doom-manegarm-theme doom-solarized-light-theme doom-meltbus-theme doom-flatwhite-theme doom-plain-dark-theme doom-tomorrow-day-theme doom-material-theme doom-challenger-deep-theme doom-laserwave-theme doom-spacegrey-theme doom-oceanic-next-theme doom-monokai-spectrum-theme doom-palenight-theme doom-monokai-machine-theme doom-Iosvkem-theme doom-opera-light-theme doom-one-theme doom-henna-theme doom-opera-theme doom-dark+-theme doom-lantern-theme doom-ayu-mirage-theme doom-molokai-theme doom-themes-ext-neotree doom-monokai-pro-theme doom-solarized-dark-high-contrast-theme doom-wilmersdorf-theme doom-winter-is-coming-light-theme doom-vibrant-theme doom-themes-ext-visual-bell doom-feather-light-theme doom-city-lights-theme doom-gruvbox-light-theme doom-themes-ext-treemacs doom-bluloco-dark-theme doom-oksolar-dark-theme doom-dracula-theme doom-pine-theme doom-horizon-theme doom-badger-theme doom-oksolar-light-theme doom-tomorrow-night-theme doom-zenburn-theme doom-tokyo-night-theme doom-homage-white-theme doom-themes-base doom-acario-light-theme doom-plain-theme doom-earl-grey-theme doom-bluloco-light-theme doom-feather-dark-theme doom-xcode-theme doom-ir-black-theme doom-nord-light-theme doom-sourcerer-theme doom-1337-theme doom-outrun-electric-theme doom-themes doom-monokai-ristretto-theme doom-themes-ext-org doom-material-dark-theme doom-nord-theme doom-homage-black-theme doom-snazzy-theme doom-old-hope-theme doom-one-light-theme doom-rouge-theme doom-fairy-floss-theme doom-miramare-theme doom-moonlight-theme doom-shades-of-purple-theme doom-gruvbox-theme doom-winter-is-coming-dark-blue-theme doom-solarized-dark-theme doom-nova-theme doom-ayu-light-theme doom-nord-aurora-theme) (register-definition-prefixes "doom-1337-theme" '("doom-1337")) (register-definition-prefixes "doom-Iosvkem-theme" '("doom-Iosvkem")) (register-definition-prefixes "doom-acario-dark-theme" '("doom-acario-dark")) (register-definition-prefixes "doom-acario-light-theme" '("doom-acario-light")) (register-definition-prefixes "doom-ayu-dark-theme" '("doom-ayu-dark")) (register-definition-prefixes "doom-ayu-light-theme" '("doom-ayu-light")) (register-definition-prefixes "doom-ayu-mirage-theme" '("doom-ayu-mirage")) (register-definition-prefixes "doom-badger-theme" '("doom-badger")) (register-definition-prefixes "doom-bluloco-dark-theme" '("doom-bluloco-dark")) (register-definition-prefixes "doom-bluloco-light-theme" '("doom-bluloco-light")) (register-definition-prefixes "doom-challenger-deep-theme" '("doom-challenger-deep")) (register-definition-prefixes "doom-city-lights-theme" '("doom-city-lights")) (register-definition-prefixes "doom-dark+-theme" '("doom-dark+")) (register-definition-prefixes "doom-dracula-theme" '("doom-dracula")) (register-definition-prefixes "doom-earl-grey-theme" '("doom-earl-grey")) (register-definition-prefixes "doom-ephemeral-theme" '(":group" "doom-ephemeral")) (register-definition-prefixes "doom-fairy-floss-theme" '("doom-fairy-floss")) (register-definition-prefixes "doom-feather-dark-theme" '("doom-feather-")) (register-definition-prefixes "doom-feather-light-theme" '("doom-feather-light")) (register-definition-prefixes "doom-flatwhite-theme" '("doom-f")) (register-definition-prefixes "doom-gruvbox-light-theme" '("doom-gruvbox-light")) (register-definition-prefixes "doom-gruvbox-theme" '("doom-gruvbox")) (register-definition-prefixes "doom-henna-theme" '("doom-henna")) (register-definition-prefixes "doom-homage-black-theme" '("doom-homage-black")) (register-definition-prefixes "doom-homage-white-theme" '("doom-homage-white")) (register-definition-prefixes "doom-horizon-theme" '("doom-horizon")) (register-definition-prefixes "doom-ir-black-theme" '("doom-ir-black")) (register-definition-prefixes "doom-lantern-theme" '("doom-lantern")) (register-definition-prefixes "doom-laserwave-theme" '("doom-laserwave")) (register-definition-prefixes "doom-manegarm-theme" '("doom-manegarm")) (register-definition-prefixes "doom-material-dark-theme" '("doom-material-")) (register-definition-prefixes "doom-material-theme" '("doom-material")) (register-definition-prefixes "doom-meltbus-theme" '("doom-meltbus")) (register-definition-prefixes "doom-miramare-theme" '("doom-miramare")) (register-definition-prefixes "doom-molokai-theme" '("doom-molokai")) (register-definition-prefixes "doom-monokai-classic-theme" '("doom-monokai-classic")) (register-definition-prefixes "doom-monokai-machine-theme" '("doom-monokai-machine")) (register-definition-prefixes "doom-monokai-octagon-theme" '("doom-monokai-octagon")) (register-definition-prefixes "doom-monokai-pro-theme" '("doom-monokai-pro")) (register-definition-prefixes "doom-monokai-ristretto-theme" '("doom-monokai-ristretto")) (register-definition-prefixes "doom-monokai-spectrum-theme" '("doom-monokai-spectrum")) (register-definition-prefixes "doom-moonlight-theme" '("doom-moonlight")) (register-definition-prefixes "doom-nord-aurora-theme" '(":group" "doom-nord-aurora")) (register-definition-prefixes "doom-nord-light-theme" '(":group" "doom-nord-light")) (register-definition-prefixes "doom-nord-theme" '(":group" "doom-nord")) (register-definition-prefixes "doom-nova-theme" '("doom-nova")) (register-definition-prefixes "doom-oceanic-next-theme" '("doom-oceanic-next")) (register-definition-prefixes "doom-oksolar-dark-theme" '("doom-oksolar-dark")) (register-definition-prefixes "doom-oksolar-light-theme" '("doom-oksolar-light")) (register-definition-prefixes "doom-old-hope-theme" '("doom-old-hope")) (register-definition-prefixes "doom-one-light-theme" '("doom-one-light")) (register-definition-prefixes "doom-one-theme" '("doom-one")) (register-definition-prefixes "doom-opera-light-theme" '(":group" "doom-opera-light")) (register-definition-prefixes "doom-opera-theme" '(":group" "doom-opera")) (register-definition-prefixes "doom-outrun-electric-theme" '("doom-outrun-electric")) (register-definition-prefixes "doom-palenight-theme" '("doom-palenight")) (register-definition-prefixes "doom-peacock-theme" '("doom-peacock")) (register-definition-prefixes "doom-pine-theme" '("doom-pine")) (register-definition-prefixes "doom-plain-dark-theme" '("doom-plain-")) (register-definition-prefixes "doom-plain-theme" '("doom-plain")) (register-definition-prefixes "doom-rouge-theme" '("doom-rouge")) (register-definition-prefixes "doom-shades-of-purple-theme" '("doom-shades-of-purple")) (register-definition-prefixes "doom-snazzy-theme" '("doom-snazzy")) (register-definition-prefixes "doom-solarized-dark-high-contrast-theme" '("doom-solarized-dark-high-contrast")) (register-definition-prefixes "doom-solarized-dark-theme" '("doom-solarized-dark")) (register-definition-prefixes "doom-solarized-light-theme" '("doom-solarized-light")) (register-definition-prefixes "doom-sourcerer-theme" '("doom-sourcerer")) (register-definition-prefixes "doom-spacegrey-theme" '("doom-spacegrey")) (autoload 'doom-name-to-rgb "doom-themes" "Retrieves the hexidecimal string repesented the named COLOR (e.g. \"red\")
-for FRAME (defaults to the current frame).
+(fn &optional ARG)" t) (register-definition-prefixes "beacon" '("beacon-")) (provide 'beacon-autoloads)) "dashboard" ((dashboard dashboard-widgets dashboard-autoloads) (autoload 'dashboard-open "dashboard" "Open (or refresh) the *dashboard* buffer.
 
-(fn COLOR)") (autoload 'doom-blend "doom-themes" "Blend two colors (hexidecimal strings) together by a coefficient ALPHA (a
-float between 0 and 1)
+(fn &rest _)" t) (autoload 'dashboard-setup-startup-hook "dashboard" "Setup post initialization hooks unless a command line argument is provided.") (register-definition-prefixes "dashboard" '("dashboard-")) (register-definition-prefixes "dashboard-widgets" '("dashboard-" "recentf-list")) (provide 'dashboard-autoloads)) "bind-key" ((bind-key-autoloads bind-key-pkg bind-key) (defvar personal-keybindings nil "List of bindings performed by `bind-key'.
 
-(fn COLOR1 COLOR2 ALPHA)") (autoload 'doom-darken "doom-themes" "Darken a COLOR (a hexidecimal string) by a coefficient ALPHA (a float between
-0 and 1).
+Elements have the form ((KEY . [MAP]) CMD ORIGINAL-CMD)") (autoload 'bind-key "bind-key" "Bind KEY-NAME to COMMAND in KEYMAP (`global-map' if not passed).
 
-(fn COLOR ALPHA)") (autoload 'doom-lighten "doom-themes" "Brighten a COLOR (a hexidecimal string) by a coefficient ALPHA (a float
-between 0 and 1).
+KEY-NAME may be a vector, in which case it is passed straight to
+`define-key'.  Or it may be a string to be interpreted as
+spelled-out keystrokes, e.g., \"C-c C-z\".  See the documentation
+of `edmacro-mode' for details.
 
-(fn COLOR ALPHA)") (autoload 'doom-color "doom-themes" "Retrieve a specific color named NAME (a symbol) from the current theme.
+COMMAND must be an interactive function or lambda form.
 
-(fn NAME &optional TYPE)") (autoload 'doom-ref "doom-themes" "TODO
+KEYMAP, if present, should be a keymap variable or symbol.
+For example:
 
-(fn FACE PROP &optional CLASS)") (autoload 'doom-themes-set-faces "doom-themes" "Customize THEME (a symbol) with FACES.
+  (bind-key \"M-h\" #\\='some-interactive-function my-mode-map)
 
-If THEME is nil, it applies to all themes you load. FACES is a list of Doom
-theme face specs. These is a simplified spec. For example:
+  (bind-key \"M-h\" #\\='some-interactive-function \\='my-mode-map)
 
-  (doom-themes-set-faces \\='user
-    \\='(default :background red :foreground blue)
-    \\='(doom-modeline-bar :background (if -modeline-bright modeline-bg highlight))
-    \\='(doom-modeline-buffer-file :inherit \\='mode-line-buffer-id :weight \\='bold)
-    \\='(doom-modeline-buffer-path :inherit \\='mode-line-emphasis :weight \\='bold)
-    \\='(doom-modeline-buffer-project-root :foreground green :weight \\='bold))
+If PREDICATE is non-nil, it is a form evaluated to determine when
+a key should be bound. It must return non-nil in such cases.
+Emacs can evaluate this form at any time that it does redisplay
+or operates on menu data structures, so you should write it so it
+can safely be called at any time.
 
-(fn THEME &rest FACES)") (function-put 'doom-themes-set-faces 'lisp-indent-function 'defun) (when (and (boundp 'custom-theme-load-path) load-file-name) (let* ((base (file-name-directory load-file-name)) (dir (expand-file-name "themes/" base))) (add-to-list 'custom-theme-load-path (or (and (file-directory-p dir) dir) base)))) (register-definition-prefixes "doom-themes" '("def-doom-theme" "doom-")) (register-definition-prefixes "doom-themes-base" '("doom-themes-base-")) (autoload 'doom-themes-neotree-config "doom-themes-ext-neotree" "Install doom-themes' neotree configuration.
+(fn KEY-NAME COMMAND &optional KEYMAP PREDICATE)" nil t) (autoload 'unbind-key "bind-key" "Unbind the given KEY-NAME, within the KEYMAP (if specified).
+See `bind-key' for more details.
 
-Includes an Atom-esque icon theme and highlighting based on filetype.") (register-definition-prefixes "doom-themes-ext-neotree" '("doom-")) (autoload 'doom-themes-org-config "doom-themes-ext-org" "Load `doom-themes-ext-org'.") (register-definition-prefixes "doom-themes-ext-org" '("doom-themes-")) (autoload 'doom-themes-treemacs-config "doom-themes-ext-treemacs" "Install doom-themes' treemacs configuration.
+(fn KEY-NAME &optional KEYMAP)" nil t) (autoload 'bind-key* "bind-key" "Similar to `bind-key', but overrides any mode-specific bindings.
 
-Includes an Atom-esque icon theme and highlighting based on filetype.") (register-definition-prefixes "doom-themes-ext-treemacs" '("doom-themes-")) (autoload 'doom-themes-visual-bell-fn "doom-themes-ext-visual-bell" "Blink the mode-line red briefly. Set `ring-bell-function' to this to use it.") (autoload 'doom-themes-visual-bell-config "doom-themes-ext-visual-bell" "Enable flashing the mode-line on error.") (register-definition-prefixes "doom-tokyo-night-theme" '("doom-tokyo-night")) (register-definition-prefixes "doom-tomorrow-day-theme" '("doom-tomorrow-day")) (register-definition-prefixes "doom-tomorrow-night-theme" '("doom-tomorrow-night")) (register-definition-prefixes "doom-vibrant-theme" '("doom-vibrant")) (register-definition-prefixes "doom-wilmersdorf-theme" '("doom-wilmersdorf")) (register-definition-prefixes "doom-winter-is-coming-dark-blue-theme" '("doom-winter-is-coming-")) (register-definition-prefixes "doom-winter-is-coming-light-theme" '("doom-winter-is-coming-")) (register-definition-prefixes "doom-xcode-theme" '("doom-xcode")) (register-definition-prefixes "doom-zenburn-theme" '("doom-zenburn")) (provide 'doom-themes-autoloads)) "rainbow-mode" ((rainbow-mode rainbow-mode-pkg rainbow-mode-autoloads) (autoload 'rainbow-mode "rainbow-mode" "Colorize strings that represent colors.
+(fn KEY-NAME COMMAND &optional PREDICATE)" nil t) (autoload 'bind-keys "bind-key" "Bind multiple keys at once.
 
-This will fontify with colors the string like \"#aabbcc\" or \"blue\".
+Accepts keyword arguments:
+:map MAP               - a keymap into which the keybindings should be
+                         added
+:prefix KEY            - prefix key for these bindings
+:prefix-map MAP        - name of the prefix map that should be created
+                         for these bindings
+:prefix-docstring STR  - docstring for the prefix-map variable
+:menu-name NAME        - optional menu string for prefix map
+:repeat-docstring STR  - docstring for the repeat-map variable
+:repeat-map MAP        - name of the repeat map that should be created
+                         for these bindings. If specified, the
+                         `repeat-map' property of each command bound
+                         (within the scope of the `:repeat-map' keyword)
+                         is set to this map.
+:exit BINDINGS         - Within the scope of `:repeat-map' will bind the
+                         key in the repeat map, but will not set the
+                         `repeat-map' property of the bound command.
+:continue BINDINGS     - Within the scope of `:repeat-map' forces the
+                         same behavior as if no special keyword had
+                         been used (that is, the command is bound, and
+                         it's `repeat-map' property set)
+:filter FORM           - optional form to determine when bindings apply
 
-This is a minor mode.  If called interactively, toggle the
-`Rainbow mode' mode.  If the prefix argument is positive, enable
-the mode, and if it is zero or negative, disable the mode.
+The rest of the arguments are conses of keybinding string and a
+function symbol (unquoted).
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+(fn &rest ARGS)" nil t) (autoload 'bind-keys* "bind-key" "Bind multiple keys at once, in `override-global-map'.
+Accepts the same keyword arguments as `bind-keys' (which see).
 
-To check whether the minor mode is enabled in the current buffer,
-evaluate `rainbow-mode'.
+This binds keys in such a way that bindings are not overridden by
+other modes.  See `override-global-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+(fn &rest ARGS)" nil t) (autoload 'describe-personal-keybindings "bind-key" "Display all the personal keybindings defined by `bind-key'." t) (register-definition-prefixes "bind-key" '("bind-key" "override-global-m")) (provide 'bind-key-autoloads)) "use-package" ((use-package-pkg use-package-bind-key use-package-diminish use-package-lint use-package use-package-ensure use-package-delight use-package-core use-package-jump use-package-autoloads use-package-ensure-system-package) (autoload 'use-package-autoload-keymap "use-package-bind-key" "Load PACKAGE and bind key sequence invoking this function to KEYMAP-SYMBOL.
+Then simulate pressing the same key sequence a again, so that the
+next key pressed is routed to the newly loaded keymap.
 
-(fn &optional ARG)" t) (register-definition-prefixes "rainbow-mode" '("rainbow-")) (provide 'rainbow-mode-autoloads)) "rainbow-delimiters" ((rainbow-delimiters-autoloads rainbow-delimiters) (autoload 'rainbow-delimiters-mode "rainbow-delimiters" "Highlight nested parentheses, brackets, and braces according to their depth.
+This function supports use-package's :bind-keymap keyword.  It
+works by binding the given key sequence to an invocation of this
+function for a particular keymap.  The keymap is expected to be
+defined by the package.  In this way, loading the package is
+deferred until the prefix key sequence is pressed.
 
-This is a minor mode.  If called interactively, toggle the
-`Rainbow-Delimiters mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+(fn KEYMAP-SYMBOL PACKAGE OVERRIDE)") (autoload 'use-package-normalize-binder "use-package-bind-key" "
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+(fn NAME KEYWORD ARGS)") (defalias 'use-package-normalize/:bind 'use-package-normalize-binder) (defalias 'use-package-normalize/:bind* 'use-package-normalize-binder) (defalias 'use-package-autoloads/:bind 'use-package-autoloads-mode) (defalias 'use-package-autoloads/:bind* 'use-package-autoloads-mode) (autoload 'use-package-handler/:bind "use-package-bind-key" "
 
-To check whether the minor mode is enabled in the current buffer,
-evaluate `rainbow-delimiters-mode'.
+(fn NAME KEYWORD ARGS REST STATE &optional BIND-MACRO)") (defalias 'use-package-normalize/:bind-keymap 'use-package-normalize-binder) (defalias 'use-package-normalize/:bind-keymap* 'use-package-normalize-binder) (autoload 'use-package-handler/:bind-keymap "use-package-bind-key" "
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+(fn NAME KEYWORD ARGS REST STATE &optional OVERRIDE)") (autoload 'use-package-handler/:bind-keymap* "use-package-bind-key" "
 
-(fn &optional ARG)" t) (autoload 'rainbow-delimiters-mode-enable "rainbow-delimiters" "Enable `rainbow-delimiters-mode'.") (autoload 'rainbow-delimiters-mode-disable "rainbow-delimiters" "Disable `rainbow-delimiters-mode'.") (register-definition-prefixes "rainbow-delimiters" '("rainbow-delimiters-")) (provide 'rainbow-delimiters-autoloads)) "dash" ((dash dash-autoloads) (autoload 'dash-fontify-mode "dash" "Toggle fontification of Dash special variables.
+(fn NAME KEYWORD ARG REST STATE)") (register-definition-prefixes "use-package-bind-key" '("use-package-handler/:bind*")) (autoload 'use-package "use-package-core" "Declare an Emacs package by specifying a group of configuration options.
+
+For the full documentation, see Info node `(use-package) top'.
+Usage:
+
+  (use-package package-name
+     [:keyword [option]]...)
+
+:init            Code to run before PACKAGE-NAME has been loaded.
+:config          Code to run after PACKAGE-NAME has been loaded.  Note that
+                 if loading is deferred for any reason, this code does not
+                 execute until the lazy load has occurred.
+:preface         Code to be run before everything except `:disabled'; this
+                 can be used to define functions for use in `:if', or that
+                 should be seen by the byte-compiler.
+
+:mode            Form to be added to `auto-mode-alist'.
+:magic           Form to be added to `magic-mode-alist'.
+:magic-fallback  Form to be added to `magic-fallback-mode-alist'.
+:interpreter     Form to be added to `interpreter-mode-alist'.
+
+:commands        Define autoloads for commands that will be defined by the
+                 package.  This is useful if the package is being lazily
+                 loaded, and you wish to conditionally call functions in your
+                 `:init' block that are defined in the package.
+:autoload        Similar to :commands, but it for no-interactive one.
+:hook            Specify hook(s) to attach this package to.
+
+:bind            Bind keys, and define autoloads for the bound commands.
+:bind*           Bind keys, and define autoloads for the bound commands,
+                 *overriding all minor mode bindings*.
+:bind-keymap     Bind a key prefix to an auto-loaded keymap defined in the
+                 package.  This is like `:bind', but for keymaps.
+:bind-keymap*    Like `:bind-keymap', but overrides all minor mode bindings
+
+:defer           Defer loading of a package -- this is implied when using
+                 `:commands', `:bind', `:bind*', `:mode', `:magic', `:hook',
+                 `:magic-fallback', or `:interpreter'.  This can be an integer,
+                 to force loading after N seconds of idle time, if the package
+                 has not already been loaded.
+:demand          Prevent the automatic deferred loading introduced by constructs
+                 such as `:bind' (see `:defer' for the complete list).
+
+:after           Delay the effect of the use-package declaration
+                 until after the named libraries have loaded.
+                 Before they have been loaded, no other keyword
+                 has any effect at all, and once they have been
+                 loaded it is as if `:after' was not specified.
+
+:if EXPR         Initialize and load only if EXPR evaluates to a non-nil value.
+:disabled        The package is ignored completely if this keyword is present.
+:defines         Declare certain variables to silence the byte-compiler.
+:functions       Declare certain functions to silence the byte-compiler.
+:load-path       Add to the `load-path' before attempting to load the package.
+:diminish        Support for diminish.el (if installed).
+:delight         Support for delight.el (if installed).
+:custom          Call `Custom-set' or `set-default' with each variable
+                 definition without modifying the Emacs `custom-file'.
+                 (compare with `custom-set-variables').
+:custom-face     Call `custom-set-faces' with each face definition.
+:ensure          Loads the package using package.el if necessary.
+:pin             Pin the package to an archive.
+:vc              Install the package directly from a version control system
+                 (using `package-vc.el').
+
+(fn NAME &rest ARGS)" nil t) (function-put 'use-package 'lisp-indent-function 'defun) (register-definition-prefixes "use-package-core" '("use-package-")) (autoload 'use-package-normalize/:delight "use-package-delight" "Normalize arguments to delight.
+
+(fn NAME KEYWORD ARGS)") (autoload 'use-package-handler/:delight "use-package-delight" "
+
+(fn NAME KEYWORD ARGS REST STATE)") (register-definition-prefixes "use-package-delight" '("use-package-normalize-delight")) (autoload 'use-package-normalize/:diminish "use-package-diminish" "
+
+(fn NAME KEYWORD ARGS)") (autoload 'use-package-handler/:diminish "use-package-diminish" "
+
+(fn NAME KEYWORD ARG REST STATE)") (register-definition-prefixes "use-package-diminish" '("use-package-normalize-diminish")) (autoload 'use-package-normalize/:ensure "use-package-ensure" "
+
+(fn NAME KEYWORD ARGS)") (autoload 'use-package-handler/:ensure "use-package-ensure" "
+
+(fn NAME KEYWORD ENSURE REST STATE)") (register-definition-prefixes "use-package-ensure" '("use-package-")) (autoload 'use-package-normalize/:ensure-system-package "use-package-ensure-system-package" "Turn ARGS into a list of conses of the form (PACKAGE-NAME . INSTALL-COMMAND).
+
+(fn NAME-SYMBOL KEYWORD ARGS)") (autoload 'use-package-handler/:ensure-system-package "use-package-ensure-system-package" "Execute the handler for `:ensure-system-package' keyword in `use-package'.
+
+(fn NAME KEYWORD ARG REST STATE)") (register-definition-prefixes "use-package-ensure-system-package" '("use-package-ensure-system-package-")) (autoload 'use-package-jump-to-package-form "use-package-jump" "Attempt to find and jump to the `use-package' form that loaded PACKAGE.
+This will only find the form if that form actually required
+PACKAGE.  If PACKAGE was previously required then this function
+will jump to the file that originally required PACKAGE instead.
+
+(fn PACKAGE)" t) (register-definition-prefixes "use-package-jump" '("use-package-find-require")) (autoload 'use-package-lint "use-package-lint" "Check for errors in `use-package' declarations.
+For example, if the module's `:if' condition is met, but even
+with the specified `:load-path' the module cannot be found." t) (register-definition-prefixes "use-package-lint" '("use-package-lint-declaration")) (provide 'use-package-autoloads)) "dash" ((dash dash-autoloads) (autoload 'dash-fontify-mode "dash" "Toggle fontification of Dash special variables.
 
 Dash-Fontify mode is a buffer-local minor mode intended for Emacs
 Lisp buffers.  Enabling it causes the special variables bound in
@@ -826,19 +976,19 @@ additionally fontifies Dash macro calls.
 See also `dash-fontify-mode-lighter' and
 `global-dash-fontify-mode'.
 
-This is a minor mode.  If called interactively, toggle the
-`Dash-Fontify mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
+This is a minor mode.  If called interactively, toggle the `Dash-Fontify
+mode' mode.  If the prefix argument is positive, enable the mode, and if
+it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `dash-fontify-mode'.
+evaluate the variable `dash-fontify-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (put 'global-dash-fontify-mode 'globalized-minor-mode t) (defvar global-dash-fontify-mode nil "Non-nil if Global Dash-Fontify mode is enabled.
 See the `global-dash-fontify-mode' command
@@ -915,19 +1065,18 @@ this time, in which case it won't display at all.
 (fn)" t) (autoload 'markdown-live-preview-mode "markdown-mode" "Toggle native previewing on save for a specific markdown file.
 
 This is a minor mode.  If called interactively, toggle the
-`Markdown-Live-Preview mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+`Markdown-Live-Preview mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `markdown-live-preview-mode'.
+evaluate the variable `markdown-live-preview-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (register-definition-prefixes "markdown-mode" '("defun-markdown-" "gfm-" "markdown")) (provide 'markdown-mode-autoloads)) "lv" ((lv lv-autoloads) (register-definition-prefixes "lv" '("lv-")) (provide 'lv-autoloads)) "eldoc" ((eldoc-pkg eldoc eldoc-autoloads) (defvar eldoc-minor-mode-string (purecopy " ElDoc") "String to display in mode line when ElDoc Mode is enabled; nil for none.") (custom-autoload 'eldoc-minor-mode-string "eldoc" t) (autoload 'eldoc-mode "eldoc" "Toggle echo area display of Lisp objects at point (ElDoc mode).
 
@@ -938,19 +1087,19 @@ displays the first line of that variable's doc string.  Otherwise
 it displays the argument list of the function called in the
 expression point is on.
 
-This is a minor mode.  If called interactively, toggle the `Eldoc
-mode' mode.  If the prefix argument is positive, enable the mode,
-and if it is zero or negative, disable the mode.
+This is a minor mode.  If called interactively, toggle the `Eldoc mode'
+mode.  If the prefix argument is positive, enable the mode, and if it is
+zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `eldoc-mode'.
+evaluate the variable `eldoc-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (put 'global-eldoc-mode 'globalized-minor-mode t) (defcustom global-eldoc-mode t "Non-nil if Global Eldoc mode is enabled.
 See the `global-eldoc-mode' command
@@ -981,36 +1130,36 @@ Focus on it if IGNORE-FOCUS? is nil.
 (fn IGNORE-FOCUS?)" t) (register-definition-prefixes "lsp-clojure" '("lsp-clojure-")) (register-definition-prefixes "lsp-cmake" '("lsp-cmake-")) (add-hook 'cobol-mode-hook #'lsp-cobol-start-ls) (autoload 'lsp-cobol-start-ls "lsp-cobol" "Start the COBOL language service." t) (register-definition-prefixes "lsp-cobol" '("lsp-cobol-")) (define-obsolete-variable-alias 'lsp-prefer-capf 'lsp-completion-provider "lsp-mode 7.0.1") (define-obsolete-variable-alias 'lsp-enable-completion-at-point 'lsp-completion-enable "lsp-mode 7.0.1") (defvar lsp-completion-enable t "Enable `completion-at-point' integration.") (custom-autoload 'lsp-completion-enable "lsp-completion" t) (autoload 'lsp-completion-at-point "lsp-completion" "Get lsp completions.") (autoload 'lsp-completion--enable "lsp-completion" "Enable LSP completion support.") (autoload 'lsp-completion-mode "lsp-completion" "Toggle LSP completion support.
 
 This is a minor mode.  If called interactively, toggle the
-`Lsp-Completion mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
+`Lsp-Completion mode' mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-completion-mode'.
+evaluate the variable `lsp-completion-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (add-hook 'lsp-configure-hook (lambda nil (when (and lsp-auto-configure lsp-completion-enable) (lsp-completion--enable)))) (register-definition-prefixes "lsp-completion" '("lsp-")) (autoload 'lsp-copilot-check-status "lsp-copilot" "Checks the status of the Copilot Server" t) (autoload 'lsp-copilot-login "lsp-copilot" "Log in with copilot.
 
 This function is automatically called during the client initialization if needed" t) (register-definition-prefixes "lsp-copilot" '("lsp-copilot-")) (register-definition-prefixes "lsp-credo" '("lsp-credo-")) (register-definition-prefixes "lsp-crystal" '("lsp-clients-crystal-executable")) (register-definition-prefixes "lsp-csharp" '("lsp-csharp-")) (register-definition-prefixes "lsp-css" '("lsp-css-")) (register-definition-prefixes "lsp-cucumber" '("lsp-cucumber-")) (register-definition-prefixes "lsp-cypher" '("lsp-client--cypher-ls-server-command")) (define-obsolete-variable-alias 'lsp-diagnostic-package 'lsp-diagnostics-provider "lsp-mode 7.0.1") (define-obsolete-variable-alias 'lsp-flycheck-default-level 'lsp-diagnostics-flycheck-default-level "lsp-mode 7.0.1") (autoload 'lsp-diagnostics-lsp-checker-if-needed "lsp-diagnostics") (autoload 'lsp-diagnostics--enable "lsp-diagnostics" "Enable LSP checker support.") (autoload 'lsp-diagnostics-mode "lsp-diagnostics" "Toggle LSP diagnostics integration.
 
 This is a minor mode.  If called interactively, toggle the
-`Lsp-Diagnostics mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
+`Lsp-Diagnostics mode' mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-diagnostics-mode'.
+evaluate the variable `lsp-diagnostics-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (add-hook 'lsp-configure-hook (lambda nil (when lsp-auto-configure (lsp-diagnostics--enable)))) (register-definition-prefixes "lsp-diagnostics" '("lsp-diagnostics-")) (defvar lsp-dired-mode nil "Non-nil if Lsp-Dired mode is enabled.
 See the `lsp-dired-mode' command
@@ -1020,18 +1169,18 @@ either customize it (see the info node `Easy Customization')
 or call the function `lsp-dired-mode'.") (custom-autoload 'lsp-dired-mode "lsp-dired" nil) (autoload 'lsp-dired-mode "lsp-dired" "Display `lsp-mode' icons for each file in a dired buffer.
 
 This is a global minor mode.  If called interactively, toggle the
-`Lsp-Dired mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
+`Lsp-Dired mode' mode.  If the prefix argument is positive, enable the
+mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
 evaluate `(default-value \\='lsp-dired-mode)'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (register-definition-prefixes "lsp-dired" '("lsp-dired-")) (register-definition-prefixes "lsp-dockerfile" '("lsp-dockerfile-language-server-command")) (register-definition-prefixes "lsp-dot" '("lsp-dot--dot-ls-server-command")) (register-definition-prefixes "lsp-earthly" '("lsp-earthly-")) (register-definition-prefixes "lsp-elixir" '("lsp-elixir-")) (register-definition-prefixes "lsp-elm" '("lsp-")) (register-definition-prefixes "lsp-emmet" '("lsp-emmet-ls-command")) (register-definition-prefixes "lsp-erlang" '("lsp-erlang-")) (register-definition-prefixes "lsp-eslint" '("lsp-")) (register-definition-prefixes "lsp-fennel" '("lsp-fennel--ls-command")) (register-definition-prefixes "lsp-fortran" '("lsp-clients-")) (autoload 'lsp-fsharp--workspace-load "lsp-fsharp" "Load all of the provided PROJECTS.
 
@@ -1039,18 +1188,18 @@ it is disabled.
 
 This is a minor mode.  If called interactively, toggle the
 `Lsp-Headerline-Breadcrumb mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+positive, enable the mode, and if it is zero or negative, disable the
+mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-headerline-breadcrumb-mode'.
+evaluate the variable `lsp-headerline-breadcrumb-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (autoload 'lsp-breadcrumb-go-to-symbol "lsp-headerline" "Go to the symbol on breadcrumb at SYMBOL-POSITION.
 
@@ -1072,52 +1221,51 @@ See also `lsp-enable-symbol-highlighting'." t) (autoload 'lsp-evil-multiedit-lin
 (fn &optional IMPLICIT)" t) (defvar lsp-inline-completion-enable t "If non-nil it will enable inline completions on idle.") (custom-autoload 'lsp-inline-completion-enable "lsp-inline-completion" t) (autoload 'lsp-inline-completion-mode "lsp-inline-completion" "Mode automatically displaying inline completions.
 
 This is a minor mode.  If called interactively, toggle the
-`Lsp-Inline-Completion mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+`Lsp-Inline-Completion mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-inline-completion-mode'.
+evaluate the variable `lsp-inline-completion-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (add-hook 'lsp-configure-hook (lambda nil (when (and lsp-inline-completion-enable (lsp-feature? "textDocument/inlineCompletion")) (lsp-inline-completion-mode)))) (autoload 'lsp-inline-completion-company-integration-mode "lsp-inline-completion" "Minor mode to be used when company mode is active with lsp-inline-completion-mode
 
 This is a minor mode.  If called interactively, toggle the
-`Lsp-Inline-Completion-Company-Integration mode' mode.  If the
-prefix argument is positive, enable the mode, and if it is zero
-or negative, disable the mode.
+`Lsp-Inline-Completion-Company-Integration mode' mode.  If the prefix
+argument is positive, enable the mode, and if it is zero or negative,
+disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-inline-completion-company-integration-mode'.
+evaluate the variable `lsp-inline-completion-company-integration-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (register-definition-prefixes "lsp-inline-completion" '("lsp-")) (register-definition-prefixes "lsp-javascript" '("lsp-")) (register-definition-prefixes "lsp-jq" '("lsp-clients-jq-server-executable")) (register-definition-prefixes "lsp-json" '("lsp-")) (register-definition-prefixes "lsp-jsonnet" '("lsp-clients-jsonnet-server-executable")) (register-definition-prefixes "lsp-kotlin" '("lsp-")) (autoload 'lsp-lens--enable "lsp-lens" "Enable lens mode.") (autoload 'lsp-lens-show "lsp-lens" "Display lenses in the buffer." t) (autoload 'lsp-lens-hide "lsp-lens" "Delete all lenses." t) (autoload 'lsp-lens-mode "lsp-lens" "Toggle code-lens overlays.
 
-This is a minor mode.  If called interactively, toggle the
-`Lsp-Lens mode' mode.  If the prefix argument is positive, enable
-the mode, and if it is zero or negative, disable the mode.
+This is a minor mode.  If called interactively, toggle the `Lsp-Lens
+mode' mode.  If the prefix argument is positive, enable the mode, and if
+it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-lens-mode'.
+evaluate the variable `lsp-lens-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (autoload 'lsp-avy-lens "lsp-lens" "Click lsp lens using `avy' package." t) (register-definition-prefixes "lsp-lens" '("lsp-")) (autoload 'lsp-lisp-alive-start-ls "lsp-lisp" "Start the alive-lsp." t) (register-definition-prefixes "lsp-lisp" '("lsp-lisp-a")) (register-definition-prefixes "lsp-lua" '("lsp-")) (register-definition-prefixes "lsp-magik" '("lsp-magik-")) (register-definition-prefixes "lsp-markdown" '("lsp-markdown-")) (register-definition-prefixes "lsp-marksman" '("lsp-marksman-")) (register-definition-prefixes "lsp-mdx" '("lsp-mdx-server-command")) (register-definition-prefixes "lsp-meson" '("lsp-meson-")) (register-definition-prefixes "lsp-mint" '("lsp-clients-mint-executable")) (put 'lsp-enable-file-watchers 'safe-local-variable #'booleanp) (put 'lsp-file-watch-ignored-directories 'safe-local-variable 'lsp--string-listp) (put 'lsp-file-watch-ignored-files 'safe-local-variable 'lsp--string-listp) (put 'lsp-file-watch-threshold 'safe-local-variable (lambda (i) (or (numberp i) (not i)))) (autoload 'lsp--string-listp "lsp-mode" "Return t if all elements of SEQUENCE are strings, else nil.
 
@@ -1150,52 +1298,52 @@ In case the major-mode that you are using for " t) (register-definition-prefixes
 
 This is a minor mode.  If called interactively, toggle the
 `Lsp-Modeline-Code-Actions mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+positive, enable the mode, and if it is zero or negative, disable the
+mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-modeline-code-actions-mode'.
+evaluate the variable `lsp-modeline-code-actions-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (define-obsolete-function-alias 'lsp-diagnostics-modeline-mode 'lsp-modeline-diagnostics-mode "lsp-mode 7.0.1") (autoload 'lsp-modeline-diagnostics-mode "lsp-modeline" "Toggle diagnostics modeline.
 
 This is a minor mode.  If called interactively, toggle the
 `Lsp-Modeline-Diagnostics mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+positive, enable the mode, and if it is zero or negative, disable the
+mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-modeline-diagnostics-mode'.
+evaluate the variable `lsp-modeline-diagnostics-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (autoload 'lsp-modeline-workspace-status-mode "lsp-modeline" "Toggle workspace status on modeline.
 
 This is a minor mode.  If called interactively, toggle the
-`Lsp-Modeline-Workspace-Status mode' mode.  If the prefix
-argument is positive, enable the mode, and if it is zero or
-negative, disable the mode.
+`Lsp-Modeline-Workspace-Status mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable the
+mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-modeline-workspace-status-mode'.
+evaluate the variable `lsp-modeline-workspace-status-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (register-definition-prefixes "lsp-modeline" '("lsp-")) (register-definition-prefixes "lsp-mojo" '("lsp-mojo-executable")) (register-definition-prefixes "lsp-move" '("lsp-clients-")) (register-definition-prefixes "lsp-nextflow" '("lsp-nextflow-")) (register-definition-prefixes "lsp-nginx" '("lsp-nginx-")) (register-definition-prefixes "lsp-nim" '("lsp-nim-l")) (register-definition-prefixes "lsp-nix" '("lsp-nix-")) (register-definition-prefixes "lsp-nushell" '("lsp-nushell-language-server-command")) (register-definition-prefixes "lsp-ocaml" '("lsp-")) (register-definition-prefixes "lsp-openscad" '("lsp-openscad-")) (register-definition-prefixes "lsp-perl" '("lsp-perl-")) (register-definition-prefixes "lsp-perlnavigator" '("lsp-perlnavigator-")) (register-definition-prefixes "lsp-php" '("lsp-")) (register-definition-prefixes "lsp-pls" '("lsp-pls-")) (register-definition-prefixes "lsp-prolog" '("lsp-prolog-server-command")) (register-definition-prefixes "lsp-protocol" '("dash-expand:&RangeToPoint" "lsp")) (register-definition-prefixes "lsp-purescript" '("lsp-purescript-")) (register-definition-prefixes "lsp-pwsh" '("lsp-pwsh-")) (register-definition-prefixes "lsp-pyls" '("lsp-")) (register-definition-prefixes "lsp-pylsp" '("lsp-")) (register-definition-prefixes "lsp-qml" '("lsp-qml-server-command")) (register-definition-prefixes "lsp-r" '("lsp-clients-r-server-command")) (register-definition-prefixes "lsp-racket" '("lsp-racket-lang")) (register-definition-prefixes "lsp-remark" '("lsp-remark-server-command")) (register-definition-prefixes "lsp-rf" '("expand-start-command" "lsp-rf-language-server-" "parse-rf-language-server-")) (register-definition-prefixes "lsp-roslyn" '("lsp-roslyn-")) (register-definition-prefixes "lsp-rpm-spec" '("lsp-rpm-spec-")) (register-definition-prefixes "lsp-rubocop" '("lsp-rubocop-")) (register-definition-prefixes "lsp-ruby-lsp" '("lsp-ruby-lsp-")) (register-definition-prefixes "lsp-ruby-syntax-tree" '("lsp-ruby-syntax-tree-")) (register-definition-prefixes "lsp-ruff" '("lsp-ruff-")) (register-definition-prefixes "lsp-rust" '("lsp-")) (defvar-local semantic-token-modifier-cache (make-hash-table) "A cache of modifier values to the selected fonts.
 This allows whole-bitmap lookup instead of checking each bit. The
@@ -1213,19 +1361,18 @@ IS-RANGE-PROVIDER is non-nil when server supports range requests.") (autoload 'l
 (fn WORKSPACE)") (autoload 'lsp-semantic-tokens--warn-about-deprecated-setting "lsp-semantic-tokens" "Warn about deprecated semantic highlighting variable.") (autoload 'lsp-semantic-tokens--enable "lsp-semantic-tokens" "Enable semantic tokens mode.") (autoload 'lsp-semantic-tokens-mode "lsp-semantic-tokens" "Toggle semantic-tokens support.
 
 This is a minor mode.  If called interactively, toggle the
-`Lsp-Semantic-Tokens mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+`Lsp-Semantic-Tokens mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `lsp-semantic-tokens-mode'.
+evaluate the variable `lsp-semantic-tokens-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (register-definition-prefixes "lsp-semantic-tokens" '("lsp-")) (register-definition-prefixes "lsp-semgrep" '("lsp-semgrep-" "semgrep-")) (register-definition-prefixes "lsp-sml" '("lsp-sml-millet-")) (register-definition-prefixes "lsp-solargraph" '("lsp-solargraph-")) (register-definition-prefixes "lsp-solidity" '("lsp-client--solidity-")) (register-definition-prefixes "lsp-sorbet" '("lsp-sorbet-")) (register-definition-prefixes "lsp-sql" '("lsp-sql-")) (register-definition-prefixes "lsp-sqls" '("lsp-sql")) (register-definition-prefixes "lsp-steep" '("lsp-steep-")) (register-definition-prefixes "lsp-svelte" '("lsp-svelte-plugin-")) (register-definition-prefixes "lsp-terraform" '("construct-tf-package" "lsp-t")) (register-definition-prefixes "lsp-tex" '("lsp-")) (register-definition-prefixes "lsp-toml" '("lsp-toml-")) (register-definition-prefixes "lsp-trunk" '("lsp-trunk-")) (register-definition-prefixes "lsp-ttcn3" '("lsp-ttcn3-lsp-server-command")) (register-definition-prefixes "lsp-typeprof" '("lsp-typeprof-")) (register-definition-prefixes "lsp-typespec" '("lsp-typespec-")) (register-definition-prefixes "lsp-v" '("lsp-v-vls-executable")) (register-definition-prefixes "lsp-vala" '("lsp-clients-vala-ls-executable")) (register-definition-prefixes "lsp-verilog" '("lsp-clients-")) (register-definition-prefixes "lsp-vetur" '("lsp-vetur-")) (register-definition-prefixes "lsp-vhdl" '("ghdl-ls-bin-name" "hdl-checker-bin-name" "lsp-vhdl-" "vhdl-")) (register-definition-prefixes "lsp-vimscript" '("lsp-clients-vim-")) (register-definition-prefixes "lsp-volar" '("lsp-volar-")) (register-definition-prefixes "lsp-wgsl" '("lsp-wgsl-")) (register-definition-prefixes "lsp-xml" '("lsp-xml-")) (register-definition-prefixes "lsp-yaml" '("lsp-yaml-")) (register-definition-prefixes "lsp-yang" '("lsp-yang-")) (register-definition-prefixes "lsp-zig" '("lsp-z")) (provide 'lsp-mode-autoloads)) "lsp-ui" ((lsp-ui-flycheck lsp-ui lsp-ui-doc lsp-ui-autoloads lsp-ui-imenu lsp-ui-peek lsp-ui-util lsp-ui-sideline) (autoload 'lsp-ui-mode "lsp-ui" "Toggle language server UI mode on or off.
 ‘lsp-ui-mode’ is a minor mode that contains a series of useful UI
@@ -1234,7 +1381,7 @@ language server UI mode if ARG is positive, and disable it
 otherwise.  If called from Lisp, enable the mode if ARG is
 omitted or nil, and toggle it if ARG is ‘toggle’.
 
-(fn &optional ARG)" t) (register-definition-prefixes "lsp-ui" '("lsp-ui-")) (register-definition-prefixes "lsp-ui-doc" '("lsp-ui-doc-")) (register-definition-prefixes "lsp-ui-flycheck" '("lsp-ui-flycheck-")) (register-definition-prefixes "lsp-ui-imenu" '("lsp-ui-imenu" "overlay-priority")) (register-definition-prefixes "lsp-ui-peek" '("lsp-")) (register-definition-prefixes "lsp-ui-sideline" '("lsp-ui-sideline")) (register-definition-prefixes "lsp-ui-util" '("lsp-ui-util-")) (provide 'lsp-ui-autoloads)) "ccls" ((ccls ccls-code-lens ccls-tree ccls-common ccls-autoloads ccls-inheritance-hierarchy ccls-member-hierarchy ccls-semantic-highlight ccls-call-hierarchy) (register-definition-prefixes "ccls" '("ccls-")) (register-definition-prefixes "ccls-call-hierarchy" '("ccls-call-hierarchy")) (register-definition-prefixes "ccls-code-lens" '("ccls-")) (register-definition-prefixes "ccls-inheritance-hierarchy" '("ccls-inheritance-hierarchy")) (register-definition-prefixes "ccls-member-hierarchy" '("ccls-member-hierarchy")) (register-definition-prefixes "ccls-semantic-highlight" '("ccls-")) (register-definition-prefixes "ccls-tree" '("ccls-tree-")) (provide 'ccls-autoloads)) "company" ((company-css company-template company-tng company-abbrev company company-autoloads company-dabbrev company-keywords company-nxml company-oddmuse company-ispell company-yasnippet company-tempo company-etags company-bbdb company-capf company-semantic company-gtags company-clang company-files company-dabbrev-code company-cmake) (autoload 'company-mode "company" "\"complete anything\"; is an in-buffer completion framework.
+(fn &optional ARG)" t) (register-definition-prefixes "lsp-ui" '("lsp-ui-")) (register-definition-prefixes "lsp-ui-doc" '("lsp-ui-doc-")) (register-definition-prefixes "lsp-ui-flycheck" '("lsp-ui-flycheck-")) (register-definition-prefixes "lsp-ui-imenu" '("lsp-ui-imenu" "overlay-priority")) (register-definition-prefixes "lsp-ui-peek" '("lsp-")) (register-definition-prefixes "lsp-ui-sideline" '("lsp-ui-sideline")) (register-definition-prefixes "lsp-ui-util" '("lsp-ui-util-")) (provide 'lsp-ui-autoloads)) "company" ((company-css company-template company-tng company-abbrev company company-autoloads company-dabbrev company-keywords company-nxml company-oddmuse company-ispell company-yasnippet company-tempo company-etags company-bbdb company-capf company-semantic company-gtags company-clang company-files company-dabbrev-code company-cmake) (autoload 'company-mode "company" "\"complete anything\"; is an in-buffer completion framework.
 
 Completion starts automatically, depending on the values
 `company-idle-delay' and `company-minimum-prefix-length'.
@@ -1262,19 +1409,19 @@ keymap during active completions (`company-active-map'):
 
 \\{company-active-map}
 
-This is a minor mode.  If called interactively, toggle the
-`Company mode' mode.  If the prefix argument is positive, enable
-the mode, and if it is zero or negative, disable the mode.
+This is a minor mode.  If called interactively, toggle the `Company
+mode' mode.  If the prefix argument is positive, enable the mode, and if
+it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `company-mode'.
+evaluate the variable `company-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (put 'global-company-mode 'globalized-minor-mode t) (defvar global-company-mode nil "Non-nil if Global Company mode is enabled.
 See the `global-company-mode' command
@@ -1345,18 +1492,18 @@ either customize it (see the info node `Easy Customization')
 or call the function `company-tng-mode'.") (custom-autoload 'company-tng-mode "company-tng" nil) (autoload 'company-tng-mode "company-tng" "This minor mode enables `company-tng-frontend'.
 
 This is a global minor mode.  If called interactively, toggle the
-`Company-Tng mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
+`Company-Tng mode' mode.  If the prefix argument is positive, enable the
+mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
 evaluate `(default-value \\='company-tng-mode)'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (register-definition-prefixes "company-tng" '("company-tng-")) (autoload 'company-yasnippet "company-yasnippet" "`company-mode' backend for `yasnippet'.
 
@@ -1380,521 +1527,23 @@ shadow backends that come after it.  Recommended usages:
 
   (global-set-key (kbd \"C-c y\") \\='company-yasnippet)
 
-(fn COMMAND &optional ARG &rest IGNORE)" t) (register-definition-prefixes "company-yasnippet" '("company-yasnippet-")) (provide 'company-autoloads)) "company-lsp" ((company-lsp company-lsp-autoloads) (autoload 'company-lsp "company-lsp" "Define a company backend for lsp-mode.
+(fn COMMAND &optional ARG &rest IGNORE)" t) (register-definition-prefixes "company-yasnippet" '("company-yasnippet-")) (provide 'company-autoloads)) "frame-local" ((frame-local frame-local-autoloads) (register-definition-prefixes "frame-local" '("frame-local-")) (provide 'frame-local-autoloads)) "company-box" ((company-box-doc company-box-icons company-box company-box-autoloads) (autoload 'company-box-mode "company-box" "Company-box minor mode.
 
-See the documentation of `company-backends' for COMMAND and ARG.
+This is a minor mode.  If called interactively, toggle the `company-box
+mode' mode.  If the prefix argument is positive, enable the mode, and if
+it is zero or negative, disable the mode.
 
-(fn COMMAND &optional ARG &rest _)" t) (register-definition-prefixes "company-lsp" '("company-lsp-")) (provide 'company-lsp-autoloads)) "yasnippet" ((yasnippet-autoloads yasnippet) (autoload 'yas-minor-mode "yasnippet" "Toggle YASnippet mode.
-
-When YASnippet mode is enabled, `yas-expand', normally bound to
-the TAB key, expands snippets of code depending on the major
-mode.
-
-With no argument, this command toggles the mode.
-positive prefix argument turns on the mode.
-Negative prefix argument turns off the mode.
-
-Key bindings:
-\\{yas-minor-mode-map}
-
-This is a minor mode.  If called interactively, toggle the `yas
-minor mode' mode.  If the prefix argument is positive, enable the
-mode, and if it is zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `yas-minor-mode'.
+evaluate the variable `company-box-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-(fn &optional ARG)" t) (put 'yas-global-mode 'globalized-minor-mode t) (defvar yas-global-mode nil "Non-nil if Yas-Global mode is enabled.
-See the `yas-global-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `yas-global-mode'.") (custom-autoload 'yas-global-mode "yasnippet" nil) (autoload 'yas-global-mode "yasnippet" "Toggle Yas minor mode in all buffers.
-With prefix ARG, enable Yas-Global mode if ARG is positive; otherwise,
-disable it.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.
-Enable the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-Yas minor mode is enabled in all buffers where `yas-minor-mode-on'
-would do it.
-
-See `yas-minor-mode' for more information on Yas minor mode.
-
-(fn &optional ARG)" t) (autoload 'snippet-mode "yasnippet" "A mode for editing yasnippets" t nil) (register-definition-prefixes "yasnippet" '("help-snippet-def" "snippet-mode-map" "yas")) (provide 'yasnippet-autoloads)) "toc-org" ((toc-org toc-org-autoloads) (autoload 'toc-org-enable "toc-org" "Enable toc-org in this buffer.") (autoload 'toc-org-mode "toc-org" "Toggle `toc-org' in this buffer.
-
-This is a minor mode.  If called interactively, toggle the
-`Toc-Org mode' mode.  If the prefix argument is positive, enable
-the mode, and if it is zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `toc-org-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (register-definition-prefixes "toc-org" '("toc-org-")) (provide 'toc-org-autoloads)) "org-bullets" ((org-bullets-autoloads org-bullets) (autoload 'org-bullets-mode "org-bullets" "Use UTF8 bullets in Org mode headings.
-
-This is a minor mode.  If called interactively, toggle the
-`Org-Bullets mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `org-bullets-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (register-definition-prefixes "org-bullets" '("org-bullets-")) (provide 'org-bullets-autoloads)) "which-key" ((which-key-autoloads which-key) (defvar which-key-mode nil "Non-nil if Which-Key mode is enabled.
-See the `which-key-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `which-key-mode'.") (custom-autoload 'which-key-mode "which-key" nil) (autoload 'which-key-mode "which-key" "Toggle `which-key-mode'.
-
-This is a global minor mode.  If called interactively, toggle the
-`Which-Key mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `(default-value \\='which-key-mode)'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (autoload 'which-key-setup-side-window-right "which-key" "Set up side-window on right." t) (autoload 'which-key-setup-side-window-right-bottom "which-key" "Set up side-window on right if space allows.
-Otherwise, use bottom." t) (autoload 'which-key-setup-side-window-bottom "which-key" "Set up side-window that opens on bottom." t) (autoload 'which-key-setup-minibuffer "which-key" "Set up minibuffer display.
-Do not use this setup if you use the paging commands.  Instead use
-`which-key-setup-side-window-bottom', which is nearly identical
-but more functional." t) (autoload 'which-key-add-keymap-based-replacements "which-key" "Replace the description of KEY using REPLACEMENT in KEYMAP.
-KEY should take a format suitable for use in `kbd'.  REPLACEMENT
-should be a cons cell of the form (STRING . COMMAND) for each
-REPLACEMENT, where STRING is the replacement string and COMMAND
-is a symbol corresponding to the intended command to be
-replaced.  COMMAND can be nil if the binding corresponds to a key
-prefix.  An example is
-
-(which-key-add-keymap-based-replacements global-map
-  \"C-x w\" \\='(\"Save as\" . write-file)).
-
-For backwards compatibility, REPLACEMENT can also be a string,
-but the above format is preferred, and the option to use a string
-for REPLACEMENT will eventually be removed.
-
-(fn KEYMAP KEY REPLACEMENT &rest MORE)") (function-put 'which-key-add-keymap-based-replacements 'lisp-indent-function 'defun) (autoload 'which-key-add-key-based-replacements "which-key" "Replace the description of KEY-SEQUENCE with REPLACEMENT.
-KEY-SEQUENCE is a string suitable for use in `kbd'.
-REPLACEMENT may either be a string, as in
-
-(which-key-add-key-based-replacements \"C-x 1\" \"maximize\")
-
-a cons of two strings as in
-
-(which-key-add-key-based-replacements \"C-x 8\"
-                                        \\='(\"unicode\" . \"Unicode keys\"))
-
-or a function that takes a (KEY . BINDING) cons and returns a
-replacement.
-
-In the second case, the second string is used to provide a longer
-name for the keys under a prefix.
-
-MORE allows you to specifcy additional KEY REPLACEMENT pairs.  All
-replacements are added to `which-key-replacement-alist'.
-
-(fn KEY-SEQUENCE REPLACEMENT &rest MORE)") (autoload 'which-key-add-major-mode-key-based-replacements "which-key" "Functions like `which-key-add-key-based-replacements'.
-The difference is that MODE specifies the `major-mode' that must
-be active for KEY-SEQUENCE and REPLACEMENT (MORE contains
-addition KEY-SEQUENCE REPLACEMENT pairs) to apply.
-
-(fn MODE KEY-SEQUENCE REPLACEMENT &rest MORE)") (function-put 'which-key-add-major-mode-key-based-replacements 'lisp-indent-function 'defun) (autoload 'which-key-reload-key-sequence "which-key" "Simulate entering the key sequence KEY-SEQ.
-KEY-SEQ should be a list of events as produced by
-`listify-key-sequence'.  If nil, KEY-SEQ defaults to
-`which-key--current-key-list'.  Any prefix arguments that were
-used are reapplied to the new key sequence.
-
-(fn &optional KEY-SEQ)") (autoload 'which-key-show-standard-help "which-key" "Call the command in `which-key--prefix-help-cmd-backup'.
-Usually this is `describe-prefix-bindings'.
-
-(fn &optional _)" t) (autoload 'which-key-show-next-page-no-cycle "which-key" "Show next page of keys or `which-key-show-standard-help'." t) (autoload 'which-key-show-previous-page-no-cycle "which-key" "Show previous page of keys if one exists." t) (autoload 'which-key-show-next-page-cycle "which-key" "Show the next page of keys, cycling from end to beginning.
-
-(fn &optional _)" t) (autoload 'which-key-show-previous-page-cycle "which-key" "Show the previous page of keys, cycling from beginning to end.
-
-(fn &optional _)" t) (autoload 'which-key-show-top-level "which-key" "Show top-level bindings.
-
-(fn &optional _)" t) (autoload 'which-key-show-major-mode "which-key" "Show top-level bindings in the map of the current major mode.
-This function will also detect evil bindings made using
-`evil-define-key' in this map.  These bindings will depend on the
-current evil state.
-
-(fn &optional ALL)" t) (autoload 'which-key-show-full-major-mode "which-key" "Show all bindings in the map of the current major mode.
-This function will also detect evil bindings made using
-`evil-define-key' in this map.  These bindings will depend on the
-current evil state." t) (autoload 'which-key-dump-bindings "which-key" "Dump bindings from PREFIX into buffer named BUFFER-NAME.
-PREFIX should be a string suitable for `kbd'.
-
-(fn PREFIX BUFFER-NAME)" t) (autoload 'which-key-undo-key "which-key" "Undo last keypress and force which-key update.
-
-(fn &optional _)" t) (autoload 'which-key-C-h-dispatch "which-key" "Dispatch \\`C-h' commands by looking up key in `which-key-C-h-map'.
-This command is always accessible (from any prefix) if
-`which-key-use-C-h-commands' is non nil." t) (autoload 'which-key-show-keymap "which-key" "Show the top-level bindings in KEYMAP using which-key.
-KEYMAP is selected interactively from all available keymaps.
-
-If NO-PAGING is non-nil, which-key will not intercept subsequent
-keypresses for the paging functionality.
-
-(fn KEYMAP &optional NO-PAGING)" t) (autoload 'which-key-show-full-keymap "which-key" "Show all bindings in KEYMAP using which-key.
-KEYMAP is selected interactively from all available keymaps.
-
-(fn KEYMAP)" t) (autoload 'which-key-show-minor-mode-keymap "which-key" "Show the top-level bindings in KEYMAP using which-key.
-KEYMAP is selected interactively by mode in
-`minor-mode-map-alist'.
-
-(fn &optional ALL)" t) (autoload 'which-key-show-full-minor-mode-keymap "which-key" "Show all bindings in KEYMAP using which-key.
-KEYMAP is selected interactively by mode in
-`minor-mode-map-alist'." t) (register-definition-prefixes "which-key" '("evil-state" "which-key-")) (provide 'which-key-autoloads)) "seq" ((seq-autoloads seq seq-25 seq-24 seq-pkg) (register-definition-prefixes "seq-24" '("seq")) (autoload 'seq-subseq "seq-25" "Return the sequence of elements of SEQUENCE from START to END.
-END is exclusive.
-
-If END is omitted, it defaults to the length of the sequence.  If
-START or END is negative, it counts from the end.  Signal an
-error if START or END are outside of the sequence (i.e too large
-if positive or too small if negative).
-
-(fn SEQUENCE START &optional END)") (autoload 'seq-take "seq-25" "Return the sequence made of the first N elements of SEQUENCE.
-The result is a sequence of the same type as SEQUENCE.
-
-If N is a negative integer or zero, an empty sequence is
-returned.
-
-(fn SEQUENCE N)") (autoload 'seq-sort-by "seq-25" "Sort SEQUENCE transformed by FUNCTION using PRED as the comparison function.
-Elements of SEQUENCE are transformed by FUNCTION before being
-sorted.  FUNCTION must be a function of one argument.
-
-(fn FUNCTION PRED SEQUENCE)") (autoload 'seq-filter "seq-25" "Return a list of all the elements in SEQUENCE for which PRED returns non-nil.
-
-(fn PRED SEQUENCE)") (autoload 'seq-remove "seq-25" "Return a list of all the elements in SEQUENCE for which PRED returns nil.
-
-(fn PRED SEQUENCE)") (autoload 'seq-remove-at-position "seq-25" "Return a copy of SEQUENCE with the element at index N removed.
-
-N is the (zero-based) index of the element that should not be in
-the result.
-
-The result is a sequence of the same type as SEQUENCE.
-
-(fn SEQUENCE N)") (autoload 'seq-reduce "seq-25" "Reduce the function FUNCTION across SEQUENCE, starting with INITIAL-VALUE.
-
-Return the result of calling FUNCTION with INITIAL-VALUE and the
-first element of SEQUENCE, then calling FUNCTION with that result
-and the second element of SEQUENCE, then with that result and the
-third element of SEQUENCE, etc.  FUNCTION will be called with
-INITIAL-VALUE (and then the accumulated value) as the first
-argument, and the elements from SEQUENCE as the second argument.
-
-If SEQUENCE is empty, return INITIAL-VALUE and FUNCTION is not called.
-
-(fn FUNCTION SEQUENCE INITIAL-VALUE)") (autoload 'seq-every-p "seq-25" "Return non-nil if PRED returns non-nil for all the elements of SEQUENCE.
-
-(fn PRED SEQUENCE)") (autoload 'seq-some "seq-25" "Return non-nil if PRED returns non-nil for at least one element of SEQUENCE.
-If the value is non-nil, it is the first non-nil value returned by PRED.
-
-(fn PRED SEQUENCE)") (autoload 'seq-find "seq-25" "Return the first element in SEQUENCE for which PRED returns non-nil.
-If no such element is found, return DEFAULT.
-
-Note that `seq-find' has an ambiguity if the found element is
-identical to DEFAULT, as in that case it is impossible to know
-whether an element was found or not.
-
-(fn PRED SEQUENCE &optional DEFAULT)") (autoload 'seq-position "seq-25" "Return the (zero-based) index of the first element in SEQUENCE \"equal\" to ELT.
-\"Equality\" is defined by the function TESTFN, which defaults to `equal'.
-
-(fn SEQUENCE ELT &optional TESTFN)") (autoload 'seq-positions "seq-25" "Return list of indices of SEQUENCE elements for which TESTFN returns non-nil.
-
-TESTFN is a two-argument function which is called with each element of
-SEQUENCE as the first argument and ELT as the second.
-TESTFN defaults to `equal'.
-
-The result is a list of (zero-based) indices.
-
-(fn SEQUENCE ELT &optional TESTFN)") (autoload 'seq-uniq "seq-25" "Return a list of the elements of SEQUENCE with duplicates removed.
-TESTFN is used to compare elements, and defaults to `equal'.
-
-(fn SEQUENCE &optional TESTFN)") (autoload 'seq-union "seq-25" "Return a list of all the elements that appear in either SEQUENCE1 or SEQUENCE2.
-\"Equality\" of elements is defined by the function TESTFN, which
-defaults to `equal'.
-
-(fn SEQUENCE1 SEQUENCE2 &optional TESTFN)") (autoload 'seq-intersection "seq-25" "Return a list of all the elements that appear in both SEQUENCE1 and SEQUENCE2.
-\"Equality\" of elements is defined by the function TESTFN, which
-defaults to `equal'.
-
-(fn SEQUENCE1 SEQUENCE2 &optional TESTFN)") (autoload 'seq-group-by "seq-25" "Apply FUNCTION to each element of SEQUENCE.
-Separate the elements of SEQUENCE into an alist using the results as
-keys.  Keys are compared using `equal'.
-
-(fn FUNCTION SEQUENCE)") (autoload 'seq-max "seq-25" "Return the largest element of SEQUENCE.
-SEQUENCE must be a sequence of numbers or markers.
-
-(fn SEQUENCE)") (autoload 'seq-random-elt "seq-25" "Return a randomly chosen element from SEQUENCE.
-Signal an error if SEQUENCE is empty.
-
-(fn SEQUENCE)") (register-definition-prefixes "seq-25" '("seq-")) (provide 'seq-autoloads)) "compat" ((compat-28 compat-30 compat-26 compat compat-pkg compat-macs compat-27 compat-autoloads compat-29 compat-25) (register-definition-prefixes "compat" '("compat-")) (register-definition-prefixes "compat-macs" '("compat-")) (provide 'compat-autoloads)) "nerd-icons" ((nerd-icons-autoloads nerd-icons nerd-icons-faces nerd-icons-data) (autoload 'nerd-icons-install-fonts "nerd-icons" "Helper function to download and install the latests fonts based on OS.
-The provided Nerd Font is Symbols Nerd Font Mono.
-When PFX is non-nil, ignore the prompt and just install
-
-(fn &optional PFX)" t) (autoload 'nerd-icons-insert "nerd-icons" "Interactive icon insertion function.
-When Prefix ARG is non-nil, insert the propertized icon.
-When GLYPH-SET is non-nil, limit the candidates to the icon set matching it.
-
-(fn &optional ARG GLYPH-SET)" t) (autoload 'nerd-icons-icon-for-dir "nerd-icons" "Get the formatted icon for DIR.
-ARG-OVERRIDES should be a plist containining `:height',
-`:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-
-(fn DIR &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-file "nerd-icons" "Get the formatted icon for FILE.
-ARG-OVERRIDES should be a plist containining `:height',
-`:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-
-(fn FILE &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-extension "nerd-icons" "Get the formatted icon for EXT.
-ARG-OVERRIDES should be a plist containining `:height',
-`:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-
-(fn EXT &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-mode "nerd-icons" "Get the formatted icon for MODE.
-ARG-OVERRIDES should be a plist containining `:height',
-`:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-
-(fn MODE &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-url "nerd-icons" "Get the formatted icon for URL.
-If an icon for URL isn't found in `nerd-icons-url-alist', a globe is used.
-ARG-OVERRIDES should be a plist containining `:height',
-`:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-
-(fn URL &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-buffer "nerd-icons" "Get the formatted icon for the current buffer.
-
-This function prioritises the use of the buffers file extension to
-discern the icon when its `major-mode' matches its auto mode,
-otherwise it will use the buffers `major-mode' to decide its
-icon.") (register-definition-prefixes "nerd-icons" '("nerd-icons-")) (provide 'nerd-icons-autoloads)) "shrink-path" ((shrink-path-autoloads shrink-path) (register-definition-prefixes "shrink-path" '("shrink-path-")) (provide 'shrink-path-autoloads)) "doom-modeline" ((doom-modeline-env doom-modeline doom-modeline-autoloads doom-modeline-segments doom-modeline-core) (autoload 'doom-modeline-set-main-modeline "doom-modeline" "Set main mode-line.
-If DEFAULT is non-nil, set the default mode-line for all buffers.
-
-(fn &optional DEFAULT)") (defvar doom-modeline-mode nil "Non-nil if Doom-Modeline mode is enabled.
-See the `doom-modeline-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `doom-modeline-mode'.") (custom-autoload 'doom-modeline-mode "doom-modeline" nil) (autoload 'doom-modeline-mode "doom-modeline" "Toggle `doom-modeline' on or off.
-
-This is a global minor mode.  If called interactively, toggle the
-`Doom-Modeline mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `(default-value \\='doom-modeline-mode)'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (register-definition-prefixes "doom-modeline" '("doom-modeline-")) (register-definition-prefixes "doom-modeline-core" '("doom-modeline")) (autoload 'doom-modeline-env-setup-python "doom-modeline-env") (autoload 'doom-modeline-env-setup-ruby "doom-modeline-env") (autoload 'doom-modeline-env-setup-perl "doom-modeline-env") (autoload 'doom-modeline-env-setup-go "doom-modeline-env") (autoload 'doom-modeline-env-setup-elixir "doom-modeline-env") (autoload 'doom-modeline-env-setup-rust "doom-modeline-env") (register-definition-prefixes "doom-modeline-env" '("doom-modeline-")) (register-definition-prefixes "doom-modeline-segments" '("doom-modeline-")) (provide 'doom-modeline-autoloads)) "all-the-icons" ((all-the-icons-autoloads all-the-icons-faces all-the-icons) (autoload 'all-the-icons-icon-for-dir "all-the-icons" "Get the formatted icon for DIR.
-ARG-OVERRIDES should be a plist containining `:height',
-`:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-
-Note: You want chevron, please use `all-the-icons-icon-for-dir-with-chevron'.
-
-(fn DIR &rest ARG-OVERRIDES)") (autoload 'all-the-icons-icon-for-file "all-the-icons" "Get the formatted icon for FILE.
-ARG-OVERRIDES should be a plist containining `:height',
-`:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-
-(fn FILE &rest ARG-OVERRIDES)") (autoload 'all-the-icons-icon-for-mode "all-the-icons" "Get the formatted icon for MODE.
-ARG-OVERRIDES should be a plist containining `:height',
-`:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-
-(fn MODE &rest ARG-OVERRIDES)") (autoload 'all-the-icons-icon-for-url "all-the-icons" "Get the formatted icon for URL.
-If an icon for URL isn't found in `all-the-icons-url-alist', a globe is used.
-ARG-OVERRIDES should be a plist containining `:height',
-`:v-adjust' or `:face' properties like in the normal icon
-inserting functions.
-
-(fn URL &rest ARG-OVERRIDES)") (autoload 'all-the-icons-install-fonts "all-the-icons" "Helper function to download and install the latests fonts based on OS.
-When PFX is non-nil, ignore the prompt and just install
-
-(fn &optional PFX)" t) (autoload 'all-the-icons-insert "all-the-icons" "Interactive icon insertion function.
-When Prefix ARG is non-nil, insert the propertized icon.
-When FAMILY is non-nil, limit the candidates to the icon set matching it.
-
-(fn &optional ARG FAMILY)" t) (register-definition-prefixes "all-the-icons" '("all-the-icons-")) (provide 'all-the-icons-autoloads)) "all-the-icons-dired" ((all-the-icons-dired all-the-icons-dired-autoloads) (autoload 'all-the-icons-dired-mode "all-the-icons-dired" "Display all-the-icons icon for each file in a Dired buffer.
-
-This is a minor mode.  If called interactively, toggle the
-`All-The-Icons-Dired mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `all-the-icons-dired-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (register-definition-prefixes "all-the-icons-dired" '("all-the-icons-dired-")) (provide 'all-the-icons-dired-autoloads)) "web-mode" ((web-mode web-mode-autoloads) (put 'web-mode-attr-indent-offset 'safe-local-variable #'(lambda (v) (or (integerp v) (booleanp v)))) (put 'web-mode-attr-value-indent-offset 'safe-local-variable #'(lambda (v) (or (integerp v) (booleanp v)))) (put 'web-mode-markup-indent-offset 'safe-local-variable #'integerp) (put 'web-mode-markup-comment-indent-offset 'safe-local-variable #'integerp) (put 'web-mode-css-indent-offset 'safe-local-variable #'integerp) (put 'web-mode-code-indent-offset 'safe-local-variable #'integerp) (put 'web-mode-sql-indent-offset 'safe-local-variable #'integerp) (autoload 'web-mode "web-mode" "Major mode for editing web templates.
-
-(fn)" t) (register-definition-prefixes "web-mode" '("web-mode-")) (provide 'web-mode-autoloads)) "emmet-mode" ((emmet-mode-autoloads emmet-mode) (autoload 'emmet-expand-line "emmet-mode" "Replace the current line's emmet expression with the corresponding expansion.
-If prefix ARG is given or region is visible call `emmet-preview' to start an
-interactive preview.
-
-Otherwise expand line directly.
-
-For more information see `emmet-mode'.
-
-(fn ARG)" t) (autoload 'emmet-mode "emmet-mode" "Minor mode for writing HTML and CSS markup.
-
-With emmet for HTML and CSS you can write a line like
-
-  ul#name>li.item*2
-
-and have it expanded to
-
-  <ul id=\"name\">
-    <li class=\"item\"></li>
-    <li class=\"item\"></li>
-  </ul>
-
-This minor mode defines keys for quick access:
-
-\\{emmet-mode-keymap}
-
-Home page URL `http://www.emacswiki.org/emacs/Emmet'.
-
-See also `emmet-expand-line'.
-
-This is a minor mode.  If called interactively, toggle the `Emmet
-mode' mode.  If the prefix argument is positive, enable the mode,
-and if it is zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `emmet-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (autoload 'emmet-expand-yas "emmet-mode" nil t) (autoload 'emmet-preview "emmet-mode" "Expand emmet between BEG and END interactively.
-This will show a preview of the expanded emmet code and you can
-accept it or skip it.
-
-(fn BEG END)" t) (autoload 'emmet-wrap-with-markup "emmet-mode" "Wrap region with markup.
-
-(fn WRAP-WITH)" t) (autoload 'emmet-next-edit-point "emmet-mode" "
-
-(fn COUNT)" t) (autoload 'emmet-prev-edit-point "emmet-mode" "
-
-(fn COUNT)" t) (register-definition-prefixes "emmet-mode" '("emmet-")) (provide 'emmet-mode-autoloads)) "js2-mode" ((js2-mode js2-old-indent js2-mode-autoloads js2-imenu-extras) (autoload 'js2-imenu-extras-setup "js2-imenu-extras") (autoload 'js2-imenu-extras-mode "js2-imenu-extras" "Toggle Imenu support for frameworks and structural patterns.
-
-This is a minor mode.  If called interactively, toggle the
-`Js2-Imenu-Extras mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `js2-imenu-extras-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (register-definition-prefixes "js2-imenu-extras" '("js2-imenu-")) (autoload 'js2-highlight-unused-variables-mode "js2-mode" "Toggle highlight of unused variables.
-
-This is a minor mode.  If called interactively, toggle the
-`Js2-Highlight-Unused-Variables mode' mode.  If the prefix
-argument is positive, enable the mode, and if it is zero or
-negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `js2-highlight-unused-variables-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (autoload 'js2-minor-mode "js2-mode" "Minor mode for running js2 as a background linter.
-
-This allows you to use a different major mode for JavaScript editing,
-such as `js-mode', while retaining the asynchronous error/warning
-highlighting features of `js2-mode'.
-
-This is a minor mode.  If called interactively, toggle the `Js2
-minor mode' mode.  If the prefix argument is positive, enable the
-mode, and if it is zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `js2-minor-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (autoload 'js2-mode "js2-mode" "Major mode for editing JavaScript code.
-
-(fn)" t) (autoload 'js2-jsx-mode "js2-mode" "Major mode for editing JSX code in Emacs 26 and earlier.
-
-To edit JSX code in Emacs 27, use `js-mode' as your major mode
-with `js2-minor-mode' enabled.
-
-To customize the indentation for this mode, set the SGML offset
-variables (`sgml-basic-offset' et al) locally, like so:
-
-  (defun set-jsx-indentation ()
-    (setq-local sgml-basic-offset js2-basic-offset))
-  (add-hook \\='js2-jsx-mode-hook #\\='set-jsx-indentation)
-
-(fn)" t) (register-definition-prefixes "js2-mode" '("js2-")) (register-definition-prefixes "js2-old-indent" '("js2-")) (provide 'js2-mode-autoloads)) "typescript-mode" ((typescript-mode-test-utilities typescript-mode typescript-mode-autoloads) (put 'typescript-indent-level 'safe-local-variable #'integerp) (autoload 'typescript-mode "typescript-mode" "Major mode for editing typescript.
-
-Key bindings:
-
-\\{typescript-mode-map}
-
-(fn)" t) (eval-after-load 'folding '(when (fboundp 'folding-add-to-marks-list) (folding-add-to-marks-list 'typescript-mode "// {{{" "// }}}"))) (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . typescript-mode)) (register-definition-prefixes "typescript-mode" '("typescript-")) (register-definition-prefixes "typescript-mode-test-utilities" '("font-lock-test" "get-face-at" "test-with-")) (provide 'typescript-mode-autoloads)) "flycheck" ((flycheck flycheck-ert flycheck-autoloads flycheck-buttercup) (autoload 'flycheck-manual "flycheck" "Open the Flycheck manual." t) (autoload 'flycheck-quick-help "flycheck" "Display brief Flycheck help." t) (autoload 'flycheck-mode "flycheck" "Flycheck is a minor mode for on-the-fly syntax checking.
+(fn &optional ARG)" t) (register-definition-prefixes "company-box" '("company-box-")) (register-definition-prefixes "company-box-doc" '("company-box-")) (register-definition-prefixes "company-box-icons" '("company-box-icons-")) (provide 'company-box-autoloads)) "flycheck" ((flycheck flycheck-ert flycheck-autoloads flycheck-buttercup) (autoload 'flycheck-manual "flycheck" "Open the Flycheck manual." t) (autoload 'flycheck-quick-help "flycheck" "Display brief Flycheck help." t) (autoload 'flycheck-mode "flycheck" "Flycheck is a minor mode for on-the-fly syntax checking.
 
 In `flycheck-mode' the buffer is automatically syntax-checked
 using the first suitable syntax checker from `flycheck-checkers'.
@@ -2132,93 +1781,287 @@ Like `flycheck-define-command-checker', but PROPERTIES must not
 be quoted.  Also, implicitly define the executable variable for
 SYMBOL with `flycheck-def-executable-var'.
 
-(fn SYMBOL DOCSTRING &rest PROPERTIES)" nil t) (function-put 'flycheck-define-checker 'lisp-indent-function 1) (function-put 'flycheck-define-checker 'doc-string-elt 2) (register-definition-prefixes "flycheck" '("flycheck-" "help-flycheck-checker-d" "list-flycheck-errors")) (register-definition-prefixes "flycheck-buttercup" '("flycheck-buttercup-format-error-list")) (register-definition-prefixes "flycheck-ert" '("flycheck-er")) (provide 'flycheck-autoloads)) "tide" ((tide tide-lv tide-autoloads) (autoload 'company-tide "tide" "
+(fn SYMBOL DOCSTRING &rest PROPERTIES)" nil t) (function-put 'flycheck-define-checker 'lisp-indent-function 1) (function-put 'flycheck-define-checker 'doc-string-elt 2) (register-definition-prefixes "flycheck" '("flycheck-" "help-flycheck-checker-d" "list-flycheck-errors")) (register-definition-prefixes "flycheck-buttercup" '("flycheck-buttercup-format-error-list")) (register-definition-prefixes "flycheck-ert" '("flycheck-er")) (provide 'flycheck-autoloads)) "go-mode" ((go-mode go-mode-autoloads) (autoload 'go-mode "go-mode" "Major mode for editing Go source text.
 
-(fn COMMAND &optional ARG &rest IGNORED)" t) (autoload 'tide-format-before-save "tide" "Before save hook to format the buffer before each save." t) (autoload 'tide-format "tide" "Format the current region or buffer." t) (autoload 'tide-setup "tide" "Setup `tide-mode' in current buffer." t) (autoload 'tide-mode "tide" "Minor mode for Typescript Interactive Development Environment.
+This mode provides (not just) basic editing capabilities for
+working with Go code. It offers almost complete syntax
+highlighting, indentation that is almost identical to gofmt and
+proper parsing of the buffer content to allow features such as
+navigation by function, manipulation of comments or detection of
+strings.
 
-\\{tide-mode-map}
+In addition to these core features, it offers various features to
+help with writing Go code. You can directly run buffer content
+through gofmt, read godoc documentation from within Emacs, modify
+and clean up the list of package imports or interact with the
+Playground (uploading and downloading pastes).
 
-This is a minor mode.  If called interactively, toggle the `tide
-mode' mode.  If the prefix argument is positive, enable the mode,
-and if it is zero or negative, disable the mode.
+The following extra functions are defined:
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+- `gofmt'
+- `godoc' and `godoc-at-point'
+- `go-import-add'
+- `go-goto-arguments'
+- `go-goto-docstring'
+- `go-goto-function'
+- `go-goto-function-name'
+- `go-goto-imports'
+- `go-goto-return-values'
+- `go-goto-method-receiver'
+- `go-play-buffer' and `go-play-region'
+- `go-download-play'
+- `godef-describe' and `godef-jump'
+- `go-coverage'
+
+If you want to automatically run `gofmt' before saving a file,
+add the following hook to your Emacs configuration:
+
+(add-hook 'before-save-hook #'gofmt-before-save)
+
+If you want to use `godef-jump' instead of etags (or similar),
+consider binding godef-jump to `M-.', which is the default key
+for `find-tag':
+
+(add-hook 'go-mode-hook (lambda ()
+                          (local-set-key (kbd \"M-.\") #'godef-jump)))
+
+Please note that godef is an external dependency. You can install
+it with
+
+go get github.com/rogpeppe/godef
+
+
+If you're looking for even more integration with Go, namely
+on-the-fly syntax checking, auto-completion and snippets, it is
+recommended that you look at flycheck
+(see URL `https://github.com/flycheck/flycheck') or flymake in combination
+with goflymake (see URL `https://github.com/dougm/goflymake'), gocode
+(see URL `https://github.com/nsf/gocode'), go-eldoc
+(see URL `github.com/syohex/emacs-go-eldoc') and yasnippet-go
+(see URL `https://github.com/dominikh/yasnippet-go')
+
+(fn)" t) (add-to-list 'auto-mode-alist (cons "\\.go\\'" 'go-mode)) (autoload 'gofmt-before-save "go-mode" "Add this to .emacs to run gofmt on the current buffer when saving:
+(add-hook 'before-save-hook 'gofmt-before-save).
+
+Note that this will cause ‘go-mode’ to get loaded the first time
+you save any file, kind of defeating the point of autoloading." t) (autoload 'godoc "go-mode" "Show Go documentation for QUERY, much like \\<go-mode-map>\\[man].
+
+(fn QUERY)" t) (autoload 'go-download-play "go-mode" "Download a paste from the playground and insert it in a Go buffer.
+Tries to look for a URL at point.
+
+(fn URL)" t) (autoload 'go-dot-mod-mode "go-mode" "A major mode for editing go.mod files.
+
+(fn)" t) (add-to-list 'auto-mode-alist '("go\\.mod\\'" . go-dot-mod-mode)) (autoload 'go-dot-work-mode "go-mode" "A major mode for editor go.work files.
+
+(fn)" t) (add-to-list 'auto-mode-alist '("go\\.work\\'" . go-dot-work-mode)) (register-definition-prefixes "go-mode" '("go-" "god" "gofmt")) (provide 'go-mode-autoloads)) "python-mode" ((python-mode-autoloads python-mode python-mode-pkg) (register-definition-prefixes "python-mode" '("all-mode-setting" "autopair-mode" "flake8" "force-py-shell-name-p-o" "highlight-indent-active" "hs-hide-comments-when-hiding-all" "info-lookup-mode" "ipython" "iypthon" "jython" "pdb-track-stack-from-shell-p" "pep8" "pst-here" "strip-chars-" "toggle-force-py-shell-name-p" "turn-o" "virtualenv-")) (provide 'python-mode-autoloads)) "web-mode" ((web-mode web-mode-autoloads) (put 'web-mode-attr-indent-offset 'safe-local-variable #'(lambda (v) (or (integerp v) (booleanp v)))) (put 'web-mode-attr-value-indent-offset 'safe-local-variable #'(lambda (v) (or (integerp v) (booleanp v)))) (put 'web-mode-markup-indent-offset 'safe-local-variable #'integerp) (put 'web-mode-markup-comment-indent-offset 'safe-local-variable #'integerp) (put 'web-mode-css-indent-offset 'safe-local-variable #'integerp) (put 'web-mode-code-indent-offset 'safe-local-variable #'integerp) (put 'web-mode-sql-indent-offset 'safe-local-variable #'integerp) (autoload 'web-mode "web-mode" "Major mode for editing web templates.
+
+(fn)" t) (register-definition-prefixes "web-mode" '("web-mode-")) (provide 'web-mode-autoloads)) "web-completion-data" ((web-completion-data web-completion-data-autoloads) (register-definition-prefixes "web-completion-data" '("web-completion-data-")) (provide 'web-completion-data-autoloads)) "company-web" ((company-web-jade company-web-autoloads company-web-slim company-web-html company-web) (register-definition-prefixes "company-web" '("company-web-")) (autoload 'company-web-html "company-web-html" "`company-mode' completion back-end for `html-mode' and `web-mode'.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t) (register-definition-prefixes "company-web-html" '("company-web-html-")) (autoload 'company-web-jade "company-web-jade" "`company-mode' completion back-end for `jade-mode'.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t) (register-definition-prefixes "company-web-jade" '("company-web-jade-")) (autoload 'company-web-slim "company-web-slim" "`company-mode' completion back-end for `slim-mode'.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t) (register-definition-prefixes "company-web-slim" '("company-web-slim-")) (provide 'company-web-autoloads)) "diminish" ((diminish diminish-autoloads) (autoload 'diminish "diminish" "Diminish mode-line display of minor mode MODE to TO-WHAT (default \"\").
+
+Interactively, enter (with completion) the name of any minor mode, followed
+on the next line by what you want it diminished to (default empty string).
+The response to neither prompt should be quoted.  However, in Lisp code,
+both args must be quoted, the first as a symbol, the second as a string,
+as in (diminish \\='jiggle-mode \" Jgl\").
+
+The mode-line displays of minor modes usually begin with a space, so
+the modes' names appear as separate words on the mode line.  However, if
+you're having problems with a cramped mode line, you may choose to use single
+letters for some modes, without leading spaces.  Capitalizing them works
+best; if you then diminish some mode to \"X\" but have `abbrev-mode' enabled as
+well, you'll get a display like \"AbbrevX\".  This function prepends a space
+to TO-WHAT if it's > 1 char long & doesn't already begin with a space.
+
+(fn MODE &optional TO-WHAT)" t) (autoload 'diminish-undo "diminish" "Restore mode-line display of diminished mode MODE to its minor-mode value.
+Do nothing if the arg is a minor mode that hasn't been diminished.
+
+Interactively, enter (with completion) the name of any diminished mode (a
+mode that was formerly a minor mode on which you invoked \\[diminish]).
+To restore all diminished modes to minor status, answer `diminished-modes'.
+The response to the prompt shouldn't be quoted.  However, in Lisp code,
+the arg must be quoted as a symbol, as in (diminish-undo \\='diminished-modes).
+
+(fn MODE)" t) (autoload 'diminished-modes "diminish" "Echo all active diminished or minor modes as if they were minor.
+The display goes in the echo area; if it's too long even for that,
+you can see the whole thing in the *Messages* buffer.
+This doesn't change the status of any modes; it just lets you see
+what diminished modes would be on the mode-line if they were still minor." t) (register-definition-prefixes "diminish" '("diminish")) (provide 'diminish-autoloads)) "dired-hacks-utils" ((dired-hacks-utils-autoloads dired-hacks-utils) (register-definition-prefixes "dired-hacks-utils" '("dired-")) (provide 'dired-hacks-utils-autoloads)) "dired-open" ((dired-open-autoloads dired-open) (autoload 'dired-open-file "dired-open" "Try `dired-open-functions' to open the thing under point.
+
+That can be either file or any other line of dired listing.
+
+If no function succeeded, run `dired-find-file' normally.
+
+With \\[universal-argument], run `dired-find-file' normally.
+
+(fn &optional ARG)" t) (register-definition-prefixes "dired-open" '("dired-open-")) (provide 'dired-open-autoloads)) "peep-dired" ((peep-dired peep-dired-autoloads) (autoload 'peep-dired "peep-dired" "A convienent way to look up file contents in other window while browsing directory in dired
+
+This is a minor mode.  If called interactively, toggle the `Peep-Dired
+mode' mode.  If the prefix argument is positive, enable the mode, and if
+it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `tide-mode'.
+evaluate the variable `peep-dired'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-(fn &optional ARG)" t) (autoload 'tide-project-errors "tide" nil t) (autoload 'tide-unhighlight-identifiers "tide" "Remove highlights from previously highlighted identifier.") (autoload 'tide-hl-identifier "tide" "Highlight all instances of the identifier under point. Removes
-highlights from previously highlighted identifier." t) (autoload 'tide-hl-identifier-mode "tide" "Highlight instances of the identifier at point after a short
+(fn &optional ARG)" t) (register-definition-prefixes "peep-dired" '("peep-dired-")) (provide 'peep-dired-autoloads)) "seq" ((seq-autoloads seq seq-25 seq-24 seq-pkg) (register-definition-prefixes "seq-24" '("seq")) (autoload 'seq-subseq "seq-25" "Return the sequence of elements of SEQUENCE from START to END.
+END is exclusive.
 
-timeout.
+If END is omitted, it defaults to the length of the sequence.  If
+START or END is negative, it counts from the end.  Signal an
+error if START or END are outside of the sequence (i.e too large
+if positive or too small if negative).
 
-This is a minor mode.  If called interactively, toggle the
-`Tide-Hl-Identifier mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+(fn SEQUENCE START &optional END)") (autoload 'seq-take "seq-25" "Return the sequence made of the first N elements of SEQUENCE.
+The result is a sequence of the same type as SEQUENCE.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If N is a negative integer or zero, an empty sequence is
+returned.
 
-To check whether the minor mode is enabled in the current buffer,
-evaluate `tide-hl-identifier-mode'.
+(fn SEQUENCE N)") (autoload 'seq-sort-by "seq-25" "Sort SEQUENCE transformed by FUNCTION using PRED as the comparison function.
+Elements of SEQUENCE are transformed by FUNCTION before being
+sorted.  FUNCTION must be a function of one argument.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+(fn FUNCTION PRED SEQUENCE)") (autoload 'seq-filter "seq-25" "Return a list of all the elements in SEQUENCE for which PRED returns non-nil.
 
-(fn &optional ARG)" t) (register-definition-prefixes "tide" '("tide-" "xref-tide-xref-backend")) (register-definition-prefixes "tide-lv" '("tide-lv-")) (provide 'tide-autoloads)) "prettier-js" ((prettier-js prettier-js-autoloads) (autoload 'prettier-js-mode "prettier-js" "Runs prettier on file save when this mode is turned on
+(fn PRED SEQUENCE)") (autoload 'seq-remove "seq-25" "Return a list of all the elements in SEQUENCE for which PRED returns nil.
 
-This is a minor mode.  If called interactively, toggle the
-`Prettier-Js mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
+(fn PRED SEQUENCE)") (autoload 'seq-remove-at-position "seq-25" "Return a copy of SEQUENCE with the element at index N removed.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+N is the (zero-based) index of the element that should not be in
+the result.
 
-To check whether the minor mode is enabled in the current buffer,
-evaluate `prettier-js-mode'.
+The result is a sequence of the same type as SEQUENCE.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+(fn SEQUENCE N)") (autoload 'seq-reduce "seq-25" "Reduce the function FUNCTION across SEQUENCE, starting with INITIAL-VALUE.
 
-(fn &optional ARG)" t) (register-definition-prefixes "prettier-js" '("prettier-js")) (provide 'prettier-js-autoloads)) "sudo-edit" ((sudo-edit sudo-edit-autoloads) (autoload 'sudo-edit-set-header "sudo-edit" "*Display a warning in header line of the current buffer.
-This function is suitable to add to `find-file-hook' and `dired-file-hook'.") (defvar sudo-edit-indicator-mode nil "Non-nil if Sudo-Edit-Indicator mode is enabled.
-See the `sudo-edit-indicator-mode' command
+Return the result of calling FUNCTION with INITIAL-VALUE and the
+first element of SEQUENCE, then calling FUNCTION with that result
+and the second element of SEQUENCE, then with that result and the
+third element of SEQUENCE, etc.  FUNCTION will be called with
+INITIAL-VALUE (and then the accumulated value) as the first
+argument, and the elements from SEQUENCE as the second argument.
+
+If SEQUENCE is empty, return INITIAL-VALUE and FUNCTION is not called.
+
+(fn FUNCTION SEQUENCE INITIAL-VALUE)") (autoload 'seq-every-p "seq-25" "Return non-nil if PRED returns non-nil for all the elements of SEQUENCE.
+
+(fn PRED SEQUENCE)") (autoload 'seq-some "seq-25" "Return non-nil if PRED returns non-nil for at least one element of SEQUENCE.
+If the value is non-nil, it is the first non-nil value returned by PRED.
+
+(fn PRED SEQUENCE)") (autoload 'seq-find "seq-25" "Return the first element in SEQUENCE for which PRED returns non-nil.
+If no such element is found, return DEFAULT.
+
+Note that `seq-find' has an ambiguity if the found element is
+identical to DEFAULT, as in that case it is impossible to know
+whether an element was found or not.
+
+(fn PRED SEQUENCE &optional DEFAULT)") (autoload 'seq-position "seq-25" "Return the (zero-based) index of the first element in SEQUENCE \"equal\" to ELT.
+\"Equality\" is defined by the function TESTFN, which defaults to `equal'.
+
+(fn SEQUENCE ELT &optional TESTFN)") (autoload 'seq-positions "seq-25" "Return list of indices of SEQUENCE elements for which TESTFN returns non-nil.
+
+TESTFN is a two-argument function which is called with each element of
+SEQUENCE as the first argument and ELT as the second.
+TESTFN defaults to `equal'.
+
+The result is a list of (zero-based) indices.
+
+(fn SEQUENCE ELT &optional TESTFN)") (autoload 'seq-uniq "seq-25" "Return a list of the elements of SEQUENCE with duplicates removed.
+TESTFN is used to compare elements, and defaults to `equal'.
+
+(fn SEQUENCE &optional TESTFN)") (autoload 'seq-union "seq-25" "Return a list of all the elements that appear in either SEQUENCE1 or SEQUENCE2.
+\"Equality\" of elements is defined by the function TESTFN, which
+defaults to `equal'.
+
+(fn SEQUENCE1 SEQUENCE2 &optional TESTFN)") (autoload 'seq-intersection "seq-25" "Return a list of all the elements that appear in both SEQUENCE1 and SEQUENCE2.
+\"Equality\" of elements is defined by the function TESTFN, which
+defaults to `equal'.
+
+(fn SEQUENCE1 SEQUENCE2 &optional TESTFN)") (autoload 'seq-group-by "seq-25" "Apply FUNCTION to each element of SEQUENCE.
+Separate the elements of SEQUENCE into an alist using the results as
+keys.  Keys are compared using `equal'.
+
+(fn FUNCTION SEQUENCE)") (autoload 'seq-max "seq-25" "Return the largest element of SEQUENCE.
+SEQUENCE must be a sequence of numbers or markers.
+
+(fn SEQUENCE)") (autoload 'seq-random-elt "seq-25" "Return a randomly chosen element from SEQUENCE.
+Signal an error if SEQUENCE is empty.
+
+(fn SEQUENCE)") (register-definition-prefixes "seq-25" '("seq-")) (provide 'seq-autoloads)) "compat" ((compat-28 compat-30 compat-26 compat compat-pkg compat-macs compat-27 compat-autoloads compat-29 compat-25) (register-definition-prefixes "compat" '("compat-")) (register-definition-prefixes "compat-macs" '("compat-")) (provide 'compat-autoloads)) "nerd-icons" ((nerd-icons-autoloads nerd-icons nerd-icons-faces nerd-icons-data) (autoload 'nerd-icons-install-fonts "nerd-icons" "Helper function to download and install the latests fonts based on OS.
+The provided Nerd Font is Symbols Nerd Font Mono.
+When PFX is non-nil, ignore the prompt and just install
+
+(fn &optional PFX)" t) (autoload 'nerd-icons-insert "nerd-icons" "Interactive icon insertion function.
+When Prefix ARG is non-nil, insert the propertized icon.
+When GLYPH-SET is non-nil, limit the candidates to the icon set matching it.
+
+(fn &optional ARG GLYPH-SET)" t) (autoload 'nerd-icons-icon-for-dir "nerd-icons" "Get the formatted icon for DIR.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn DIR &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-file "nerd-icons" "Get the formatted icon for FILE.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn FILE &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-extension "nerd-icons" "Get the formatted icon for EXT.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn EXT &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-mode "nerd-icons" "Get the formatted icon for MODE.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn MODE &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-url "nerd-icons" "Get the formatted icon for URL.
+If an icon for URL isn't found in `nerd-icons-url-alist', a globe is used.
+ARG-OVERRIDES should be a plist containining `:height',
+`:v-adjust' or `:face' properties like in the normal icon
+inserting functions.
+
+(fn URL &rest ARG-OVERRIDES)") (autoload 'nerd-icons-icon-for-buffer "nerd-icons" "Get the formatted icon for the current buffer.
+
+This function prioritises the use of the buffers file extension to
+discern the icon when its `major-mode' matches its auto mode,
+otherwise it will use the buffers `major-mode' to decide its
+icon.") (register-definition-prefixes "nerd-icons" '("nerd-icons-")) (provide 'nerd-icons-autoloads)) "shrink-path" ((shrink-path-autoloads shrink-path) (register-definition-prefixes "shrink-path" '("shrink-path-")) (provide 'shrink-path-autoloads)) "doom-modeline" ((doom-modeline-env doom-modeline doom-modeline-autoloads doom-modeline-segments doom-modeline-core) (autoload 'doom-modeline-set-main-modeline "doom-modeline" "Set main mode-line.
+If DEFAULT is non-nil, set the default mode-line for all buffers.
+
+(fn &optional DEFAULT)") (defvar doom-modeline-mode nil "Non-nil if Doom-Modeline mode is enabled.
+See the `doom-modeline-mode' command
 for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
-or call the function `sudo-edit-indicator-mode'.") (custom-autoload 'sudo-edit-indicator-mode "sudo-edit" nil) (autoload 'sudo-edit-indicator-mode "sudo-edit" "Indicates editing as root by displaying a message in the header line.
+or call the function `doom-modeline-mode'.") (custom-autoload 'doom-modeline-mode "doom-modeline" nil) (autoload 'doom-modeline-mode "doom-modeline" "Toggle `doom-modeline' on or off.
 
 This is a global minor mode.  If called interactively, toggle the
-`Sudo-Edit-Indicator mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+`Doom-Modeline mode' mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `(default-value \\='sudo-edit-indicator-mode)'.
+evaluate `(default-value \\='doom-modeline-mode)'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-(fn &optional ARG)" t) (autoload 'sudo-edit "sudo-edit" "Edit currently visited file as another user, by default `sudo-edit-user'.
-
-With a prefix ARG prompt for a file to visit.  Will also prompt
-for a file to visit if current buffer is not visiting a file.
-
-(fn &optional ARG)" t) (autoload 'sudo-edit-find-file "sudo-edit" "Edit FILENAME as another user, by default `sudo-edit-user'.
-
-(fn FILENAME)" t) (register-definition-prefixes "sudo-edit" '("sudo-edit-")) (provide 'sudo-edit-autoloads)) "ivy" ((elpa ivy-overlay ivy colir ivy-autoloads ivy-faces) (register-definition-prefixes "colir" '("colir-")) (autoload 'ivy-resume "ivy" "Resume the last completion session, or SESSION if non-nil.
+(fn &optional ARG)" t) (register-definition-prefixes "doom-modeline" '("doom-modeline-")) (register-definition-prefixes "doom-modeline-core" '("doom-modeline")) (autoload 'doom-modeline-env-setup-python "doom-modeline-env") (autoload 'doom-modeline-env-setup-ruby "doom-modeline-env") (autoload 'doom-modeline-env-setup-perl "doom-modeline-env") (autoload 'doom-modeline-env-setup-go "doom-modeline-env") (autoload 'doom-modeline-env-setup-elixir "doom-modeline-env") (autoload 'doom-modeline-env-setup-rust "doom-modeline-env") (register-definition-prefixes "doom-modeline-env" '("doom-modeline-")) (register-definition-prefixes "doom-modeline-segments" '("doom-modeline-")) (provide 'doom-modeline-autoloads)) "ivy" ((elpa ivy-overlay ivy colir ivy-autoloads ivy-faces) (register-definition-prefixes "colir" '("colir-")) (autoload 'ivy-resume "ivy" "Resume the last completion session, or SESSION if non-nil.
 With a prefix arg, try to restore a recorded completion session,
 if one exists.
 
@@ -2555,18 +2398,18 @@ either customize it (see the info node `Easy Customization')
 or call the function `ivy-rich-mode'.") (custom-autoload 'ivy-rich-mode "ivy-rich" nil) (autoload 'ivy-rich-mode "ivy-rich" "Toggle ivy-rich mode globally.
 
 This is a global minor mode.  If called interactively, toggle the
-`Ivy-Rich mode' mode.  If the prefix argument is positive, enable
-the mode, and if it is zero or negative, disable the mode.
+`Ivy-Rich mode' mode.  If the prefix argument is positive, enable the
+mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
 evaluate `(default-value \\='ivy-rich-mode)'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (autoload 'ivy-rich-reload "ivy-rich") (defvar ivy-rich-project-root-cache-mode nil "Non-nil if Ivy-Rich-Project-Root-Cache mode is enabled.
 See the `ivy-rich-project-root-cache-mode' command
@@ -2576,19 +2419,19 @@ either customize it (see the info node `Easy Customization')
 or call the function `ivy-rich-project-root-cache-mode'.") (custom-autoload 'ivy-rich-project-root-cache-mode "ivy-rich" nil) (autoload 'ivy-rich-project-root-cache-mode "ivy-rich" "Toggle ivy-rich-root-cache-mode globally.
 
 This is a global minor mode.  If called interactively, toggle the
-`Ivy-Rich-Project-Root-Cache mode' mode.  If the prefix argument
-is positive, enable the mode, and if it is zero or negative,
-disable the mode.
+`Ivy-Rich-Project-Root-Cache mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable the
+mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
 evaluate `(default-value \\='ivy-rich-project-root-cache-mode)'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
 (fn &optional ARG)" t) (register-definition-prefixes "ivy-rich" '("ivy-rich-")) (provide 'ivy-rich-autoloads)) "all-the-icons-ivy-rich" ((all-the-icons-ivy-rich-autoloads all-the-icons-ivy-rich) (defvar all-the-icons-ivy-rich-mode nil "Non-nil if All-The-Icons-Ivy-Rich mode is enabled.
 See the `all-the-icons-ivy-rich-mode' command
@@ -2598,144 +2441,63 @@ either customize it (see the info node `Easy Customization')
 or call the function `all-the-icons-ivy-rich-mode'.") (custom-autoload 'all-the-icons-ivy-rich-mode "all-the-icons-ivy-rich" nil) (autoload 'all-the-icons-ivy-rich-mode "all-the-icons-ivy-rich" "Better experience with icons for ivy.
 
 This is a global minor mode.  If called interactively, toggle the
-`All-The-Icons-Ivy-Rich mode' mode.  If the prefix argument is
-positive, enable the mode, and if it is zero or negative, disable
-the mode.
+`All-The-Icons-Ivy-Rich mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
 evaluate `(default-value \\='all-the-icons-ivy-rich-mode)'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-(fn &optional ARG)" t) (autoload 'all-the-icons-ivy-rich-reload "all-the-icons-ivy-rich" "Reload `all-the-icons-ivy-rich'." t) (register-definition-prefixes "all-the-icons-ivy-rich" '("all-the-icons-ivy-rich-")) (provide 'all-the-icons-ivy-rich-autoloads)) "eshell-syntax-highlighting" ((eshell-syntax-highlighting-autoloads eshell-syntax-highlighting) (autoload 'eshell-syntax-highlighting-mode "eshell-syntax-highlighting" "Toggle syntax highlighting for Eshell.
+(fn &optional ARG)" t) (autoload 'all-the-icons-ivy-rich-reload "all-the-icons-ivy-rich" "Reload `all-the-icons-ivy-rich'." t) (register-definition-prefixes "all-the-icons-ivy-rich" '("all-the-icons-ivy-rich-")) (provide 'all-the-icons-ivy-rich-autoloads)) "neotree" ((neotree-autoloads neotree) (autoload 'neotree-find "neotree" "Quick select node which specified PATH in NeoTree.
+If path is nil and no buffer file name, then use DEFAULT-PATH,
 
-This is a minor mode.  If called interactively, toggle the
-`Eshell-Syntax-Highlighting mode' mode.  If the prefix argument
-is positive, enable the mode, and if it is zero or negative,
-disable the mode.
+(fn &optional PATH DEFAULT-PATH)" t) (autoload 'neotree-projectile-action "neotree" "Integration with `Projectile'.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+Usage:
+    (setq projectile-switch-project-action 'neotree-projectile-action).
+
+When running `projectile-switch-project' (C-c p p), `neotree' will change root
+automatically." t) (autoload 'neotree-toggle "neotree" "Toggle show the NeoTree window." t) (autoload 'neotree-show "neotree" "Show the NeoTree window." t) (autoload 'neotree-hide "neotree" "Close the NeoTree window." t) (autoload 'neotree-dir "neotree" "Show the NeoTree window, and change root to PATH.
+
+(fn PATH)" t) (defalias 'neotree 'neotree-show "Show the NeoTree window.") (register-definition-prefixes "neotree" '("neo" "off-p")) (provide 'neotree-autoloads)) "toc-org" ((toc-org toc-org-autoloads) (autoload 'toc-org-enable "toc-org" "Enable toc-org in this buffer.") (autoload 'toc-org-mode "toc-org" "Toggle `toc-org' in this buffer.
+
+This is a minor mode.  If called interactively, toggle the `Toc-Org
+mode' mode.  If the prefix argument is positive, enable the mode, and if
+it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `eshell-syntax-highlighting-mode'.
+evaluate the variable `toc-org-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-(fn &optional ARG)" t) (put 'eshell-syntax-highlighting-global-mode 'globalized-minor-mode t) (defvar eshell-syntax-highlighting-global-mode nil "Non-nil if Eshell-Syntax-Highlighting-Global mode is enabled.
-See the `eshell-syntax-highlighting-global-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `eshell-syntax-highlighting-global-mode'.") (custom-autoload 'eshell-syntax-highlighting-global-mode "eshell-syntax-highlighting" nil) (autoload 'eshell-syntax-highlighting-global-mode "eshell-syntax-highlighting" "Toggle Eshell-Syntax-Highlighting mode in all buffers.
-With prefix ARG, enable Eshell-Syntax-Highlighting-Global mode if ARG
-is positive; otherwise, disable it.
+(fn &optional ARG)" t) (register-definition-prefixes "toc-org" '("toc-org-")) (provide 'toc-org-autoloads)) "org-bullets" ((org-bullets-autoloads org-bullets) (autoload 'org-bullets-mode "org-bullets" "Use UTF8 bullets in Org mode headings.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.
-Enable the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+This is a minor mode.  If called interactively, toggle the `Org-Bullets
+mode' mode.  If the prefix argument is positive, enable the mode, and if
+it is zero or negative, disable the mode.
 
-Eshell-Syntax-Highlighting mode is enabled in all buffers where
-`eshell-syntax-highlighting--global-on' would do it.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
-See `eshell-syntax-highlighting-mode' for more information on
-Eshell-Syntax-Highlighting mode.
+To check whether the minor mode is enabled in the current buffer,
+evaluate the variable `org-bullets-mode'.
 
-(fn &optional ARG)" t) (register-definition-prefixes "eshell-syntax-highlighting" '("eshell-syntax-highlighting-")) (provide 'eshell-syntax-highlighting-autoloads)) "vterm" ((vterm vterm-autoloads) (autoload 'vterm-module-compile "vterm" "Compile vterm-module." t) (autoload 'vterm--bookmark-handler "vterm" "Handler to restore a vterm bookmark BMK.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-If a vterm buffer of the same name does not exist, the function will create a
-new vterm buffer of the name. It also checks the current directory and sets
-it to the bookmarked directory if needed.
-
-(fn BMK)") (autoload 'vterm-next-error-function "vterm" "Advance to the next error message and visit the file where the error was.
-This is the value of `next-error-function' in Compilation
-buffers.  Prefix arg N says how many error messages to move
-forwards (or backwards, if negative).
-
-Optional argument RESET clears all the errors.
-
-(fn N &optional RESET)" t) (autoload 'vterm "vterm" "Create an interactive Vterm buffer.
-Start a new Vterm session, or switch to an already active
-session.  Return the buffer selected (or created).
-
-With a nonnumeric prefix arg, create a new session.
-
-With a string prefix arg, create a new session with arg as buffer name.
-
-With a numeric prefix arg (as in `C-u 42 M-x vterm RET'), switch
-to the session with that number, or create it if it doesn't
-already exist.
-
-The buffer name used for Vterm sessions is determined by the
-value of `vterm-buffer-name'.
-
-(fn &optional ARG)" t) (autoload 'vterm-other-window "vterm" "Create an interactive Vterm buffer in another window.
-Start a new Vterm session, or switch to an already active
-session.  Return the buffer selected (or created).
-
-With a nonnumeric prefix arg, create a new session.
-
-With a string prefix arg, create a new session with arg as buffer name.
-
-With a numeric prefix arg (as in `C-u 42 M-x vterm RET'), switch
-to the session with that number, or create it if it doesn't
-already exist.
-
-The buffer name used for Vterm sessions is determined by the
-value of `vterm-buffer-name'.
-
-(fn &optional ARG)" t) (register-definition-prefixes "vterm" '("vterm-")) (provide 'vterm-autoloads)) "vterm-toggle" ((vterm-toggle-autoloads vterm-toggle) (autoload 'vterm-toggle "vterm-toggle" "Vterm toggle.
-Optional argument ARGS .
-
-(fn &optional ARGS)" t) (autoload 'vterm-toggle-cd "vterm-toggle" "Vterm toggle and insert a cd command.
-Optional argument ARGS .
-
-(fn &optional ARGS)" t) (autoload 'vterm-toggle-insert-cd "vterm-toggle" "Cd to the directory where your previous buffer file exists.
-after you have toggle to the vterm buffer with `vterm-toggle'." t) (autoload 'vterm-toggle-forward "vterm-toggle" "Go to the next term buffer.
-If OFFSET is `non-nil', will goto next term buffer with OFFSET.
-
-(fn &optional OFFSET)" t) (autoload 'vterm-toggle-backward "vterm-toggle" "Go to the previous term buffer.
-If OFFSET is `non-nil', will goto next term buffer with OFFSET.
-
-(fn &optional OFFSET)" t) (register-definition-prefixes "vterm-toggle" '("vterm-")) (provide 'vterm-toggle-autoloads)) "dashboard" ((dashboard dashboard-widgets dashboard-autoloads) (autoload 'dashboard-open "dashboard" "Open (or refresh) the *dashboard* buffer.
-
-(fn &rest _)" t) (autoload 'dashboard-setup-startup-hook "dashboard" "Setup post initialization hooks unless a command line argument is provided.") (register-definition-prefixes "dashboard" '("dashboard-")) (register-definition-prefixes "dashboard-widgets" '("dashboard-" "recentf-list")) (provide 'dashboard-autoloads)) "diminish" ((diminish diminish-autoloads) (autoload 'diminish "diminish" "Diminish mode-line display of minor mode MODE to TO-WHAT (default \"\").
-
-Interactively, enter (with completion) the name of any minor mode, followed
-on the next line by what you want it diminished to (default empty string).
-The response to neither prompt should be quoted.  However, in Lisp code,
-both args must be quoted, the first as a symbol, the second as a string,
-as in (diminish \\='jiggle-mode \" Jgl\").
-
-The mode-line displays of minor modes usually begin with a space, so
-the modes' names appear as separate words on the mode line.  However, if
-you're having problems with a cramped mode line, you may choose to use single
-letters for some modes, without leading spaces.  Capitalizing them works
-best; if you then diminish some mode to \"X\" but have `abbrev-mode' enabled as
-well, you'll get a display like \"AbbrevX\".  This function prepends a space
-to TO-WHAT if it's > 1 char long & doesn't already begin with a space.
-
-(fn MODE &optional TO-WHAT)" t) (autoload 'diminish-undo "diminish" "Restore mode-line display of diminished mode MODE to its minor-mode value.
-Do nothing if the arg is a minor mode that hasn't been diminished.
-
-Interactively, enter (with completion) the name of any diminished mode (a
-mode that was formerly a minor mode on which you invoked \\[diminish]).
-To restore all diminished modes to minor status, answer `diminished-modes'.
-The response to the prompt shouldn't be quoted.  However, in Lisp code,
-the arg must be quoted as a symbol, as in (diminish-undo \\='diminished-modes).
-
-(fn MODE)" t) (autoload 'diminished-modes "diminish" "Echo all active diminished or minor modes as if they were minor.
-The display goes in the echo area; if it's too long even for that,
-you can see the whole thing in the *Messages* buffer.
-This doesn't change the status of any modes; it just lets you see
-what diminished modes would be on the mode-line if they were still minor." t) (register-definition-prefixes "diminish" '("diminish")) (provide 'diminish-autoloads)) "projectile" ((projectile-autoloads projectile) (autoload 'projectile-version "projectile" "Get the Projectile version as string.
+(fn &optional ARG)" t) (register-definition-prefixes "org-bullets" '("org-bullets-")) (provide 'org-bullets-autoloads)) "projectile" ((projectile-autoloads projectile) (autoload 'projectile-version "projectile" "Get the Projectile version as string.
 
 If called interactively or if SHOW-VERSION is non-nil, show the
 version in the echo area and the messages buffer.
@@ -3098,928 +2860,306 @@ Otherwise behave as if called interactively.
 
 \\{projectile-mode-map}
 
-(fn &optional ARG)" t) (define-obsolete-function-alias 'projectile-global-mode 'projectile-mode "1.0") (register-definition-prefixes "projectile" '("??" "compilation-find-file-projectile-find-compilation-buffer" "def-projectile-commander-method" "delete-file-projectile-remove-from-cache" "project" "savehist-additional-variables")) (provide 'projectile-autoloads)) "frame-local" ((frame-local frame-local-autoloads) (register-definition-prefixes "frame-local" '("frame-local-")) (provide 'frame-local-autoloads)) "company-box" ((company-box-doc company-box-icons company-box company-box-autoloads) (autoload 'company-box-mode "company-box" "Company-box minor mode.
+(fn &optional ARG)" t) (define-obsolete-function-alias 'projectile-global-mode 'projectile-mode "1.0") (register-definition-prefixes "projectile" '("compilation-find-file-projectile-find-compilation-buffer" "def-projectile-commander-method" "delete-file-projectile-remove-from-cache" "project" "savehist-additional-variables")) (provide 'projectile-autoloads)) "rainbow-mode" ((rainbow-mode rainbow-mode-pkg rainbow-mode-autoloads) (autoload 'rainbow-mode "rainbow-mode" "Colorize strings that represent colors.
+
+This will fontify with colors the string like \"#aabbcc\" or \"blue\".
+
+This is a minor mode.  If called interactively, toggle the `Rainbow
+mode' mode.  If the prefix argument is positive, enable the mode, and if
+it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate the variable `rainbow-mode'.
+
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
+
+(fn &optional ARG)" t) (register-definition-prefixes "rainbow-mode" '("rainbow-")) (provide 'rainbow-mode-autoloads)) "rainbow-delimiters" ((rainbow-delimiters-autoloads rainbow-delimiters) (autoload 'rainbow-delimiters-mode "rainbow-delimiters" "Highlight nested parentheses, brackets, and braces according to their depth.
 
 This is a minor mode.  If called interactively, toggle the
-`company-box mode' mode.  If the prefix argument is positive,
+`Rainbow-Delimiters mode' mode.  If the prefix argument is positive,
 enable the mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `company-box-mode'.
+evaluate the variable `rainbow-delimiters-mode'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-(fn &optional ARG)" t) (register-definition-prefixes "company-box" '("company-box-")) (register-definition-prefixes "company-box-doc" '("company-box-")) (register-definition-prefixes "company-box-icons" '("company-box-icons-")) (provide 'company-box-autoloads)) "rust-mode" ((rust-playpen rust-common rust-mode rust-mode-autoloads rust-prog-mode rust-compile rust-rustfmt rust-mode-treesitter rust-utils rust-cargo) (register-definition-prefixes "rust-cargo" '("rust-")) (register-definition-prefixes "rust-common" '("rust-")) (register-definition-prefixes "rust-compile" '("cargo-compilation-regexps" "rustc-")) (autoload 'rust-mode "rust-mode" "Major mode for Rust code." t) (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode)) (register-definition-prefixes "rust-mode" '("rust-")) (register-definition-prefixes "rust-playpen" '("rust-")) (register-definition-prefixes "rust-prog-mode" '("rust-")) (register-definition-prefixes "rust-rustfmt" '("rust-")) (autoload 'rust-dbg-wrap-or-unwrap "rust-utils" "Either remove or add the dbg! macro." t) (register-definition-prefixes "rust-utils" '("rust-")) (provide 'rust-mode-autoloads)) "let-alist" ((let-alist let-alist-pkg let-alist-autoloads) (autoload 'let-alist "let-alist" "Let-bind dotted symbols to their cdrs in ALIST and execute BODY.
-Dotted symbol is any symbol starting with a `.'.  Only those present
-in BODY are let-bound and this search is done at compile time.
-A number will result in a list index.
+(fn &optional ARG)" t) (autoload 'rainbow-delimiters-mode-enable "rainbow-delimiters" "Enable `rainbow-delimiters-mode'.") (autoload 'rainbow-delimiters-mode-disable "rainbow-delimiters" "Disable `rainbow-delimiters-mode'.") (register-definition-prefixes "rainbow-delimiters" '("rainbow-delimiters-")) (provide 'rainbow-delimiters-autoloads)) "doom-themes" ((doom-monokai-octagon-theme doom-themes-autoloads doom-ayu-dark-theme doom-ephemeral-theme doom-acario-dark-theme doom-peacock-theme doom-monokai-classic-theme doom-manegarm-theme doom-solarized-light-theme doom-meltbus-theme doom-flatwhite-theme doom-plain-dark-theme doom-tomorrow-day-theme doom-material-theme doom-challenger-deep-theme doom-laserwave-theme doom-spacegrey-theme doom-oceanic-next-theme doom-monokai-spectrum-theme doom-palenight-theme doom-monokai-machine-theme doom-Iosvkem-theme doom-opera-light-theme doom-one-theme doom-henna-theme doom-opera-theme doom-dark+-theme doom-lantern-theme doom-ayu-mirage-theme doom-molokai-theme doom-themes-ext-neotree doom-monokai-pro-theme doom-solarized-dark-high-contrast-theme doom-wilmersdorf-theme doom-winter-is-coming-light-theme doom-vibrant-theme doom-themes-ext-visual-bell doom-feather-light-theme doom-city-lights-theme doom-gruvbox-light-theme doom-themes-ext-treemacs doom-bluloco-dark-theme doom-oksolar-dark-theme doom-dracula-theme doom-pine-theme doom-horizon-theme doom-badger-theme doom-oksolar-light-theme doom-tomorrow-night-theme doom-zenburn-theme doom-tokyo-night-theme doom-homage-white-theme doom-themes-base doom-acario-light-theme doom-plain-theme doom-earl-grey-theme doom-bluloco-light-theme doom-feather-dark-theme doom-xcode-theme doom-ir-black-theme doom-nord-light-theme doom-sourcerer-theme doom-1337-theme doom-outrun-electric-theme doom-themes doom-monokai-ristretto-theme doom-themes-ext-org doom-material-dark-theme doom-nord-theme doom-homage-black-theme doom-snazzy-theme doom-old-hope-theme doom-one-light-theme doom-rouge-theme doom-fairy-floss-theme doom-miramare-theme doom-moonlight-theme doom-shades-of-purple-theme doom-gruvbox-theme doom-winter-is-coming-dark-blue-theme doom-solarized-dark-theme doom-nova-theme doom-ayu-light-theme doom-nord-aurora-theme) (register-definition-prefixes "doom-1337-theme" '("doom-1337")) (register-definition-prefixes "doom-Iosvkem-theme" '("doom-Iosvkem")) (register-definition-prefixes "doom-acario-dark-theme" '("doom-acario-dark")) (register-definition-prefixes "doom-acario-light-theme" '("doom-acario-light")) (register-definition-prefixes "doom-ayu-dark-theme" '("doom-ayu-dark")) (register-definition-prefixes "doom-ayu-light-theme" '("doom-ayu-light")) (register-definition-prefixes "doom-ayu-mirage-theme" '("doom-ayu-mirage")) (register-definition-prefixes "doom-badger-theme" '("doom-badger")) (register-definition-prefixes "doom-bluloco-dark-theme" '("doom-bluloco-dark")) (register-definition-prefixes "doom-bluloco-light-theme" '("doom-bluloco-light")) (register-definition-prefixes "doom-challenger-deep-theme" '("doom-challenger-deep")) (register-definition-prefixes "doom-city-lights-theme" '("doom-city-lights")) (register-definition-prefixes "doom-dark+-theme" '("doom-dark+")) (register-definition-prefixes "doom-dracula-theme" '("doom-dracula")) (register-definition-prefixes "doom-earl-grey-theme" '("doom-earl-grey")) (register-definition-prefixes "doom-ephemeral-theme" '(":group" "doom-ephemeral")) (register-definition-prefixes "doom-fairy-floss-theme" '("doom-fairy-floss")) (register-definition-prefixes "doom-feather-dark-theme" '("doom-feather-")) (register-definition-prefixes "doom-feather-light-theme" '("doom-feather-light")) (register-definition-prefixes "doom-flatwhite-theme" '("doom-f")) (register-definition-prefixes "doom-gruvbox-light-theme" '("doom-gruvbox-light")) (register-definition-prefixes "doom-gruvbox-theme" '("doom-gruvbox")) (register-definition-prefixes "doom-henna-theme" '("doom-henna")) (register-definition-prefixes "doom-homage-black-theme" '("doom-homage-black")) (register-definition-prefixes "doom-homage-white-theme" '("doom-homage-white")) (register-definition-prefixes "doom-horizon-theme" '("doom-horizon")) (register-definition-prefixes "doom-ir-black-theme" '("doom-ir-black")) (register-definition-prefixes "doom-lantern-theme" '("doom-lantern")) (register-definition-prefixes "doom-laserwave-theme" '("doom-laserwave")) (register-definition-prefixes "doom-manegarm-theme" '("doom-manegarm")) (register-definition-prefixes "doom-material-dark-theme" '("doom-material-")) (register-definition-prefixes "doom-material-theme" '("doom-material")) (register-definition-prefixes "doom-meltbus-theme" '("doom-meltbus")) (register-definition-prefixes "doom-miramare-theme" '("doom-miramare")) (register-definition-prefixes "doom-molokai-theme" '("doom-molokai")) (register-definition-prefixes "doom-monokai-classic-theme" '("doom-monokai-classic")) (register-definition-prefixes "doom-monokai-machine-theme" '("doom-monokai-machine")) (register-definition-prefixes "doom-monokai-octagon-theme" '("doom-monokai-octagon")) (register-definition-prefixes "doom-monokai-pro-theme" '("doom-monokai-pro")) (register-definition-prefixes "doom-monokai-ristretto-theme" '("doom-monokai-ristretto")) (register-definition-prefixes "doom-monokai-spectrum-theme" '("doom-monokai-spectrum")) (register-definition-prefixes "doom-moonlight-theme" '("doom-moonlight")) (register-definition-prefixes "doom-nord-aurora-theme" '(":group" "doom-nord-aurora")) (register-definition-prefixes "doom-nord-light-theme" '(":group" "doom-nord-light")) (register-definition-prefixes "doom-nord-theme" '(":group" "doom-nord")) (register-definition-prefixes "doom-nova-theme" '("doom-nova")) (register-definition-prefixes "doom-oceanic-next-theme" '("doom-oceanic-next")) (register-definition-prefixes "doom-oksolar-dark-theme" '("doom-oksolar-dark")) (register-definition-prefixes "doom-oksolar-light-theme" '("doom-oksolar-light")) (register-definition-prefixes "doom-old-hope-theme" '("doom-old-hope")) (register-definition-prefixes "doom-one-light-theme" '("doom-one-light")) (register-definition-prefixes "doom-one-theme" '("doom-one")) (register-definition-prefixes "doom-opera-light-theme" '(":group" "doom-opera-light")) (register-definition-prefixes "doom-opera-theme" '(":group" "doom-opera")) (register-definition-prefixes "doom-outrun-electric-theme" '("doom-outrun-electric")) (register-definition-prefixes "doom-palenight-theme" '("doom-palenight")) (register-definition-prefixes "doom-peacock-theme" '("doom-peacock")) (register-definition-prefixes "doom-pine-theme" '("doom-pine")) (register-definition-prefixes "doom-plain-dark-theme" '("doom-plain-")) (register-definition-prefixes "doom-plain-theme" '("doom-plain")) (register-definition-prefixes "doom-rouge-theme" '("doom-rouge")) (register-definition-prefixes "doom-shades-of-purple-theme" '("doom-shades-of-purple")) (register-definition-prefixes "doom-snazzy-theme" '("doom-snazzy")) (register-definition-prefixes "doom-solarized-dark-high-contrast-theme" '("doom-solarized-dark-high-contrast")) (register-definition-prefixes "doom-solarized-dark-theme" '("doom-solarized-dark")) (register-definition-prefixes "doom-solarized-light-theme" '("doom-solarized-light")) (register-definition-prefixes "doom-sourcerer-theme" '("doom-sourcerer")) (register-definition-prefixes "doom-spacegrey-theme" '("doom-spacegrey")) (autoload 'doom-name-to-rgb "doom-themes" "Retrieves the hexidecimal string repesented the named COLOR (e.g. \"red\")
+for FRAME (defaults to the current frame).
 
-For instance, the following code
+(fn COLOR)") (autoload 'doom-blend "doom-themes" "Blend two colors (hexidecimal strings) together by a coefficient ALPHA (a
+float between 0 and 1)
 
-  (let-alist alist
-    (if (and .title.0 .body)
-        .body
-      .site
-      .site.contents))
+(fn COLOR1 COLOR2 ALPHA)") (autoload 'doom-darken "doom-themes" "Darken a COLOR (a hexidecimal string) by a coefficient ALPHA (a float between
+0 and 1).
 
-essentially expands to
+(fn COLOR ALPHA)") (autoload 'doom-lighten "doom-themes" "Brighten a COLOR (a hexidecimal string) by a coefficient ALPHA (a float
+between 0 and 1).
 
-  (let ((.title (nth 0 (cdr (assq \\='title alist))))
-        (.body  (cdr (assq \\='body alist)))
-        (.site  (cdr (assq \\='site alist)))
-        (.site.contents (cdr (assq \\='contents (cdr (assq \\='site alist))))))
-    (if (and .title.0 .body)
-        .body
-      .site
-      .site.contents))
+(fn COLOR ALPHA)") (autoload 'doom-color "doom-themes" "Retrieve a specific color named NAME (a symbol) from the current theme.
 
-If you nest `let-alist' invocations, the inner one can't access
-the variables of the outer one.  You can, however, access alists
-inside the original alist by using dots inside the symbol, as
-displayed in the example above.
+(fn NAME &optional TYPE)") (autoload 'doom-ref "doom-themes" "TODO
 
-Note that there is no way to differentiate the case where a key
-is missing from when it is present, but its value is nil.  Thus,
-the following form evaluates to nil:
+(fn FACE PROP &optional CLASS)") (autoload 'doom-themes-set-faces "doom-themes" "Customize THEME (a symbol) with FACES.
 
-    (let-alist \\='((some-key . nil))
-      .some-key)
+If THEME is nil, it applies to all themes you load. FACES is a list of Doom
+theme face specs. These is a simplified spec. For example:
 
-(fn ALIST &rest BODY)" nil t) (function-put 'let-alist 'lisp-indent-function 1) (register-definition-prefixes "let-alist" '("let-alist--")) (provide 'let-alist-autoloads)) "xref" ((xref-autoloads xref-pkg xref) (autoload 'xref-find-backend "xref") (define-obsolete-function-alias 'xref-pop-marker-stack #'xref-go-back "29.1") (autoload 'xref-go-back "xref" "Go back to the previous position in xref history.
-To undo, use \\[xref-go-forward]." t) (autoload 'xref-go-forward "xref" "Go to the point where a previous \\[xref-go-back] was invoked." t) (autoload 'xref-marker-stack-empty-p "xref" "Whether the xref back-history is empty.") (autoload 'xref-forward-history-empty-p "xref" "Whether the xref forward-history is empty.") (autoload 'xref-show-xrefs "xref" "Display some Xref values produced by FETCHER using DISPLAY-ACTION.
-The meanings of both arguments are the same as documented in
-`xref-show-xrefs-function'.
+  (doom-themes-set-faces \\='user
+    \\='(default :background red :foreground blue)
+    \\='(doom-modeline-bar :background (if -modeline-bright modeline-bg highlight))
+    \\='(doom-modeline-buffer-file :inherit \\='mode-line-buffer-id :weight \\='bold)
+    \\='(doom-modeline-buffer-path :inherit \\='mode-line-emphasis :weight \\='bold)
+    \\='(doom-modeline-buffer-project-root :foreground green :weight \\='bold))
 
-(fn FETCHER DISPLAY-ACTION)") (autoload 'xref-find-definitions "xref" "Find the definition of the identifier at point.
-With prefix argument or when there's no identifier at point,
-prompt for it.
+(fn THEME &rest FACES)") (function-put 'doom-themes-set-faces 'lisp-indent-function 'defun) (when (and (boundp 'custom-theme-load-path) load-file-name) (let* ((base (file-name-directory load-file-name)) (dir (expand-file-name "themes/" base))) (add-to-list 'custom-theme-load-path (or (and (file-directory-p dir) dir) base)))) (register-definition-prefixes "doom-themes" '("def-doom-theme" "doom-")) (register-definition-prefixes "doom-themes-base" '("doom-themes-base-")) (autoload 'doom-themes-neotree-config "doom-themes-ext-neotree" "Install doom-themes' neotree configuration.
 
-If sufficient information is available to determine a unique
-definition for IDENTIFIER, display it in the selected window.
-Otherwise, display the list of the possible definitions in a
-buffer where the user can select from the list.
+Includes an Atom-esque icon theme and highlighting based on filetype.") (register-definition-prefixes "doom-themes-ext-neotree" '("doom-")) (autoload 'doom-themes-org-config "doom-themes-ext-org" "Load `doom-themes-ext-org'.") (register-definition-prefixes "doom-themes-ext-org" '("doom-themes-")) (autoload 'doom-themes-treemacs-config "doom-themes-ext-treemacs" "Install doom-themes' treemacs configuration.
 
-Use \\[xref-go-back] to return back to where you invoked this command.
-
-(fn IDENTIFIER)" t) (autoload 'xref-find-definitions-other-window "xref" "Like `xref-find-definitions' but switch to the other window.
-
-(fn IDENTIFIER)" t) (autoload 'xref-find-definitions-other-frame "xref" "Like `xref-find-definitions' but switch to the other frame.
-
-(fn IDENTIFIER)" t) (autoload 'xref-find-references "xref" "Find references to the identifier at point.
-This command might prompt for the identifier as needed, perhaps
-offering the symbol at point as the default.
-With prefix argument, or if `xref-prompt-for-identifier' is t,
-always prompt for the identifier.  If `xref-prompt-for-identifier'
-is nil, prompt only if there's no usable symbol at point.
-
-(fn IDENTIFIER)" t) (autoload 'xref-find-definitions-at-mouse "xref" "Find the definition of identifier at or around mouse click.
-This command is intended to be bound to a mouse event.
-
-(fn EVENT)" t) (autoload 'xref-find-references-at-mouse "xref" "Find references to the identifier at or around mouse click.
-This command is intended to be bound to a mouse event.
-
-(fn EVENT)" t) (autoload 'xref-find-apropos "xref" "Find all meaningful symbols that match PATTERN.
-The argument has the same meaning as in `apropos'.
-See `tags-apropos-additional-actions' for how to augment the
-output of this command when the backend is etags.
-
-(fn PATTERN)" t) (define-key esc-map "." #'xref-find-definitions) (define-key esc-map "," #'xref-go-back) (define-key esc-map [67108908] #'xref-go-forward) (define-key esc-map "?" #'xref-find-references) (define-key esc-map [67108910] #'xref-find-apropos) (define-key ctl-x-4-map "." #'xref-find-definitions-other-window) (define-key ctl-x-5-map "." #'xref-find-definitions-other-frame) (autoload 'xref-references-in-directory "xref" "Find all references to SYMBOL in directory DIR.
-Return a list of xref values.
-
-This function uses the Semantic Symbol Reference API, see
-`semantic-symref-tool-alist' for details on which tools are used,
-and when.
-
-(fn SYMBOL DIR)") (autoload 'xref-matches-in-directory "xref" "Find all matches for REGEXP in directory DIR.
-Return a list of xref values.
-Only files matching some of FILES and none of IGNORES are searched.
-FILES is a string with glob patterns separated by spaces.
-IGNORES is a list of glob patterns for files to ignore.
-
-(fn REGEXP FILES DIR IGNORES)") (autoload 'xref-matches-in-files "xref" "Find all matches for REGEXP in FILES.
-Return a list of xref values.
-FILES must be a list of absolute file names.
-
-See `xref-search-program' and `xref-search-program-alist' for how
-to control which program to use when looking for matches.
-
-(fn REGEXP FILES)") (register-definition-prefixes "xref" '("xref-")) (provide 'xref-autoloads)) "project" ((project-pkg project project-autoloads) (autoload 'project-current "project" "Return the project instance in DIRECTORY, defaulting to `default-directory'.
-
-When no project is found in that directory, the result depends on
-the value of MAYBE-PROMPT: if it is nil or omitted, return nil,
-else prompt the user for the project to use.  To prompt for a
-project, call the function specified by `project-prompter', which
-returns the directory in which to look for the project.  If no
-project is found in that directory, return a \"transient\"
-project instance.  When MAYBE-PROMPT is a string, it's passed to the
-prompter function as an argument.
-
-The \"transient\" project instance is a special kind of value
-which denotes a project rooted in that directory and includes all
-the files under the directory except for those that match entries
-in `vc-directory-exclusion-list' or `grep-find-ignored-files'.
-
-See the doc string of `project-find-functions' for the general form
-of the project instance object.
-
-(fn &optional MAYBE-PROMPT DIRECTORY)") (put 'project-vc-ignores 'safe-local-variable (lambda (val) (and (listp val) (not (memq nil (mapcar #'stringp val)))))) (put 'project-vc-merge-submodules 'safe-local-variable #'booleanp) (put 'project-vc-include-untracked 'safe-local-variable #'booleanp) (put 'project-vc-name 'safe-local-variable #'stringp) (put 'project-vc-extra-root-markers 'safe-local-variable (lambda (val) (and (listp val) (not (memq nil (mapcar #'stringp val)))))) (defvar project-prefix-map (let ((map (make-sparse-keymap))) (define-key map "!" 'project-shell-command) (define-key map "&" 'project-async-shell-command) (define-key map "f" 'project-find-file) (define-key map "F" 'project-or-external-find-file) (define-key map "b" 'project-switch-to-buffer) (define-key map "s" 'project-shell) (define-key map "d" 'project-find-dir) (define-key map "D" 'project-dired) (define-key map "v" 'project-vc-dir) (define-key map "c" 'project-compile) (define-key map "e" 'project-eshell) (define-key map "k" 'project-kill-buffers) (define-key map "p" 'project-switch-project) (define-key map "g" 'project-find-regexp) (define-key map "G" 'project-or-external-find-regexp) (define-key map "r" 'project-query-replace-regexp) (define-key map "x" 'project-execute-extended-command) (define-key map "o" 'project-any-command) (define-key map "" 'project-list-buffers) map) "Keymap for project commands.") (define-key ctl-x-map "p" project-prefix-map) (autoload 'project-other-window-command "project" "Run project command, displaying resultant buffer in another window.
-
-The following commands are available:
-
-\\{project-prefix-map}
-\\{project-other-window-map}" t) (define-key ctl-x-4-map "p" #'project-other-window-command) (autoload 'project-other-frame-command "project" "Run project command, displaying resultant buffer in another frame.
-
-The following commands are available:
-
-\\{project-prefix-map}
-\\{project-other-frame-map}" t) (define-key ctl-x-5-map "p" #'project-other-frame-command) (autoload 'project-other-tab-command "project" "Run project command, displaying resultant buffer in a new tab.
-
-The following commands are available:
-
-\\{project-prefix-map}" t) (when (bound-and-true-p tab-prefix-map) (define-key tab-prefix-map "p" #'project-other-tab-command)) (autoload 'project-find-regexp "project" "Find all matches for REGEXP in the current project's roots.
-With \\[universal-argument] prefix, you can specify the directory
-to search in, and the file name pattern to search for.  The
-pattern may use abbreviations defined in `grep-files-aliases',
-e.g. entering `ch' is equivalent to `*.[ch]'.  As whitespace
-triggers completion when entering a pattern, including it
-requires quoting, e.g. `\\[quoted-insert]<space>'.
-
-(fn REGEXP)" t) (autoload 'project-or-external-find-regexp "project" "Find all matches for REGEXP in the project roots or external roots.
-
-(fn REGEXP)" t) (autoload 'project-root-find-file "project" "Edit file FILENAME.
-
-Interactively, prompt for FILENAME, defaulting to the root directory of
-the current project.
-
-(fn FILENAME)" t) (function-put 'project-root-find-file 'interactive-only 'find-file) (autoload 'project-find-file "project" "Visit a file (with completion) in the current project.
-
-The filename at point (determined by `thing-at-point'), if any,
-is available as part of \"future history\".  If none, the current
-buffer's file name is used.
-
-If INCLUDE-ALL is non-nil, or with prefix argument when called
-interactively, include all files under the project root, except
-for VCS directories listed in `vc-directory-exclusion-list'.
-
-(fn &optional INCLUDE-ALL)" t) (autoload 'project-or-external-find-file "project" "Visit a file (with completion) in the current project or external roots.
-
-The filename at point (determined by `thing-at-point'), if any,
-is available as part of \"future history\".  If none, the current
-buffer's file name is used.
-
-If INCLUDE-ALL is non-nil, or with prefix argument when called
-interactively, include all files under the project root, except
-for VCS directories listed in `vc-directory-exclusion-list'.
-
-(fn &optional INCLUDE-ALL)" t) (autoload 'project-find-dir "project" "Start Dired in a directory inside the current project.
-
-The current buffer's `default-directory' is available as part of
-\"future history\"." t) (autoload 'project-dired "project" "Start Dired in the current project's root." t) (autoload 'project-vc-dir "project" "Run VC-Dir in the current project's root." t) (autoload 'project-shell "project" "Start an inferior shell in the current project's root directory.
-If a buffer already exists for running a shell in the project's root,
-switch to it.  Otherwise, create a new shell buffer.
-With \\[universal-argument] prefix arg, create a new inferior shell buffer even
-if one already exists." t) (autoload 'project-eshell "project" "Start Eshell in the current project's root directory.
-If a buffer already exists for running Eshell in the project's root,
-switch to it.  Otherwise, create a new Eshell buffer.
-With \\[universal-argument] prefix arg, create a new Eshell buffer even
-if one already exists." t) (autoload 'project-async-shell-command "project" "Run `async-shell-command' in the current project's root directory." t) (function-put 'project-async-shell-command 'interactive-only 'async-shell-command) (autoload 'project-shell-command "project" "Run `shell-command' in the current project's root directory." t) (function-put 'project-shell-command 'interactive-only 'shell-command) (autoload 'project-search "project" "Search for REGEXP in all the files of the project.
-Stops when a match is found.
-To continue searching for the next match, use the
-command \\[fileloop-continue].
-
-(fn REGEXP)" t) (autoload 'project-query-replace-regexp "project" "Query-replace REGEXP in all the files of the project.
-Stops when a match is found and prompts for whether to replace it.
-At that prompt, the user must type a character saying what to do
-with the match.  Type SPC or `y' to replace the match,
-DEL or `n' to skip and go to the next match.  For more directions,
-type \\[help-command] at that time.
-If you exit the `query-replace', you can later continue the
-`query-replace' loop using the command \\[fileloop-continue].
-
-(fn FROM TO)" t) (autoload 'project-compile "project" "Run `compile' in the project root." t) (function-put 'project-compile 'interactive-only 'compile) (autoload 'project-recompile "project" "Run `recompile' in the project root with an appropriate buffer.
-
-(fn &optional EDIT-COMMAND)" t) (function-put 'project-recompile 'interactive-only 'recompile) (autoload 'project-switch-to-buffer "project" "Display buffer BUFFER-OR-NAME in the selected window.
-When called interactively, prompts for a buffer belonging to the
-current project.  Two buffers belong to the same project if their
-project instances, as reported by `project-current' in each
-buffer, are identical.
-
-(fn BUFFER-OR-NAME)" t) (autoload 'project-display-buffer "project" "Display BUFFER-OR-NAME in some window, without selecting it.
-When called interactively, prompts for a buffer belonging to the
-current project.  Two buffers belong to the same project if their
-project instances, as reported by `project-current' in each
-buffer, are identical.
-
-This function uses `display-buffer' as a subroutine, which see
-for how it is determined where the buffer will be displayed.
-
-(fn BUFFER-OR-NAME)" t) (autoload 'project-display-buffer-other-frame "project" "Display BUFFER-OR-NAME preferably in another frame.
-When called interactively, prompts for a buffer belonging to the
-current project.  Two buffers belong to the same project if their
-project instances, as reported by `project-current' in each
-buffer, are identical.
-
-This function uses `display-buffer-other-frame' as a subroutine,
-which see for how it is determined where the buffer will be
-displayed.
-
-(fn BUFFER-OR-NAME)" t) (autoload 'project-list-buffers "project" "Display a list of project buffers.
-The list is displayed in a buffer named \"*Buffer List*\".
-
-By default, all project buffers are listed except those whose names
-start with a space (which are for internal use).  With prefix argument
-ARG, show only buffers that are visiting files.
-
-(fn &optional ARG)" t) (put 'project-kill-buffers-display-buffer-list 'safe-local-variable #'booleanp) (autoload 'project-kill-buffers "project" "Kill the buffers belonging to the current project.
-Two buffers belong to the same project if their project
-instances, as reported by `project-current' in each buffer, are
-identical.  Only the buffers that match a condition in
-`project-kill-buffer-conditions' will be killed.  If NO-CONFIRM
-is non-nil, the command will not ask the user for confirmation.
-NO-CONFIRM is always nil when the command is invoked
-interactively.
-
-If PROJECT is non-nil, kill buffers for that project instead.
-
-Also see the `project-kill-buffers-display-buffer-list' variable.
-
-(fn &optional NO-CONFIRM PROJECT)" t) (autoload 'project-remember-project "project" "Add project PR to the front of the project list.
-Save the result in `project-list-file' if the list of projects
-has changed, and NO-WRITE is nil.
-
-(fn PR &optional NO-WRITE)") (autoload 'project-forget-project "project" "Remove directory PROJECT-ROOT from the project list.
-PROJECT-ROOT is the root directory of a known project listed in
-the project list.
-
-(fn PROJECT-ROOT)" t) (autoload 'project-known-project-roots "project" "Return the list of root directories of all known projects.") (autoload 'project-execute-extended-command "project" "Execute an extended command in project root." t) (function-put 'project-execute-extended-command 'interactive-only 'command-execute) (autoload 'project-any-command "project" "Run the next command in the current project.
-
-If the command name starts with `project-', or its symbol has
-property `project-aware', it gets passed the project to use
-with the variable `project-current-directory-override'.
-Otherwise, `default-directory' is temporarily set to the current
-project's root.
-
-If OVERRIDING-MAP is non-nil, it will be used as
-`overriding-terminal-local-map' to provide shorter bindings
-from that map which will take priority over the global ones.
-
-(fn &optional OVERRIDING-MAP PROMPT-FORMAT)" t) (autoload 'project-prefix-or-any-command "project" "Run the next command in the current project.
-Works like `project-any-command', but also mixes in the shorter
-bindings from `project-prefix-map'." t) (autoload 'project-switch-project "project" "\"Switch\" to another project by running an Emacs command.
-The available commands are presented as a dispatch menu
-made from `project-switch-commands'.
-
-When called in a program, it will use the project corresponding
-to directory DIR.
-
-(fn DIR)" t) (autoload 'project-uniquify-dirname-transform "project" "Uniquify name of directory DIRNAME using `project-name', if in a project.
-
-If you set `uniquify-dirname-transform' to this function,
-slash-separated components from `project-name' will be appended to
-the buffer's directory name when buffers from two different projects
-would otherwise have the same name.
-
-(fn DIRNAME)") (defvar project-mode-line nil "Whether to show current project name and Project menu on the mode line.
-This feature requires the presence of the following item in
-`mode-line-format': `(project-mode-line project-mode-line-format)'; it
-is part of the default mode line beginning with Emacs 30.") (custom-autoload 'project-mode-line "project" t) (register-definition-prefixes "project" '("project-")) (provide 'project-autoloads)) "xterm-color" ((xterm-color xterm-color-autoloads) (autoload 'xterm-color-filter-strip "xterm-color" "Translate ANSI color sequences in STRING into text properties.
-Return new STRING with text properties applied.
-
-In order to get maximum performance, this function strips text properties
-if they are present in STRING.
-
-(fn STRING)") (autoload 'xterm-color-filter "xterm-color" "Translate ANSI color sequences in STRING into text properties.
-Return new STRING with text properties applied.
-
-This function checks if `xterm-color-preserve-properties' is non-nil
-and only calls `xterm-color-filter-strip' on substrings that do not
-have text properties applied (passing through the rest unmodified).
-Preserving properties in this fashion is not very robust as there may
-be situations where text properties are applied on ANSI data, which
-will desync the state machine.
-
-Preserving properties works ok with and is really meant for eshell.
-
-This can be inserted into `comint-preoutput-filter-functions'.
-
-(fn STRING)") (autoload 'xterm-color-256 "xterm-color" "
-
-(fn COLOR)") (autoload 'xterm-color-colorize-buffer "xterm-color" "Apply `xterm-color-filter' to current buffer, and replace its contents.
-Colors are applied using \\='face, unless font-lock-mode is active, in
-which case \\='font-lock-face is used. Operation with font-lock mode active
-is not recommended.
-
-If USE-OVERLAYS is non-nil, colors are applied to the buffer using overlays
-instead of text properties. A C-u prefix arg causes overlays to be used.
-
-(fn &optional USE-OVERLAYS)" t) (autoload 'xterm-color-clear-cache "xterm-color" "Clear xterm color face attribute cache.
-You may want to call this if you change `xterm-color-names' or
-`xterm-color-names-bright' at runtime and you want to see the changes
-take place in a pre-existing buffer that has had xterm-color initialized.
-
-Since the cache is buffer-local and created on-demand when needed, this has no
-effect when called from a buffer that does not have a cache." t) (autoload 'xterm-color-test "xterm-color" "Create, display and render a new buffer containing ANSI control sequences." t) (autoload 'xterm-color-test-raw "xterm-color" "Create and display a new buffer containing ANSI SGR control sequences.
-ANSI sequences are not processed. One can use a different Emacs package,
-such as ansi-color.el to do so. This is really meant to be used for easy
-comparisons/benchmarks with libraries that offer similar functionality." t) (register-definition-prefixes "xterm-color" '("+xterm-color--table-256+" "xterm-color-")) (provide 'xterm-color-autoloads)) "rustic" ((rustic-lsp rustic-doc rustic-rustfmt rustic-cargo rustic-popup rustic-spellcheck rustic-flycheck rustic-autoloads rustic-playground rustic-interaction rustic rustic-compile rustic-babel rustic-rustfix rustic-expand rustic-comint rustic-clippy) (autoload 'rustic-mode "rustic" "Major mode for Rust code.
-
-\\{rustic-mode-map}
-
-(fn)" t) (add-to-list 'auto-mode-alist '("\\.rs\\'" . rustic-mode)) (register-definition-prefixes "rustic" '("rustic-")) (register-definition-prefixes "rustic-babel" '("cargo-toml-dependencies" "crate-dependencies" "org-babel-execute:rust" "rustic-")) (autoload 'rustic-cargo-test-run "rustic-cargo" "Start compilation process for 'cargo test' with optional TEST-ARGS.
-
-(fn &optional TEST-ARGS)" t) (autoload 'rustic-cargo-test "rustic-cargo" "Run 'cargo test'.
-
-If ARG is not nil, use value as argument and store it in
-`rustic-test-arguments'.  When calling this function from
-`rustic-popup-mode', always use the value of
-`rustic-test-arguments'.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-test-rerun "rustic-cargo" "Run 'cargo test' with `rustic-test-arguments'." t) (autoload 'rustic-cargo-current-test "rustic-cargo" "Run 'cargo test' for the test near point." t) (autoload 'rustic-cargo-test-dwim "rustic-cargo" "Run test or mod at point. Otherwise run `rustic-cargo-test'." t) (autoload 'rustic-cargo-outdated "rustic-cargo" "Use 'cargo outdated' to list outdated packages in `tabulated-list-mode'.
-Execute process in PATH.
-
-(fn &optional PATH)" t) (autoload 'rustic-cargo-reload-outdated "rustic-cargo" "Update list of outdated packages." t) (autoload 'rustic-cargo-mark-upgrade "rustic-cargo" "Mark an upgradable package." t) (autoload 'rustic-cargo-mark-latest-upgrade "rustic-cargo" "Mark an upgradable package to the latest available version." t) (autoload 'rustic-cargo-mark-all-upgrades-latest "rustic-cargo" "Mark all packages in the Package Menu to latest version." t) (autoload 'rustic-cargo-mark-all-upgrades "rustic-cargo" "Mark all upgradable packages in the Package Menu." t) (autoload 'rustic-cargo-menu-mark-unmark "rustic-cargo" "Clear any marks on a package." t) (autoload 'rustic-cargo-upgrade-execute "rustic-cargo" "Perform marked menu actions." t) (autoload 'rustic-cargo-new "rustic-cargo" "Run 'cargo new' to start a new package in the path specified by PROJECT-PATH.
-If BIN is not nil, create a binary application, otherwise a library.
-
-(fn PROJECT-PATH &optional BIN)" t) (autoload 'rustic-cargo-init "rustic-cargo" "Run 'cargo init' to initialize a directory in the path specified by PROJECT-PATH.
-If BIN is not nil, create a binary application, otherwise a library.
-
-(fn PROJECT-PATH &optional BIN)" t) (autoload 'rustic-cargo-run-command "rustic-cargo" "Start compilation process for 'cargo run' with optional RUN-ARGS.
-
-(fn &optional RUN-ARGS)" t) (autoload 'rustic-cargo-run "rustic-cargo" "Run 'cargo run'.
-
-If ARG is not nil, use value as argument and store it in `rustic-run-arguments'.
-When calling this function from `rustic-popup-mode', always use the value of
-`rustic-run-arguments'.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-run-rerun "rustic-cargo" "Run 'cargo run' with `rustic-run-arguments'." t) (autoload 'rustic-run-shell-command "rustic-cargo" "Run an arbitrary shell command using ARG for the current project.
-Example: use it to provide an environment variable to your
-application like this `env MYVAR=1 cargo run' so that it can read
-it at the runtime.  As a byproduct, you can run any shell command
-in your project like `pwd'
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-build "rustic-cargo" "Run 'cargo build' for the current project, allow configuring
-`rustic-cargo-build-arguments' when prefix argument (C-u) is enabled.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-clean "rustic-cargo" "Run 'cargo clean' for the current project.
-
-If ARG is not nil, use value as argument and store it in `rustic-clean-arguments'.
-When calling this function from `rustic-popup-mode', always use the value of
-`rustic-clean-arguments'.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-check "rustic-cargo" "Run 'cargo check' for the current project, allow configuring
-`rustic-cargo-check-arguments' when prefix argument (C-u) is enabled.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-bench "rustic-cargo" "Run 'cargo bench' for the current project." t) (autoload 'rustic-cargo-build-doc "rustic-cargo" "Build the documentation for the current project." t) (autoload 'rustic-cargo-doc "rustic-cargo" "Open the documentation for the current project in a browser.
-The documentation is built if necessary." t) (autoload 'rustic-cargo-add "rustic-cargo" "Add crate to Cargo.toml using 'cargo add'.
-If running with prefix command `C-u', read whole command from minibuffer.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-rm "rustic-cargo" "Remove crate from Cargo.toml using 'cargo rm'.
-If running with prefix command `C-u', read whole command from minibuffer.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-upgrade "rustic-cargo" "Upgrade dependencies as specified in the local manifest file using 'cargo upgrade'.
-If running with prefix command `C-u', read whole command from minibuffer.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-update "rustic-cargo" "Update dependencies as recorded in the local lock file.
-If running with prefix command `C-u', use ARG by reading whole
-command from minibuffer.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-login "rustic-cargo" "Add crates.io API token using `cargo login'.
-
-`TOKEN' the token for interacting with crates.io. Visit [1] for
-        how to get one
-
-[1] https://doc.rust-lang.org/cargo/reference/publishing.html#before-your-first-publish
-
-(fn TOKEN)" t) (autoload 'rustic-cargo-install-rerun "rustic-cargo" "Run 'cargo install' with `rustic-install-arguments'." t) (autoload 'rustic-cargo-install "rustic-cargo" "Install rust binary using 'cargo install'.
-If running with prefix command `C-u', read whole command from minibuffer.
-
-(fn &optional ARG)" t) (register-definition-prefixes "rustic-cargo" '("rustic-")) (autoload 'rustic-cargo-clippy-run "rustic-clippy" "Run `cargo clippy' with optional ARGS.
-
-(fn &rest ARGS)" t) (autoload 'rustic-cargo-lints "rustic-clippy" "Run cargo-lints with optional ARGS." t) (autoload 'rustic-cargo-clippy "rustic-clippy" "Run 'cargo clippy'.
-
-If ARG is not nil, use value as argument and store it in `rustic-clippy-arguments'.
-When calling this function from `rustic-popup-mode', always use the value of
-`rustic-clippy-arguments'.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-clippy-rerun "rustic-clippy" "Run 'cargo clippy' with `rustic-clippy-arguments'." t) (register-definition-prefixes "rustic-clippy" '("rustic-")) (autoload 'rustic-cargo-comint-run "rustic-comint" "Run 'cargo run' but for interactive programs.
-
-If ARG is not nil, use value as argument and store it in `rustic-run-arguments'.
-When calling this function from `rustic-popup-mode', always use the value of
-`rustic-run-arguments'.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-comint-run-rerun "rustic-comint" "Run `cargo run' with `rustic-run-comint-arguments'." t) (autoload 'rustic-cargo-plain-run "rustic-comint" "Run `cargo run' for the current project.
-Read the full command from the minibuffer when ARG is non-nil or
-when called with a prefix command \\[universal-argument].
-
-(fn &optional ARG)" t) (register-definition-prefixes "rustic-comint" '("poly-rustic-cargo-comint-switch-buffer-hook" "rustic-")) (autoload 'rustic-compile "rustic-compile" "Run COMMAND in the current Rust workspace root.
-
-Interactively, prompts for the command if the variable
-`compilation-read-command' is non-nil; otherwise uses
-`rustic-compile-command'.
-
-(fn COMMAND)" t) (autoload 'rustic-recompile "rustic-compile" "Re-compile the program using `compilation-arguments'." t) (register-definition-prefixes "rustic-compile" '("rust")) (autoload 'rustic-doc-dumb-search "rustic-doc" "Search all projects and std for SEARCH-TERM.
-Use this when `rustic-doc-search' does not find what you're looking for.
-Add `universal-argument' to only search level 1 headers.
-See `rustic-doc-search' for more information.
-
-(fn SEARCH-TERM)" t) (autoload 'rustic-doc-search "rustic-doc" "Search the rust documentation for SEARCH-TERM.
-Only searches in headers (structs, functions, traits, enums, etc)
-to limit the number of results.
-To limit search results to only level 1 headers, add `universal-argument'
-Level 1 headers are things like struct or enum names.
-if ROOT is non-nil the search is performed from the root dir.
-This function tries to be smart and limits the search results
-as much as possible. If it ends up being so smart that
-it doesn't manage to find what you're looking for, try `rustic-doc-dumb-search'.
-
-(fn SEARCH-TERM &optional ROOT)" t) (autoload 'rustic-doc-convert-current-package "rustic-doc" "Convert the documentation for a project and its dependencies." t) (autoload 'rustic-doc-setup "rustic-doc" "Setup or update rustic-doc filter and convert script. Convert std.
-If NO-DL is non-nil, will not try to re-download
-the pandoc filter and bash script.
-NO-DL is primarily used for development of the filters.
-If NOCONFIRM is non-nil, install all dependencies without prompting user.
-
-(fn &optional NO-DL NOCONFIRM)" t) (autoload 'rustic-doc-mode "rustic-doc" "Convert rust html docs to .org, and browse the converted docs.
+Includes an Atom-esque icon theme and highlighting based on filetype.") (register-definition-prefixes "doom-themes-ext-treemacs" '("doom-themes-")) (autoload 'doom-themes-visual-bell-fn "doom-themes-ext-visual-bell" "Blink the mode-line red briefly. Set `ring-bell-function' to this to use it.") (autoload 'doom-themes-visual-bell-config "doom-themes-ext-visual-bell" "Enable flashing the mode-line on error.") (register-definition-prefixes "doom-tokyo-night-theme" '("doom-tokyo-night")) (register-definition-prefixes "doom-tomorrow-day-theme" '("doom-tomorrow-day")) (register-definition-prefixes "doom-tomorrow-night-theme" '("doom-tomorrow-night")) (register-definition-prefixes "doom-vibrant-theme" '("doom-vibrant")) (register-definition-prefixes "doom-wilmersdorf-theme" '("doom-wilmersdorf")) (register-definition-prefixes "doom-winter-is-coming-dark-blue-theme" '("doom-winter-is-coming-")) (register-definition-prefixes "doom-winter-is-coming-light-theme" '("doom-winter-is-coming-")) (register-definition-prefixes "doom-xcode-theme" '("doom-xcode")) (register-definition-prefixes "doom-zenburn-theme" '("doom-zenburn")) (provide 'doom-themes-autoloads)) "eshell-syntax-highlighting" ((eshell-syntax-highlighting-autoloads eshell-syntax-highlighting) (autoload 'eshell-syntax-highlighting-mode "eshell-syntax-highlighting" "Toggle syntax highlighting for Eshell.
 
 This is a minor mode.  If called interactively, toggle the
-`Rustic-Doc mode' mode.  If the prefix argument is positive,
+`Eshell-Syntax-Highlighting mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable the
+mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate the variable `eshell-syntax-highlighting-mode'.
+
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
+
+(fn &optional ARG)" t) (put 'eshell-syntax-highlighting-global-mode 'globalized-minor-mode t) (defvar eshell-syntax-highlighting-global-mode nil "Non-nil if Eshell-Syntax-Highlighting-Global mode is enabled.
+See the `eshell-syntax-highlighting-global-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `eshell-syntax-highlighting-global-mode'.") (custom-autoload 'eshell-syntax-highlighting-global-mode "eshell-syntax-highlighting" nil) (autoload 'eshell-syntax-highlighting-global-mode "eshell-syntax-highlighting" "Toggle Eshell-Syntax-Highlighting mode in all buffers.
+With prefix ARG, enable Eshell-Syntax-Highlighting-Global mode if ARG
+is positive; otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Eshell-Syntax-Highlighting mode is enabled in all buffers where
+`eshell-syntax-highlighting--global-on' would do it.
+
+See `eshell-syntax-highlighting-mode' for more information on
+Eshell-Syntax-Highlighting mode.
+
+(fn &optional ARG)" t) (register-definition-prefixes "eshell-syntax-highlighting" '("eshell-syntax-highlighting-")) (provide 'eshell-syntax-highlighting-autoloads)) "vterm" ((vterm vterm-autoloads) (autoload 'vterm-module-compile "vterm" "Compile vterm-module." t) (autoload 'vterm--bookmark-handler "vterm" "Handler to restore a vterm bookmark BMK.
+
+If a vterm buffer of the same name does not exist, the function will create a
+new vterm buffer of the name. It also checks the current directory and sets
+it to the bookmarked directory if needed.
+
+(fn BMK)") (autoload 'vterm-next-error-function "vterm" "Advance to the next error message and visit the file where the error was.
+This is the value of `next-error-function' in Compilation
+buffers.  Prefix arg N says how many error messages to move
+forwards (or backwards, if negative).
+
+Optional argument RESET clears all the errors.
+
+(fn N &optional RESET)" t) (autoload 'vterm "vterm" "Create an interactive Vterm buffer.
+Start a new Vterm session, or switch to an already active
+session.  Return the buffer selected (or created).
+
+With a nonnumeric prefix arg, create a new session.
+
+With a string prefix arg, create a new session with arg as buffer name.
+
+With a numeric prefix arg (as in `C-u 42 M-x vterm RET'), switch
+to the session with that number, or create it if it doesn't
+already exist.
+
+The buffer name used for Vterm sessions is determined by the
+value of `vterm-buffer-name'.
+
+(fn &optional ARG)" t) (autoload 'vterm-other-window "vterm" "Create an interactive Vterm buffer in another window.
+Start a new Vterm session, or switch to an already active
+session.  Return the buffer selected (or created).
+
+With a nonnumeric prefix arg, create a new session.
+
+With a string prefix arg, create a new session with arg as buffer name.
+
+With a numeric prefix arg (as in `C-u 42 M-x vterm RET'), switch
+to the session with that number, or create it if it doesn't
+already exist.
+
+The buffer name used for Vterm sessions is determined by the
+value of `vterm-buffer-name'.
+
+(fn &optional ARG)" t) (register-definition-prefixes "vterm" '("vterm-")) (provide 'vterm-autoloads)) "vterm-toggle" ((vterm-toggle-autoloads vterm-toggle) (autoload 'vterm-toggle "vterm-toggle" "Vterm toggle.
+Optional argument ARGS .
+
+(fn &optional ARGS)" t) (autoload 'vterm-toggle-cd "vterm-toggle" "Vterm toggle and insert a cd command.
+Optional argument ARGS .
+
+(fn &optional ARGS)" t) (autoload 'vterm-toggle-insert-cd "vterm-toggle" "Cd to the directory where your previous buffer file exists.
+after you have toggle to the vterm buffer with `vterm-toggle'." t) (autoload 'vterm-toggle-forward "vterm-toggle" "Go to the next term buffer.
+If OFFSET is `non-nil', will goto next term buffer with OFFSET.
+
+(fn &optional OFFSET)" t) (autoload 'vterm-toggle-backward "vterm-toggle" "Go to the previous term buffer.
+If OFFSET is `non-nil', will goto next term buffer with OFFSET.
+
+(fn &optional OFFSET)" t) (register-definition-prefixes "vterm-toggle" '("vterm-")) (provide 'vterm-toggle-autoloads)) "sudo-edit" ((sudo-edit sudo-edit-autoloads) (autoload 'sudo-edit-set-header "sudo-edit" "*Display a warning in header line of the current buffer.
+This function is suitable to add to `find-file-hook' and `dired-file-hook'.") (defvar sudo-edit-indicator-mode nil "Non-nil if Sudo-Edit-Indicator mode is enabled.
+See the `sudo-edit-indicator-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `sudo-edit-indicator-mode'.") (custom-autoload 'sudo-edit-indicator-mode "sudo-edit" nil) (autoload 'sudo-edit-indicator-mode "sudo-edit" "Indicates editing as root by displaying a message in the header line.
+
+This is a global minor mode.  If called interactively, toggle the
+`Sudo-Edit-Indicator mode' mode.  If the prefix argument is positive,
 enable the mode, and if it is zero or negative, disable the mode.
 
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `rustic-doc-mode'.
+evaluate `(default-value \\='sudo-edit-indicator-mode)'.
 
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-(fn &optional ARG)" t) (register-definition-prefixes "rustic-doc" '("rustic-doc-")) (autoload 'rustic-cargo-expand "rustic-expand" "Run 'cargo expand'.
+(fn &optional ARG)" t) (autoload 'sudo-edit "sudo-edit" "Edit currently visited file as another user, by default `sudo-edit-user'.
 
-If ARG is not nil, use value as argument and store it in
-`rustic-expand-arguments'.  When calling this function from
-`rustic-popup-mode', always use the value of
-`rustic-expand-arguments'.
+With a prefix ARG prompt for a file to visit.  Will also prompt
+for a file to visit if current buffer is not visiting a file.
 
-(fn &optional ARG)" t) (autoload 'rustic-cargo-expand-rerun "rustic-expand" "Run 'cargo expand' with `rustic-expand-arguments'." t) (register-definition-prefixes "rustic-expand" '("rustic-")) (autoload 'rustic-flycheck-setup "rustic-flycheck" "Setup Rust in Flycheck.
+(fn &optional ARG)" t) (autoload 'sudo-edit-find-file "sudo-edit" "Edit FILENAME as another user, by default `sudo-edit-user'.
 
-If the current file is part of a Cargo project, configure
-Flycheck according to the Cargo project layout." t) (register-definition-prefixes "rustic-flycheck" '("rustic-flycheck-")) (autoload 'rustic-open-dependency-file "rustic-interaction" "Open the 'Cargo.toml' file at the project root if the current buffer is
-visiting a project." t) (register-definition-prefixes "rustic-interaction" '("rustic-")) (autoload 'rustic-analyzer-macro-expand "rustic-lsp" "Default method for displaying macro expansion RESULT .
+(fn FILENAME)" t) (register-definition-prefixes "sudo-edit" '("sudo-edit-")) (provide 'sudo-edit-autoloads)) "which-key" ((which-key-autoloads which-key) (defvar which-key-mode nil "Non-nil if Which-Key mode is enabled.
+See the `which-key-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `which-key-mode'.") (custom-autoload 'which-key-mode "which-key" nil) (autoload 'which-key-mode "which-key" "Toggle `which-key-mode'.
 
-(fn RESULT)") (register-definition-prefixes "rustic-lsp" '("rustic-")) (autoload 'rustic-playground "rustic-playground" "Create a shareable URL for the contents of the current region,
-src-block or buffer on the Rust playground.
+This is a global minor mode.  If called interactively, toggle the
+`Which-Key mode' mode.  If the prefix argument is positive, enable the
+mode, and if it is zero or negative, disable the mode.
 
-(fn BEGIN END)" t) (register-definition-prefixes "rustic-playground" '("rustic-")) (autoload 'rustic-popup "rustic-popup" "Setup popup.
-If directory is not in a rust project call `read-directory-name'.
-
-(fn &optional ARGS)" t) (autoload 'rustic-popup-invoke-popup-action "rustic-popup" "Execute commands which are listed in `rustic-popup-commands'.
-
-(fn EVENT)" t) (autoload 'rustic-popup-default-action "rustic-popup" "Change backtrace and `compilation-arguments' when executed on
-corresponding line." t) (autoload 'rustic-popup-cargo-command-help "rustic-popup" "Display help buffer for cargo command at point." t) (autoload 'rustic-popup-kill-help-buffer "rustic-popup" "Kill popup help buffer and switch to popup buffer." t) (register-definition-prefixes "rustic-popup" '("rustic-")) (autoload 'rustic-rustfix "rustic-rustfix" "Run 'cargo fix'." t) (register-definition-prefixes "rustic-rustfix" '("rustic-rustfix-")) (autoload 'rustic-cargo-fmt "rustic-rustfmt" "Use rustfmt via cargo." t) (autoload 'rustic-format-region "rustic-rustfmt" "Format the current active region using rustfmt.
-
-This operation requires a nightly version of rustfmt.
-
-(fn BEGIN END)" t) (autoload 'rustic-format-buffer "rustic-rustfmt" "Format the current buffer using rustfmt." t) (autoload 'rustic-format-file "rustic-rustfmt" "Unlike `rustic-format-buffer' format file directly and revert the buffer.
-
-(fn &optional FILE)" t) (register-definition-prefixes "rustic-rustfmt" '("rustic-")) (autoload 'rustic-cargo-spellcheck "rustic-spellcheck" "Run `cargo spellcheck'.
-
-If ARG is not nil, use value as argument and store it in
-`rustic-spellcheck-arguments'.  When calling this function from
-`rustic-popup-mode', always use the value of
-`rustic-spellcheck-arguments'.
-
-(fn &optional ARG)" t) (autoload 'rustic-cargo-spellcheck-rerun "rustic-spellcheck" "Run `cargo spellcheck' with `rustic-spellcheck-arguments'." t) (register-definition-prefixes "rustic-spellcheck" '("rustic-")) (provide 'rustic-autoloads)) "external-completion" ((external-completion-autoloads external-completion external-completion-pkg) (register-definition-prefixes "external-completion" '("external-completion-")) (provide 'external-completion-autoloads)) "flymake" ((flymake-pkg flymake flymake-autoloads) (autoload 'flymake-log "flymake" "Log, at level LEVEL, the message MSG formatted with ARGS.
-LEVEL is passed to `display-warning', which is used to display
-the warning.  If this form is included in a file,
-the generated warning contains an indication of the file that
-generated it.
-
-(fn LEVEL MSG &rest ARGS)" nil t) (autoload 'flymake-make-diagnostic "flymake" "Make a Flymake diagnostic for LOCUS's region from BEG to END.
-LOCUS is a buffer object or a string designating a file name.
-
-TYPE is a diagnostic symbol and TEXT is string describing the
-problem detected in this region.  DATA is any object that the
-caller wishes to attach to the created diagnostic for later
-retrieval with `flymake-diagnostic-data'.
-
-If LOCUS is a buffer BEG and END should be buffer positions
-inside it.  If LOCUS designates a file, BEG and END should be a
-cons (LINE . COL) indicating a file position.  In this second
-case, END may be omitted in which case the region is computed
-using `flymake-diag-region' if the diagnostic is appended to an
-actual buffer.
-
-OVERLAY-PROPERTIES is an alist of properties attached to the
-created diagnostic, overriding the default properties and any
-properties listed in the `flymake-overlay-control' property of
-the diagnostic's type symbol.
-
-(fn LOCUS BEG END TYPE TEXT &optional DATA OVERLAY-PROPERTIES)") (autoload 'flymake-diagnostics "flymake" "Get Flymake diagnostics in region determined by BEG and END.
-
-If neither BEG or END is supplied, use whole accessible buffer,
-otherwise if BEG is non-nil and END is nil, consider only
-diagnostics at BEG.
-
-(fn &optional BEG END)") (autoload 'flymake-diag-region "flymake" "Compute BUFFER's region (BEG . END) corresponding to LINE and COL.
-If COL is nil, return a region just for LINE.  Return nil if the
-region is invalid.  This function saves match data.
-
-(fn BUFFER LINE &optional COL)") (autoload 'flymake-mode "flymake" "Toggle Flymake mode on or off.
-
-Flymake is an Emacs minor mode for on-the-fly syntax checking.
-Flymake collects diagnostic information from multiple sources,
-called backends, and visually annotates the buffer with the
-results.
-
-Flymake performs these checks while the user is editing.
-The customization variables `flymake-start-on-flymake-mode',
-`flymake-no-changes-timeout' determine the exact circumstances
-whereupon Flymake decides to initiate a check of the buffer.
-
-The commands `flymake-goto-next-error' and
-`flymake-goto-prev-error' can be used to navigate among Flymake
-diagnostics annotated in the buffer.
-
-By default, `flymake-mode' doesn't override the \\[next-error] command, but
-if you're using Flymake a lot (and don't use the regular compilation
-mechanisms that often), it can be useful to put something like
-the following in your init file:
-
-  (setq next-error-function \\='flymake-goto-next-error)
-
-The visual appearance of each type of diagnostic can be changed
-by setting properties `flymake-overlay-control', `flymake-bitmap'
-and `flymake-severity' on the symbols of diagnostic types (like
-`:error', `:warning' and `:note').
-
-Activation or deactivation of backends used by Flymake in each
-buffer happens via the special hook
-`flymake-diagnostic-functions'.
-
-Some backends may take longer than others to respond or complete,
-and some may decide to disable themselves if they are not
-suitable for the current buffer.  The commands
-`flymake-running-backends', `flymake-disabled-backends' and
-`flymake-reporting-backends' summarize the situation, as does the
-special *Flymake log* buffer.
-
-This is a minor mode.  If called interactively, toggle the
-`Flymake mode' mode.  If the prefix argument is positive, enable
-the mode, and if it is zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable the
+mode if ARG is nil, omitted, or is a positive number.  Disable the mode
+if ARG is a negative number.
 
 To check whether the minor mode is enabled in the current buffer,
-evaluate `flymake-mode'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+evaluate `(default-value \\='which-key-mode)'.
 
-(fn &optional ARG)" t) (autoload 'flymake-mode-on "flymake" "Turn Flymake mode on.") (autoload 'flymake-mode-off "flymake" "Turn Flymake mode off.") (register-definition-prefixes "flymake" '("flymake-")) (provide 'flymake-autoloads)) "jsonrpc" ((jsonrpc jsonrpc-autoloads jsonrpc-pkg) (register-definition-prefixes "jsonrpc" '("jsonrpc-")) (provide 'jsonrpc-autoloads)) "track-changes" ((track-changes track-changes-autoloads track-changes-pkg) (register-definition-prefixes "track-changes" '("track-changes-" "with--track-changes")) (provide 'track-changes-autoloads)) "eglot" ((eglot-autoloads eglot-pkg eglot) (define-obsolete-function-alias 'eglot-update #'eglot-upgrade-eglot "29.1") (autoload 'eglot "eglot" "Start LSP server for PROJECT's buffers under MANAGED-MAJOR-MODES.
-
-This starts a Language Server Protocol (LSP) server suitable for
-the buffers of PROJECT whose `major-mode' is among
-MANAGED-MAJOR-MODES.  CLASS is the class of the LSP server to
-start and CONTACT specifies how to connect to the server.
+The mode's hook is called both when the mode is enabled and when it is
+disabled.
 
-Interactively, the command attempts to guess MANAGED-MAJOR-MODES,
-CLASS, CONTACT, and LANGUAGE-IDS from `eglot-server-programs',
-according to the current buffer's `major-mode'.  PROJECT is
-guessed from `project-find-functions'.  The search for active
-projects in this context binds `eglot-lsp-context' (which see).
+(fn &optional ARG)" t) (autoload 'which-key-setup-side-window-right "which-key" "Set up side-window on right." t) (autoload 'which-key-setup-side-window-right-bottom "which-key" "Set up side-window on right if space allows.
+Otherwise, use bottom." t) (autoload 'which-key-setup-side-window-bottom "which-key" "Set up side-window that opens on bottom." t) (autoload 'which-key-setup-minibuffer "which-key" "Set up minibuffer display.
+Do not use this setup if you use the paging commands.  Instead use
+`which-key-setup-side-window-bottom', which is nearly identical
+but more functional." t) (autoload 'which-key-add-keymap-based-replacements "which-key" "Replace the description of KEY using REPLACEMENT in KEYMAP.
+KEY should take a format suitable for use in `kbd'.  REPLACEMENT
+should be a cons cell of the form (STRING . COMMAND) for each
+REPLACEMENT, where STRING is the replacement string and COMMAND
+is a symbol corresponding to the intended command to be
+replaced.  COMMAND can be nil if the binding corresponds to a key
+prefix.  An example is
 
-If it can't guess, it prompts the user for the mode and the
-server.  With a single \\[universal-argument] prefix arg, it
-always prompts for COMMAND.  With two \\[universal-argument], it
-also always prompts for MANAGED-MAJOR-MODE.
+(which-key-add-keymap-based-replacements global-map
+  \"C-x w\" \\='(\"Save as\" . write-file)).
 
-The LSP server of CLASS is started (or contacted) via CONTACT.
-If this operation is successful, current *and future* file
-buffers of MANAGED-MAJOR-MODE inside PROJECT become \"managed\"
-by the LSP server, meaning the information about their contents is
-exchanged periodically with the server to provide enhanced
-code-analysis via `xref-find-definitions', `flymake-mode',
-`eldoc-mode', and `completion-at-point', among others.
+For backwards compatibility, REPLACEMENT can also be a string,
+but the above format is preferred, and the option to use a string
+for REPLACEMENT will eventually be removed.
 
-PROJECT is a project object as returned by `project-current'.
+(fn KEYMAP KEY REPLACEMENT &rest MORE)") (function-put 'which-key-add-keymap-based-replacements 'lisp-indent-function 'defun) (autoload 'which-key-add-key-based-replacements "which-key" "Replace the description of KEY-SEQUENCE with REPLACEMENT.
+KEY-SEQUENCE is a string suitable for use in `kbd'.
+REPLACEMENT may either be a string, as in
 
-CLASS is a subclass of `eglot-lsp-server'.
+(which-key-add-key-based-replacements \"C-x 1\" \"maximize\")
 
-CONTACT specifies how to contact the server.  It is a
-keyword-value plist used to initialize CLASS or a plain list as
-described in `eglot-server-programs', which see.
+a cons of two strings as in
 
-LANGUAGE-IDS is a list of language ID string to send to the
-server for each element in MANAGED-MAJOR-MODES.
+(which-key-add-key-based-replacements \"C-x 8\"
+                                        \\='(\"unicode\" . \"Unicode keys\"))
 
-INTERACTIVE is ignored and provided for backward compatibility.
+or a function that takes a (KEY . BINDING) cons and returns a
+replacement.
 
-(fn MANAGED-MAJOR-MODES PROJECT CLASS CONTACT LANGUAGE-IDS &optional INTERACTIVE)" t) (autoload 'eglot-ensure "eglot" "Start Eglot session for current buffer if there isn't one.
+In the second case, the second string is used to provide a longer
+name for the keys under a prefix.
 
-Only use this function (in major mode hooks, etc) if you are
-confident that Eglot can be started safely and efficiently for
-*every* buffer visited where these hooks may execute.
+MORE allows you to specifcy additional KEY REPLACEMENT pairs.  All
+replacements are added to `which-key-replacement-alist'.
 
-Since it is difficult to establish this confidence fully, it's
-often wise to use the interactive command `eglot' instead.  This
-command only needs to be invoked once per project, as all other
-files of a given major mode visited within the same project will
-automatically become managed with no further user intervention
-needed.") (autoload 'eglot-upgrade-eglot "eglot" "Update Eglot to latest version.
+(fn KEY-SEQUENCE REPLACEMENT &rest MORE)") (autoload 'which-key-add-major-mode-key-based-replacements "which-key" "Functions like `which-key-add-key-based-replacements'.
+The difference is that MODE specifies the `major-mode' that must
+be active for KEY-SEQUENCE and REPLACEMENT (MORE contains
+addition KEY-SEQUENCE REPLACEMENT pairs) to apply.
 
-(fn &rest _)" t) (put 'eglot-workspace-configuration 'safe-local-variable #'listp) (put 'eglot--debbugs-or-github-bug-uri 'bug-reference-url-format t) (defun eglot--debbugs-or-github-bug-uri nil (format (if (string= (match-string 2) "github") "https://github.com/joaotavora/eglot/issues/%s" "https://debbugs.gnu.org/%s") (match-string 3))) (register-definition-prefixes "eglot" '("eglot-")) (provide 'eglot-autoloads)) "web-completion-data" ((web-completion-data web-completion-data-autoloads) (register-definition-prefixes "web-completion-data" '("web-completion-data-")) (provide 'web-completion-data-autoloads)) "company-web" ((company-web-jade company-web-autoloads company-web-slim company-web-html company-web) (register-definition-prefixes "company-web" '("company-web-")) (autoload 'company-web-html "company-web-html" "`company-mode' completion back-end for `html-mode' and `web-mode'.
+(fn MODE KEY-SEQUENCE REPLACEMENT &rest MORE)") (function-put 'which-key-add-major-mode-key-based-replacements 'lisp-indent-function 'defun) (autoload 'which-key-reload-key-sequence "which-key" "Simulate entering the key sequence KEY-SEQ.
+KEY-SEQ should be a list of events as produced by
+`listify-key-sequence'.  If nil, KEY-SEQ defaults to
+`which-key--current-key-list'.  Any prefix arguments that were
+used are reapplied to the new key sequence.
 
-(fn COMMAND &optional ARG &rest IGNORED)" t) (register-definition-prefixes "company-web-html" '("company-web-html-")) (autoload 'company-web-jade "company-web-jade" "`company-mode' completion back-end for `jade-mode'.
+(fn &optional KEY-SEQ)") (autoload 'which-key-show-standard-help "which-key" "Call the command in `which-key--prefix-help-cmd-backup'.
+Usually this is `describe-prefix-bindings'.
 
-(fn COMMAND &optional ARG &rest IGNORED)" t) (register-definition-prefixes "company-web-jade" '("company-web-jade-")) (autoload 'company-web-slim "company-web-slim" "`company-mode' completion back-end for `slim-mode'.
+(fn &optional _)" t) (autoload 'which-key-show-next-page-no-cycle "which-key" "Show next page of keys or `which-key-show-standard-help'." t) (autoload 'which-key-show-previous-page-no-cycle "which-key" "Show previous page of keys if one exists." t) (autoload 'which-key-show-next-page-cycle "which-key" "Show the next page of keys, cycling from end to beginning.
 
-(fn COMMAND &optional ARG &rest IGNORED)" t) (register-definition-prefixes "company-web-slim" '("company-web-slim-")) (provide 'company-web-autoloads)) "go-mode" ((go-mode go-mode-autoloads) (autoload 'go-mode "go-mode" "Major mode for editing Go source text.
+(fn &optional _)" t) (autoload 'which-key-show-previous-page-cycle "which-key" "Show the previous page of keys, cycling from beginning to end.
 
-This mode provides (not just) basic editing capabilities for
-working with Go code. It offers almost complete syntax
-highlighting, indentation that is almost identical to gofmt and
-proper parsing of the buffer content to allow features such as
-navigation by function, manipulation of comments or detection of
-strings.
+(fn &optional _)" t) (autoload 'which-key-show-top-level "which-key" "Show top-level bindings.
 
-In addition to these core features, it offers various features to
-help with writing Go code. You can directly run buffer content
-through gofmt, read godoc documentation from within Emacs, modify
-and clean up the list of package imports or interact with the
-Playground (uploading and downloading pastes).
+(fn &optional _)" t) (autoload 'which-key-show-major-mode "which-key" "Show top-level bindings in the map of the current major mode.
+This function will also detect evil bindings made using
+`evil-define-key' in this map.  These bindings will depend on the
+current evil state.
 
-The following extra functions are defined:
+(fn &optional ALL)" t) (autoload 'which-key-show-full-major-mode "which-key" "Show all bindings in the map of the current major mode.
+This function will also detect evil bindings made using
+`evil-define-key' in this map.  These bindings will depend on the
+current evil state." t) (autoload 'which-key-dump-bindings "which-key" "Dump bindings from PREFIX into buffer named BUFFER-NAME.
+PREFIX should be a string suitable for `kbd'.
 
-- `gofmt'
-- `godoc' and `godoc-at-point'
-- `go-import-add'
-- `go-goto-arguments'
-- `go-goto-docstring'
-- `go-goto-function'
-- `go-goto-function-name'
-- `go-goto-imports'
-- `go-goto-return-values'
-- `go-goto-method-receiver'
-- `go-play-buffer' and `go-play-region'
-- `go-download-play'
-- `godef-describe' and `godef-jump'
-- `go-coverage'
+(fn PREFIX BUFFER-NAME)" t) (autoload 'which-key-undo-key "which-key" "Undo last keypress and force which-key update.
 
-If you want to automatically run `gofmt' before saving a file,
-add the following hook to your Emacs configuration:
+(fn &optional _)" t) (autoload 'which-key-C-h-dispatch "which-key" "Dispatch \\`C-h' commands by looking up key in `which-key-C-h-map'.
+This command is always accessible (from any prefix) if
+`which-key-use-C-h-commands' is non nil." t) (autoload 'which-key-show-keymap "which-key" "Show the top-level bindings in KEYMAP using which-key.
+KEYMAP is selected interactively from all available keymaps.
 
-(add-hook 'before-save-hook #'gofmt-before-save)
+If NO-PAGING is non-nil, which-key will not intercept subsequent
+keypresses for the paging functionality.
 
-If you want to use `godef-jump' instead of etags (or similar),
-consider binding godef-jump to `M-.', which is the default key
-for `find-tag':
+(fn KEYMAP &optional NO-PAGING)" t) (autoload 'which-key-show-full-keymap "which-key" "Show all bindings in KEYMAP using which-key.
+KEYMAP is selected interactively from all available keymaps.
 
-(add-hook 'go-mode-hook (lambda ()
-                          (local-set-key (kbd \"M-.\") #'godef-jump)))
+(fn KEYMAP)" t) (autoload 'which-key-show-minor-mode-keymap "which-key" "Show the top-level bindings in KEYMAP using which-key.
+KEYMAP is selected interactively by mode in
+`minor-mode-map-alist'.
 
-Please note that godef is an external dependency. You can install
-it with
+(fn &optional ALL)" t) (autoload 'which-key-show-full-minor-mode-keymap "which-key" "Show all bindings in KEYMAP using which-key.
+KEYMAP is selected interactively by mode in
+`minor-mode-map-alist'." t) (register-definition-prefixes "which-key" '("evil-state" "which-key-")) (provide 'which-key-autoloads))))
 
-go get github.com/rogpeppe/godef
-
-
-If you're looking for even more integration with Go, namely
-on-the-fly syntax checking, auto-completion and snippets, it is
-recommended that you look at flycheck
-(see URL `https://github.com/flycheck/flycheck') or flymake in combination
-with goflymake (see URL `https://github.com/dougm/goflymake'), gocode
-(see URL `https://github.com/nsf/gocode'), go-eldoc
-(see URL `github.com/syohex/emacs-go-eldoc') and yasnippet-go
-(see URL `https://github.com/dominikh/yasnippet-go')
-
-(fn)" t) (add-to-list 'auto-mode-alist (cons "\\.go\\'" 'go-mode)) (autoload 'gofmt-before-save "go-mode" "Add this to .emacs to run gofmt on the current buffer when saving:
-(add-hook 'before-save-hook 'gofmt-before-save).
-
-Note that this will cause ‘go-mode’ to get loaded the first time
-you save any file, kind of defeating the point of autoloading." t) (autoload 'godoc "go-mode" "Show Go documentation for QUERY, much like \\<go-mode-map>\\[man].
-
-(fn QUERY)" t) (autoload 'go-download-play "go-mode" "Download a paste from the playground and insert it in a Go buffer.
-Tries to look for a URL at point.
-
-(fn URL)" t) (autoload 'go-dot-mod-mode "go-mode" "A major mode for editing go.mod files.
-
-(fn)" t) (add-to-list 'auto-mode-alist '("go\\.mod\\'" . go-dot-mod-mode)) (autoload 'go-dot-work-mode "go-mode" "A major mode for editor go.work files.
-
-(fn)" t) (add-to-list 'auto-mode-alist '("go\\.work\\'" . go-dot-work-mode)) (register-definition-prefixes "go-mode" '("go-" "god" "gofmt")) (provide 'go-mode-autoloads)) "neotree" ((neotree-autoloads neotree) (autoload 'neotree-find "neotree" "Quick select node which specified PATH in NeoTree.
-If path is nil and no buffer file name, then use DEFAULT-PATH,
-
-(fn &optional PATH DEFAULT-PATH)" t) (autoload 'neotree-projectile-action "neotree" "Integration with `Projectile'.
-
-Usage:
-    (setq projectile-switch-project-action 'neotree-projectile-action).
-
-When running `projectile-switch-project' (C-c p p), `neotree' will change root
-automatically." t) (autoload 'neotree-toggle "neotree" "Toggle show the NeoTree window." t) (autoload 'neotree-show "neotree" "Show the NeoTree window." t) (autoload 'neotree-hide "neotree" "Close the NeoTree window." t) (autoload 'neotree-dir "neotree" "Show the NeoTree window, and change root to PATH.
-
-(fn PATH)" t) (defalias 'neotree 'neotree-show "Show the NeoTree window.") (register-definition-prefixes "neotree" '("neo" "off-p")) (provide 'neotree-autoloads)) "python-mode" ((python-mode-autoloads python-mode python-mode-pkg) (register-definition-prefixes "python-mode" '("all-mode-setting" "autopair-mode" "flake8" "force-py-shell-name-p-o" "highlight-indent-active" "hs-hide-comments-when-hiding-all" "info-lookup-mode" "ipython" "iypthon" "jython" "pdb-track-stack-from-shell-p" "pep8" "pst-here" "strip-chars-" "toggle-force-py-shell-name-p" "turn-o" "virtualenv-")) (provide 'python-mode-autoloads)) "lsp-pyright" ((lsp-pyright lsp-pyright-autoloads) (register-definition-prefixes "lsp-pyright" '("lsp-pyright-")) (provide 'lsp-pyright-autoloads)) "bind-key" ((bind-key-autoloads bind-key-pkg bind-key) (defvar personal-keybindings nil "List of bindings performed by `bind-key'.
-
-Elements have the form ((KEY . [MAP]) CMD ORIGINAL-CMD)") (autoload 'bind-key "bind-key" "Bind KEY-NAME to COMMAND in KEYMAP (`global-map' if not passed).
-
-KEY-NAME may be a vector, in which case it is passed straight to
-`define-key'.  Or it may be a string to be interpreted as
-spelled-out keystrokes, e.g., \"C-c C-z\".  See the documentation
-of `edmacro-mode' for details.
-
-COMMAND must be an interactive function or lambda form.
-
-KEYMAP, if present, should be a keymap variable or symbol.
-For example:
-
-  (bind-key \"M-h\" #\\='some-interactive-function my-mode-map)
-
-  (bind-key \"M-h\" #\\='some-interactive-function \\='my-mode-map)
-
-If PREDICATE is non-nil, it is a form evaluated to determine when
-a key should be bound. It must return non-nil in such cases.
-Emacs can evaluate this form at any time that it does redisplay
-or operates on menu data structures, so you should write it so it
-can safely be called at any time.
-
-(fn KEY-NAME COMMAND &optional KEYMAP PREDICATE)" nil t) (autoload 'unbind-key "bind-key" "Unbind the given KEY-NAME, within the KEYMAP (if specified).
-See `bind-key' for more details.
-
-(fn KEY-NAME &optional KEYMAP)" nil t) (autoload 'bind-key* "bind-key" "Similar to `bind-key', but overrides any mode-specific bindings.
-
-(fn KEY-NAME COMMAND &optional PREDICATE)" nil t) (autoload 'bind-keys "bind-key" "Bind multiple keys at once.
-
-Accepts keyword arguments:
-:map MAP               - a keymap into which the keybindings should be
-                         added
-:prefix KEY            - prefix key for these bindings
-:prefix-map MAP        - name of the prefix map that should be created
-                         for these bindings
-:prefix-docstring STR  - docstring for the prefix-map variable
-:menu-name NAME        - optional menu string for prefix map
-:repeat-docstring STR  - docstring for the repeat-map variable
-:repeat-map MAP        - name of the repeat map that should be created
-                         for these bindings. If specified, the
-                         `repeat-map' property of each command bound
-                         (within the scope of the `:repeat-map' keyword)
-                         is set to this map.
-:exit BINDINGS         - Within the scope of `:repeat-map' will bind the
-                         key in the repeat map, but will not set the
-                         `repeat-map' property of the bound command.
-:continue BINDINGS     - Within the scope of `:repeat-map' forces the
-                         same behavior as if no special keyword had
-                         been used (that is, the command is bound, and
-                         it's `repeat-map' property set)
-:filter FORM           - optional form to determine when bindings apply
-
-The rest of the arguments are conses of keybinding string and a
-function symbol (unquoted).
-
-(fn &rest ARGS)" nil t) (autoload 'bind-keys* "bind-key" "Bind multiple keys at once, in `override-global-map'.
-Accepts the same keyword arguments as `bind-keys' (which see).
-
-This binds keys in such a way that bindings are not overridden by
-other modes.  See `override-global-mode'.
-
-(fn &rest ARGS)" nil t) (autoload 'describe-personal-keybindings "bind-key" "Display all the personal keybindings defined by `bind-key'." t) (register-definition-prefixes "bind-key" '("bind-key" "override-global-m")) (provide 'bind-key-autoloads)) "use-package" ((use-package-pkg use-package-bind-key use-package-diminish use-package-lint use-package use-package-ensure use-package-delight use-package-core use-package-jump use-package-autoloads use-package-ensure-system-package) (autoload 'use-package-autoload-keymap "use-package-bind-key" "Load PACKAGE and bind key sequence invoking this function to KEYMAP-SYMBOL.
-Then simulate pressing the same key sequence a again, so that the
-next key pressed is routed to the newly loaded keymap.
-
-This function supports use-package's :bind-keymap keyword.  It
-works by binding the given key sequence to an invocation of this
-function for a particular keymap.  The keymap is expected to be
-defined by the package.  In this way, loading the package is
-deferred until the prefix key sequence is pressed.
-
-(fn KEYMAP-SYMBOL PACKAGE OVERRIDE)") (autoload 'use-package-normalize-binder "use-package-bind-key" "
-
-(fn NAME KEYWORD ARGS)") (defalias 'use-package-normalize/:bind 'use-package-normalize-binder) (defalias 'use-package-normalize/:bind* 'use-package-normalize-binder) (defalias 'use-package-autoloads/:bind 'use-package-autoloads-mode) (defalias 'use-package-autoloads/:bind* 'use-package-autoloads-mode) (autoload 'use-package-handler/:bind "use-package-bind-key" "
-
-(fn NAME KEYWORD ARGS REST STATE &optional BIND-MACRO)") (defalias 'use-package-normalize/:bind-keymap 'use-package-normalize-binder) (defalias 'use-package-normalize/:bind-keymap* 'use-package-normalize-binder) (autoload 'use-package-handler/:bind-keymap "use-package-bind-key" "
-
-(fn NAME KEYWORD ARGS REST STATE &optional OVERRIDE)") (autoload 'use-package-handler/:bind-keymap* "use-package-bind-key" "
-
-(fn NAME KEYWORD ARG REST STATE)") (register-definition-prefixes "use-package-bind-key" '("use-package-handler/:bind*")) (autoload 'use-package "use-package-core" "Declare an Emacs package by specifying a group of configuration options.
-
-For the full documentation, see Info node `(use-package) top'.
-Usage:
-
-  (use-package package-name
-     [:keyword [option]]...)
-
-:init            Code to run before PACKAGE-NAME has been loaded.
-:config          Code to run after PACKAGE-NAME has been loaded.  Note that
-                 if loading is deferred for any reason, this code does not
-                 execute until the lazy load has occurred.
-:preface         Code to be run before everything except `:disabled'; this
-                 can be used to define functions for use in `:if', or that
-                 should be seen by the byte-compiler.
-
-:mode            Form to be added to `auto-mode-alist'.
-:magic           Form to be added to `magic-mode-alist'.
-:magic-fallback  Form to be added to `magic-fallback-mode-alist'.
-:interpreter     Form to be added to `interpreter-mode-alist'.
-
-:commands        Define autoloads for commands that will be defined by the
-                 package.  This is useful if the package is being lazily
-                 loaded, and you wish to conditionally call functions in your
-                 `:init' block that are defined in the package.
-:autoload        Similar to :commands, but it for no-interactive one.
-:hook            Specify hook(s) to attach this package to.
-
-:bind            Bind keys, and define autoloads for the bound commands.
-:bind*           Bind keys, and define autoloads for the bound commands,
-                 *overriding all minor mode bindings*.
-:bind-keymap     Bind a key prefix to an auto-loaded keymap defined in the
-                 package.  This is like `:bind', but for keymaps.
-:bind-keymap*    Like `:bind-keymap', but overrides all minor mode bindings
-
-:defer           Defer loading of a package -- this is implied when using
-                 `:commands', `:bind', `:bind*', `:mode', `:magic', `:hook',
-                 `:magic-fallback', or `:interpreter'.  This can be an integer,
-                 to force loading after N seconds of idle time, if the package
-                 has not already been loaded.
-:demand          Prevent the automatic deferred loading introduced by constructs
-                 such as `:bind' (see `:defer' for the complete list).
-
-:after           Delay the effect of the use-package declaration
-                 until after the named libraries have loaded.
-                 Before they have been loaded, no other keyword
-                 has any effect at all, and once they have been
-                 loaded it is as if `:after' was not specified.
-
-:if EXPR         Initialize and load only if EXPR evaluates to a non-nil value.
-:disabled        The package is ignored completely if this keyword is present.
-:defines         Declare certain variables to silence the byte-compiler.
-:functions       Declare certain functions to silence the byte-compiler.
-:load-path       Add to the `load-path' before attempting to load the package.
-:diminish        Support for diminish.el (if installed).
-:delight         Support for delight.el (if installed).
-:custom          Call `Custom-set' or `set-default' with each variable
-                 definition without modifying the Emacs `custom-file'.
-                 (compare with `custom-set-variables').
-:custom-face     Call `custom-set-faces' with each face definition.
-:ensure          Loads the package using package.el if necessary.
-:pin             Pin the package to an archive.
-:vc              Install the package directly from a version control system
-                 (using `package-vc.el').
-
-(fn NAME &rest ARGS)" nil t) (function-put 'use-package 'lisp-indent-function 'defun) (register-definition-prefixes "use-package-core" '("use-package-")) (autoload 'use-package-normalize/:delight "use-package-delight" "Normalize arguments to delight.
-
-(fn NAME KEYWORD ARGS)") (autoload 'use-package-handler/:delight "use-package-delight" "
-
-(fn NAME KEYWORD ARGS REST STATE)") (register-definition-prefixes "use-package-delight" '("use-package-normalize-delight")) (autoload 'use-package-normalize/:diminish "use-package-diminish" "
-
-(fn NAME KEYWORD ARGS)") (autoload 'use-package-handler/:diminish "use-package-diminish" "
-
-(fn NAME KEYWORD ARG REST STATE)") (register-definition-prefixes "use-package-diminish" '("use-package-normalize-diminish")) (autoload 'use-package-normalize/:ensure "use-package-ensure" "
-
-(fn NAME KEYWORD ARGS)") (autoload 'use-package-handler/:ensure "use-package-ensure" "
-
-(fn NAME KEYWORD ENSURE REST STATE)") (register-definition-prefixes "use-package-ensure" '("use-package-")) (autoload 'use-package-normalize/:ensure-system-package "use-package-ensure-system-package" "Turn ARGS into a list of conses of the form (PACKAGE-NAME . INSTALL-COMMAND).
-
-(fn NAME-SYMBOL KEYWORD ARGS)") (autoload 'use-package-handler/:ensure-system-package "use-package-ensure-system-package" "Execute the handler for `:ensure-system-package' keyword in `use-package'.
-
-(fn NAME KEYWORD ARG REST STATE)") (register-definition-prefixes "use-package-ensure-system-package" '("use-package-ensure-system-package-")) (autoload 'use-package-jump-to-package-form "use-package-jump" "Attempt to find and jump to the `use-package' form that loaded PACKAGE.
-This will only find the form if that form actually required
-PACKAGE.  If PACKAGE was previously required then this function
-will jump to the file that originally required PACKAGE instead.
-
-(fn PACKAGE)" t) (register-definition-prefixes "use-package-jump" '("use-package-find-require")) (autoload 'use-package-lint "use-package-lint" "Check for errors in `use-package' declarations.
-For example, if the module's `:if' condition is met, but even
-with the specified `:load-path' the module cannot be found." t) (register-definition-prefixes "use-package-lint" '("use-package-lint-declaration")) (provide 'use-package-autoloads)) "dired-hacks-utils" ((dired-hacks-utils-autoloads dired-hacks-utils) (register-definition-prefixes "dired-hacks-utils" '("dired-")) (provide 'dired-hacks-utils-autoloads)) "dired-open" ((dired-open-autoloads dired-open) (autoload 'dired-open-file "dired-open" "Try `dired-open-functions' to open the thing under point.
-
-That can be either file or any other line of dired listing.
-
-If no function succeeded, run `dired-find-file' normally.
-
-With \\[universal-argument], run `dired-find-file' normally.
-
-(fn &optional ARG)" t) (register-definition-prefixes "dired-open" '("dired-open-")) (provide 'dired-open-autoloads)) "peep-dired" ((peep-dired peep-dired-autoloads) (autoload 'peep-dired "peep-dired" "A convienent way to look up file contents in other window while browsing directory in dired
-
-This is a minor mode.  If called interactively, toggle the
-`Peep-Dired mode' mode.  If the prefix argument is positive,
-enable the mode, and if it is zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-To check whether the minor mode is enabled in the current buffer,
-evaluate `peep-dired'.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
-
-(fn &optional ARG)" t) (register-definition-prefixes "peep-dired" '("peep-dired-")) (provide 'peep-dired-autoloads))))
-
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 15 "melpa" nil "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "evil" nil "cl-lib" nil "goto-chg" nil "evil-collection" nil "annalist" nil "general" nil "beacon" nil "doom-themes" nil "rainbow-mode" nil "rainbow-delimiters" nil "lsp-mode" nil "dash" nil "f" nil "s" nil "ht" nil "spinner" nil "markdown-mode" nil "lv" nil "eldoc" nil "lsp-ui" nil "ccls" nil "company" nil "company-lsp" nil "yasnippet" nil "toc-org" nil "org-bullets" nil "which-key" nil "doom-modeline" nil "compat" nil "seq" nil "nerd-icons" nil "shrink-path" nil "all-the-icons" nil "all-the-icons-dired" nil "web-mode" nil "emmet-mode" nil "css-mode" nil "js2-mode" nil "typescript-mode" nil "tide" nil "flycheck" nil "prettier-js" nil "sudo-edit" nil "counsel" nil "ivy" nil "swiper" nil "all-the-icons-ivy-rich" nil "ivy-rich" nil "eshell-syntax-highlighting" nil "vterm" nil "vterm-toggle" nil "dashboard" nil "diminish" nil "projectile" nil "company-box" nil "frame-local" nil "rustic" nil "rust-mode" nil "let-alist" nil "project" nil "xref" nil "xterm-color" nil "lsp-html" nil "eglot" nil "external-completion" nil "flymake" nil "jsonrpc" nil "track-changes" nil "company-web" nil "web-completion-data" nil "go-mode" nil "neotree" nil "python-mode" nil "lsp-pyright" nil "lsp-pyls" nil "lsp-go" nil "use-package" nil "bind-key" nil "dired-open" nil "dired-hacks-utils" nil "peep-dired" nil)) melpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" (el-get :type git :files (:defaults "methods" ("recipes" "recipes/el-get.rcp") "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "evil" (evil :type git :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "cl-lib" nil "goto-chg" (goto-chg :type git :host github :repo "emacs-evil/goto-chg") "evil-collection" (evil-collection :type git :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :host github :repo "noctuid/annalist.el") "general" (general :type git :host github :repo "noctuid/general.el") "beacon" (beacon :type git :host github :repo "Malabarba/beacon") "doom-themes" (doom-themes :type git :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes") "rainbow-mode" nil "rainbow-delimiters" (rainbow-delimiters :type git :host github :repo "Fanael/rainbow-delimiters") "lsp-mode" (lsp-mode :type git :files (:defaults "clients/*.el" "lsp-mode-pkg.el") :host github :repo "emacs-lsp/lsp-mode") "dash" (dash :type git :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :host github :repo "rejeep/f.el") "s" (s :type git :host github :repo "magnars/s.el") "ht" (ht :type git :host github :repo "Wilfred/ht.el") "spinner" nil "markdown-mode" (markdown-mode :type git :host github :repo "jrblevin/markdown-mode") "lv" (lv :type git :files ("lv.el" "lv-pkg.el") :host github :repo "abo-abo/hydra") "eldoc" nil "lsp-ui" (lsp-ui :type git :files (:defaults "lsp-ui-doc.html" "resources" "lsp-ui-pkg.el") :host github :repo "emacs-lsp/lsp-ui") "ccls" (ccls :type git :host github :repo "emacs-lsp/emacs-ccls") "company" (company :type git :files (:defaults "icons" ("images/small" "doc/images/small/*.png") "company-pkg.el") :host github :repo "company-mode/company-mode") "company-lsp" nil "yasnippet" (yasnippet :type git :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet") "toc-org" (toc-org :type git :host github :repo "snosov1/toc-org") "org-bullets" (org-bullets :type git :host github :repo "integral-dw/org-bullets") "which-key" (which-key :type git :host github :repo "justbur/emacs-which-key") "doom-modeline" (doom-modeline :type git :host github :repo "seagle0128/doom-modeline") "compat" nil "seq" nil "nerd-icons" (nerd-icons :type git :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el") "shrink-path" (shrink-path :type git :host gitlab :repo "bennya/shrink-path.el") "all-the-icons" (all-the-icons :type git :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el") "all-the-icons-dired" (all-the-icons-dired :type git :host github :repo "wyuenho/all-the-icons-dired") "web-mode" (web-mode :type git :host github :repo "fxbois/web-mode") "emmet-mode" (emmet-mode :type git :host github :repo "smihica/emmet-mode") "css-mode" nil "js2-mode" (js2-mode :type git :host github :repo "mooz/js2-mode") "typescript-mode" (typescript-mode :type git :host github :repo "emacs-typescript/typescript.el") "tide" (tide :type git :files (:defaults "tsserver" "tide-pkg.el") :host github :repo "ananthakumaran/tide") "flycheck" (flycheck :type git :host github :repo "flycheck/flycheck") "prettier-js" (prettier-js :type git :host github :repo "prettier/prettier-emacs") "sudo-edit" (sudo-edit :type git :host github :repo "nflath/sudo-edit") "counsel" (counsel :type git :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :files (:defaults "doc/ivy-help.org" (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "ivy-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "all-the-icons-ivy-rich" (all-the-icons-ivy-rich :type git :host github :repo "seagle0128/all-the-icons-ivy-rich") "ivy-rich" (ivy-rich :type git :host github :repo "Yevgnen/ivy-rich") "eshell-syntax-highlighting" (eshell-syntax-highlighting :type git :host github :repo "akreisher/eshell-syntax-highlighting") "vterm" (vterm :type git :files ("CMakeLists.txt" "elisp.c" "elisp.h" "emacs-module.h" "etc" "utf8.c" "utf8.h" "vterm.el" "vterm-module.c" "vterm-module.h" "vterm-pkg.el") :host github :repo "akermu/emacs-libvterm") "vterm-toggle" (vterm-toggle :type git :host github :repo "jixiuf/vterm-toggle") "dashboard" (dashboard :type git :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard") "diminish" (diminish :type git :host github :repo "myrjola/diminish.el") "projectile" (projectile :type git :host github :repo "bbatsov/projectile") "company-box" (company-box :type git :files (:defaults "images" "company-box-pkg.el") :host github :repo "sebastiencs/company-box") "frame-local" (frame-local :type git :host github :repo "sebastiencs/frame-local") "rustic" (rustic :type git :host github :repo "emacs-rustic/rustic") "rust-mode" (rust-mode :type git :host github :repo "rust-lang/rust-mode") "let-alist" nil "project" nil "xref" nil "xterm-color" (xterm-color :type git :host github :repo "atomontage/xterm-color") "lsp-html" nil "eglot" nil "external-completion" nil "flymake" nil "jsonrpc" nil "track-changes" nil "company-web" (company-web :type git :host github :repo "osv/company-web") "web-completion-data" (web-completion-data :type git :files ("*.el" "html-stuff" "web-completion-data-pkg.el") :host github :repo "osv/web-completion-data") "go-mode" (go-mode :type git :files ("go-mode.el" "go-mode-pkg.el") :host github :repo "dominikh/go-mode.el") "neotree" (neotree :type git :files (:defaults "icons" "neotree-pkg.el") :host github :repo "jaypei/emacs-neotree") "python-mode" (python-mode :type git :files ("python-mode.el" ("completion" "completion/pycomplete.*") "python-mode-pkg.el") :host gitlab :repo "python-mode-devs/python-mode") "lsp-pyright" (lsp-pyright :type git :host github :repo "emacs-lsp/lsp-pyright") "lsp-pyls" nil "lsp-go" nil "use-package" nil "bind-key" nil "dired-open" (dired-open :type git :files ("dired-open.el" "dired-open-pkg.el") :host github :repo "Fuco1/dired-hacks") "dired-hacks-utils" (dired-hacks-utils :type git :files ("dired-hacks-utils.el" "dired-hacks-utils-pkg.el") :host github :repo "Fuco1/dired-hacks") "peep-dired" (peep-dired :type git :host github :repo "asok/peep-dired"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "nongnu-elpa" nil "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "rainbow-mode" (rainbow-mode :type git :host github :repo "emacs-straight/rainbow-mode" :files ("*" (:exclude ".git"))) "spinner" (spinner :type git :host github :repo "emacs-straight/spinner" :files ("*" (:exclude ".git"))) "eldoc" (eldoc :type git :host github :repo "emacs-straight/eldoc" :files ("*" (:exclude ".git"))) "company-lsp" nil "compat" (compat :type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git"))) "seq" (seq :type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git"))) "css-mode" nil "let-alist" (let-alist :type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git"))) "project" (project :type git :host github :repo "emacs-straight/project" :files ("*" (:exclude ".git"))) "xref" (xref :type git :host github :repo "emacs-straight/xref" :files ("*" (:exclude ".git"))) "lsp-html" nil "eglot" (eglot :type git :host github :repo "emacs-straight/eglot" :files ("*" (:exclude ".git"))) "external-completion" (external-completion :type git :host github :repo "emacs-straight/external-completion" :files ("*" (:exclude ".git"))) "flymake" (flymake :type git :host github :repo "emacs-straight/flymake" :files ("*" (:exclude ".git"))) "jsonrpc" (jsonrpc :type git :host github :repo "emacs-straight/jsonrpc" :files ("*" (:exclude ".git"))) "track-changes" (track-changes :type git :host github :repo "emacs-straight/track-changes" :files ("*" (:exclude ".git"))) "lsp-pyls" nil "lsp-go" nil "use-package" (use-package :type git :host github :repo "emacs-straight/use-package" :files ("*" (:exclude ".git"))) "bind-key" (bind-key :type git :host github :repo "emacs-straight/bind-key" :files ("*" (:exclude ".git"))))) nongnu-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 4 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "company-lsp" nil "css-mode" nil "lsp-html" nil "lsp-pyls" nil "lsp-go" nil)) el-get #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "company-lsp" nil "css-mode" nil "lsp-html" nil "lsp-pyls" nil "lsp-go" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "company-lsp" (company-lsp :type git :host github :repo "emacsattic/company-lsp") "css-mode" nil "lsp-html" nil "lsp-pyls" nil "lsp-go" nil))))
+#s(hash-table test eq data (org-elpa #s(hash-table test equal data (version 15 "melpa" nil "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "evil" nil "cl-lib" nil "goto-chg" nil "evil-collection" nil "annalist" nil "general" nil "all-the-icons" nil "all-the-icons-dired" nil "beacon" nil "dashboard" nil "use-package" nil "bind-key" nil "lsp-mode" nil "dash" nil "f" nil "s" nil "ht" nil "spinner" nil "markdown-mode" nil "lv" nil "eldoc" nil "lsp-ui" nil "company" nil "company-box" nil "frame-local" nil "flycheck" nil "go-mode" nil "python-mode" nil "web-mode" nil "company-web" nil "web-completion-data" nil "diminish" nil "dired-open" nil "dired-hacks-utils" nil "peep-dired" nil "doom-modeline" nil "compat" nil "seq" nil "nerd-icons" nil "shrink-path" nil "counsel" nil "ivy" nil "swiper" nil "all-the-icons-ivy-rich" nil "ivy-rich" nil "neotree" nil "toc-org" nil "org-bullets" nil "projectile" nil "rainbow-mode" nil "rainbow-delimiters" nil "doom-themes" nil "eshell-syntax-highlighting" nil "vterm" nil "vterm-toggle" nil "sudo-edit" nil "which-key" nil)) melpa #s(hash-table test equal data (version 2 "gnu-elpa-mirror" nil "nongnu-elpa" nil "el-get" (el-get :type git :files (:defaults "methods" ("recipes" "recipes/el-get.rcp") "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "evil" (evil :type git :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "cl-lib" nil "goto-chg" (goto-chg :type git :host github :repo "emacs-evil/goto-chg") "evil-collection" (evil-collection :type git :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :host github :repo "noctuid/annalist.el") "general" (general :type git :host github :repo "noctuid/general.el") "all-the-icons" (all-the-icons :type git :files (:defaults "data" "all-the-icons-pkg.el") :host github :repo "domtronn/all-the-icons.el") "all-the-icons-dired" (all-the-icons-dired :type git :host github :repo "wyuenho/all-the-icons-dired") "beacon" (beacon :type git :host github :repo "Malabarba/beacon") "dashboard" (dashboard :type git :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard") "use-package" nil "bind-key" nil "lsp-mode" (lsp-mode :type git :files (:defaults "clients/*.el" "lsp-mode-pkg.el") :host github :repo "emacs-lsp/lsp-mode") "dash" (dash :type git :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :host github :repo "rejeep/f.el") "s" (s :type git :host github :repo "magnars/s.el") "ht" (ht :type git :host github :repo "Wilfred/ht.el") "spinner" nil "markdown-mode" (markdown-mode :type git :host github :repo "jrblevin/markdown-mode") "lv" (lv :type git :files ("lv.el" "lv-pkg.el") :host github :repo "abo-abo/hydra") "eldoc" nil "lsp-ui" (lsp-ui :type git :files (:defaults "lsp-ui-doc.html" "resources" "lsp-ui-pkg.el") :host github :repo "emacs-lsp/lsp-ui") "company" (company :type git :files (:defaults "icons" ("images/small" "doc/images/small/*.png") "company-pkg.el") :host github :repo "company-mode/company-mode") "company-box" (company-box :type git :files (:defaults "images" "company-box-pkg.el") :host github :repo "sebastiencs/company-box") "frame-local" (frame-local :type git :host github :repo "sebastiencs/frame-local") "flycheck" (flycheck :type git :host github :repo "flycheck/flycheck") "go-mode" (go-mode :type git :files ("go-mode.el" "go-mode-pkg.el") :host github :repo "dominikh/go-mode.el") "python-mode" (python-mode :type git :files ("python-mode.el" ("completion" "completion/pycomplete.*") "python-mode-pkg.el") :host gitlab :repo "python-mode-devs/python-mode") "web-mode" (web-mode :type git :host github :repo "fxbois/web-mode") "company-web" (company-web :type git :host github :repo "osv/company-web") "web-completion-data" (web-completion-data :type git :files ("*.el" "html-stuff" "web-completion-data-pkg.el") :host github :repo "osv/web-completion-data") "diminish" (diminish :type git :host github :repo "myrjola/diminish.el") "dired-open" (dired-open :type git :files ("dired-open.el" "dired-open-pkg.el") :host github :repo "Fuco1/dired-hacks") "dired-hacks-utils" (dired-hacks-utils :type git :files ("dired-hacks-utils.el" "dired-hacks-utils-pkg.el") :host github :repo "Fuco1/dired-hacks") "peep-dired" (peep-dired :type git :host github :repo "asok/peep-dired") "doom-modeline" (doom-modeline :type git :host github :repo "seagle0128/doom-modeline") "compat" nil "seq" nil "nerd-icons" (nerd-icons :type git :files (:defaults "data" "nerd-icons-pkg.el") :host github :repo "rainstormstudio/nerd-icons.el") "shrink-path" (shrink-path :type git :host gitlab :repo "bennya/shrink-path.el") "counsel" (counsel :type git :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :files (:defaults "doc/ivy-help.org" (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "ivy-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "all-the-icons-ivy-rich" (all-the-icons-ivy-rich :type git :host github :repo "seagle0128/all-the-icons-ivy-rich") "ivy-rich" (ivy-rich :type git :host github :repo "Yevgnen/ivy-rich") "neotree" (neotree :type git :files (:defaults "icons" "neotree-pkg.el") :host github :repo "jaypei/emacs-neotree") "toc-org" (toc-org :type git :host github :repo "snosov1/toc-org") "org-bullets" (org-bullets :type git :host github :repo "integral-dw/org-bullets") "projectile" (projectile :type git :host github :repo "bbatsov/projectile") "rainbow-mode" nil "rainbow-delimiters" (rainbow-delimiters :type git :host github :repo "Fanael/rainbow-delimiters") "doom-themes" (doom-themes :type git :files (:defaults "themes/*.el" "themes/*/*.el" "extensions/*.el" "doom-themes-pkg.el") :host github :repo "doomemacs/themes") "eshell-syntax-highlighting" (eshell-syntax-highlighting :type git :host github :repo "akreisher/eshell-syntax-highlighting") "vterm" (vterm :type git :files ("CMakeLists.txt" "elisp.c" "elisp.h" "emacs-module.h" "etc" "utf8.c" "utf8.h" "vterm.el" "vterm-module.c" "vterm-module.h" "vterm-pkg.el") :host github :repo "akermu/emacs-libvterm") "vterm-toggle" (vterm-toggle :type git :host github :repo "jixiuf/vterm-toggle") "sudo-edit" (sudo-edit :type git :host github :repo "nflath/sudo-edit") "which-key" (which-key :type git :host github :repo "justbur/emacs-which-key"))) gnu-elpa-mirror #s(hash-table test equal data (version 3 "nongnu-elpa" nil "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "use-package" (use-package :type git :host github :repo "emacs-straight/use-package" :files ("*" (:exclude ".git"))) "bind-key" (bind-key :type git :host github :repo "emacs-straight/bind-key" :files ("*" (:exclude ".git"))) "spinner" (spinner :type git :host github :repo "emacs-straight/spinner" :files ("*" (:exclude ".git"))) "eldoc" (eldoc :type git :host github :repo "emacs-straight/eldoc" :files ("*" (:exclude ".git"))) "compat" (compat :type git :host github :repo "emacs-straight/compat" :files ("*" (:exclude ".git"))) "seq" (seq :type git :host github :repo "emacs-straight/seq" :files ("*" (:exclude ".git"))) "rainbow-mode" (rainbow-mode :type git :host github :repo "emacs-straight/rainbow-mode" :files ("*" (:exclude ".git"))))) nongnu-elpa #s(hash-table test equal data (version 4 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil)) el-get #s(hash-table test equal data (version 2 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil)) emacsmirror-mirror #s(hash-table test equal data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil))))
 
 ("which-key" "sudo-edit" "vterm-toggle" "vterm" "eshell-syntax-highlighting" "doom-themes" "rainbow-delimiters" "rainbow-mode" "projectile" "org-bullets" "toc-org" "neotree" "all-the-icons" "ivy-rich" "all-the-icons-ivy-rich" "swiper" "ivy" "counsel" "shrink-path" "nerd-icons" "seq" "compat" "doom-modeline" "peep-dired" "dired-hacks-utils" "dired-open" "diminish" "web-completion-data" "cl-lib" "company-web" "web-mode" "python-mode" "go-mode" "flycheck" "frame-local" "company-box" "company" "lsp-ui" "eldoc" "lv" "markdown-mode" "spinner" "ht" "s" "f" "dash" "lsp-mode" "bind-key" "emacs" "use-package" "straight" "emacsmirror-mirror" "el-get" "nongnu-elpa" "gnu-elpa-mirror" "melpa" "org-elpa")
 

@@ -17,7 +17,6 @@ return {
       formatters_by_ft = {
         python = {
           'black',  -- Popular Python formatter. Requires "black" to be installed.
-          'isort',  -- Python import sorter. Requires "isort" to be installed.
         },
         javascript = { 'prettierd' }, -- JavaScript formatter. Requires "prettierd" to be installed.
         typescript = { 'prettierd' }, -- TypeScript formatter. Requires "prettierd" to be installed.

@@ -5,26 +5,16 @@ cmake_minimum_required(VERSION 3.5)
 
 if(EXISTS "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm-stamp/libvterm-gitclone-lastrun.txt" AND EXISTS "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm-stamp/libvterm-gitinfo.txt" AND
   "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm-stamp/libvterm-gitclone-lastrun.txt" IS_NEWER_THAN "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm-stamp/libvterm-gitinfo.txt")
-  message(VERBOSE
+  message(STATUS
     "Avoiding repeated git clone, stamp file is up to date: "
     "'/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm-stamp/libvterm-gitclone-lastrun.txt'"
   )
   return()
 endif()
 
-# Even at VERBOSE level, we don't want to see the commands executed, but
-# enabling them to be shown for DEBUG may be useful to help diagnose problems.
-cmake_language(GET_MESSAGE_LOG_LEVEL active_log_level)
-if(active_log_level MATCHES "DEBUG|TRACE")
-  set(maybe_show_command COMMAND_ECHO STDOUT)
-else()
-  set(maybe_show_command "")
-endif()
-
 execute_process(
   COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm"
   RESULT_VARIABLE error_code
-  ${maybe_show_command}
 )
 if(error_code)
   message(FATAL_ERROR "Failed to remove directory: '/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm'")
@@ -35,27 +25,25 @@ set(error_code 1)
 set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
-    COMMAND "/usr/bin/git"
+    COMMAND "/usr/bin/git" 
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/Sbozzolo/libvterm-mirror.git" "libvterm"
     WORKING_DIRECTORY "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src"
     RESULT_VARIABLE error_code
-    ${maybe_show_command}
   )
   math(EXPR number_of_tries "${number_of_tries} + 1")
 endwhile()
 if(number_of_tries GREATER 1)
-  message(NOTICE "Had to git clone more than once: ${number_of_tries} times.")
+  message(STATUS "Had to git clone more than once: ${number_of_tries} times.")
 endif()
 if(error_code)
   message(FATAL_ERROR "Failed to clone repository: 'https://github.com/Sbozzolo/libvterm-mirror.git'")
 endif()
 
 execute_process(
-  COMMAND "/usr/bin/git"
+  COMMAND "/usr/bin/git" 
           checkout "64f1775952dbe001e989f2ab679563b54f2fca55" --
   WORKING_DIRECTORY "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm"
   RESULT_VARIABLE error_code
-  ${maybe_show_command}
 )
 if(error_code)
   message(FATAL_ERROR "Failed to checkout tag: '64f1775952dbe001e989f2ab679563b54f2fca55'")
@@ -68,7 +56,6 @@ if(init_submodules)
             submodule update --recursive --init 
     WORKING_DIRECTORY "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm"
     RESULT_VARIABLE error_code
-    ${maybe_show_command}
   )
 endif()
 if(error_code)
@@ -80,7 +67,6 @@ endif()
 execute_process(
   COMMAND ${CMAKE_COMMAND} -E copy "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm-stamp/libvterm-gitinfo.txt" "/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm-stamp/libvterm-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
-  ${maybe_show_command}
 )
 if(error_code)
   message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/mohammed/.emacs.d/straight/build/vterm/build/libvterm-prefix/src/libvterm-stamp/libvterm-gitclone-lastrun.txt'")
