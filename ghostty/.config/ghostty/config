@@ -1,0 +1,5 @@
+font-size = 16
+theme = gruber-darker
+background-opacity = 0.98
+keybind =  shift+ctrl+r=reload_config
+gtk-titlebar=false
