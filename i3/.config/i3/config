@@ -48,7 +48,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # Start a terminal
-bindsym $mod+Return exec ghostty
+bindsym $mod+Return exec kitty
 
 # Kill focused window
 bindsym $mod+q kill
