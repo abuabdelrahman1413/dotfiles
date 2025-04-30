@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/tide/tsserver/lib.es2019.full.d.ts

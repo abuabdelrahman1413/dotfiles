@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/spinner/spinner-pkg.el

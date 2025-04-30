@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/go-mode.el/go-mode.el

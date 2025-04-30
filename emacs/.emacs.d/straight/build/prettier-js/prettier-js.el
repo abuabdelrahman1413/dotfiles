@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/prettier-emacs/prettier-js.el

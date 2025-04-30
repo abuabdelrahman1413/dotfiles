@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/company-mode/company-tng.el

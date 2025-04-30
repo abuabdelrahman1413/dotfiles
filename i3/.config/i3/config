@@ -29,6 +29,7 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id ./secondscreen.sh
+exec xinput set-prop 14 "libinput Tapping Enabled" 1  # Or the command with the name
 
 # PulseAudio volume controls
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -48,10 +49,16 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # Start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec wezterm
 
 # Kill focused window
 bindsym $mod+q kill
+
+# Open file manager
+bindsym $mod+Shift+f exec --no-startup-id nemo
+
+#Open telegram
+bindsym $mod+t exec --no-startup-id flatpak run io.github.kukuruzka165.materialgram &
 
 # Application launcher
 bindsym $mod+d exec --no-startup-id dmenu_run
@@ -177,6 +184,14 @@ bindsym $mod+minus resize shrink width 10 px
 # Status bar
 bar {
     status_command i3status
+    output primary
+
+    tray_output primary
 }
 
-exec --no-startup-id  ./hide-bar.sh
+exec --no-startup-id "setxkbmap -layout us,ara"
+exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
+
+exec --no-startup-id sh -c "setxkbmap -layout us,ara -option 'grp:alt_shift_toggle'"
+
+bindsym Print exec maim -s -u | xclip -selection clipboard -t image/png -i

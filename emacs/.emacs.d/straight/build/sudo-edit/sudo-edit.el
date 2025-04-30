@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/sudo-edit/sudo-edit.el

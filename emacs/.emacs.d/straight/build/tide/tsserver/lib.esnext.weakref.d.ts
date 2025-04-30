@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/tide/tsserver/lib.esnext.weakref.d.ts

@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/tide/tsserver/lib.es2022.regexp.d.ts

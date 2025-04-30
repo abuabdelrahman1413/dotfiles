@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/external-completion/.github/PULL_REQUEST_TEMPLATE.md

@@ -1,1 +1,0 @@
-/home/mohammed/.emacs.d/straight/repos/rustic/rustic-popup.el
