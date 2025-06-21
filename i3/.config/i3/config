@@ -1,7 +1,11 @@
 # Set Mod key to "Mod4" (usually the Super/Windows key)
 set $mod Mod4
-set $screen1 LVDS-1
-set $screen2 VIRTUAL1
+# manage Workspaces with multiple monitors
+workspace 1 output $screen1
+workspace 2 output $screen1
+# ...
+workspace 6 output $screen2
+workspace 7 output $screen2
 
 # Font settings
 font pango:DejaVu Sans Mono 12
@@ -175,18 +179,31 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# زيادة حجم النافذة باستخدام +
 bindsym $mod+equal resize grow width 10 px  
 
-# تقليل حجم النافذة باستخدام -
 bindsym $mod+minus resize shrink width 10 px
 
 # Status bar
+# bar {
+#     status_command i3status
+#     output primary
+#
+#     tray_output primary
+# }
+
+
 bar {
     status_command i3status
-    output primary
+    colors {
+        background #f0f0f0
+        statusline #000000
+        separator  #cccccc
 
-    tray_output primary
+        focused_workspace  #ffffff #cccccc #000000
+        active_workspace   #dddddd #bbbbbb #000000
+        inactive_workspace #eeeeee #dddddd #666666
+        urgent_workspace   #ffaaaa #ff4444 #000000
+    }
 }
 
 exec --no-startup-id "setxkbmap -layout us,ara"
@@ -195,3 +212,8 @@ exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
 exec --no-startup-id sh -c "setxkbmap -layout us,ara -option 'grp:alt_shift_toggle'"
 
 bindsym Print exec maim -s -u | xclip -selection clipboard -t image/png -i
+
+# Shortcuts to switch between VGA monitor and Tablet (Deskreen)
+bindsym $mod+Shift+p exec --no-startup-id ~/start_tablet.sh
+bindsym $mod+Shift+o exec --no-startup-id ~/stop_tablet.sh
+exec_always --no-startup-id feh --bg-scale /home/mohammed/Pictures/pexels-vlado-paunovic-1567547-3028961.jpg
