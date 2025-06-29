@@ -21,7 +21,7 @@ config.load_autoconfig(False)
 c.aliases = {'q': 'quit', 'w': 'session-save', 'wq': 'quit --save'}
 
 # Setting dark mode
-#config.set("colors.webpage.darkmode.enabled", True)
+config.set("colors.webpage.darkmode.enabled", True)
 
 
 # Which cookies to accept. With QtWebEngine, this setting also controls
@@ -190,8 +190,8 @@ c.tabs.show = 'always'
 
 # Setting default page for when opening new tabs or new windows with
 # commands like :open -t and :open -w .
-c.url.default_page = 'https://distro.tube/'
-c.url.start_pages = 'https://distro.tube/'
+c.url.default_page = 'https://google.com'
+c.url.start_pages = 'https://google.com'
 
 # Search engines which can be used via the address bar.  Maps a search
 # engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
@@ -377,6 +377,7 @@ c.fonts.statusbar = '11pt "Source Code Pro"'
 
 # Bindings for normal mode
 config.bind('M', 'hint links spawn mpv {hint-url}')
+config.bind('Sh', 'history -t')
 config.bind('Z', 'hint links spawn st -e youtube-dl {hint-url}')
 config.bind('t', 'set-cmd-text -s :open -t')
 config.bind('xb', 'config-cycle statusbar.show always never')
@@ -390,3 +391,8 @@ config.bind(',dr', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/
 config.bind(',gr', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css ""')
 config.bind(',sd', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
 config.bind(',sl', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized-everything-css/css/solarized-light/solarized-light-all-sites.css ""')
+
+
+ 
+c.zoom.default = '120%'
+c.auto_save.session = True
