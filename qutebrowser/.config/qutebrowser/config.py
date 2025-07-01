@@ -1,170 +1,187 @@
+# Final Merged config.py
+# Combines the dynamic theme (from the second file) with the useful shortcuts and functions (from the first file).
+
+# --- Basic Setup & Boilerplate ---
 # pylint: disable=C0111
 c = c  # noqa: F821 pylint: disable=E0602,C0103
 config = config  # noqa: F821 pylint: disable=E0602,C0103
-# pylint settings included to disable linting errors
-
 import subprocess
+
+# --- Function to read colors from Xresources (for pywal integration) ---
 def read_xresources(prefix):
+    """
+    Reads color properties from Xresources.
+    Returns a dictionary of colors.
+    """
     props = {}
-    x = subprocess.run(['xrdb', '-query'], capture_output=True, check=True, text=True)
-    lines = x.stdout.split('\n')
-    for line in filter(lambda l : l.startswith(prefix), lines):
-        prop, _, value = line.partition(':\t')
-        props[prop] = value
+    try:
+        x = subprocess.run(['xrdb', '-query'], capture_output=True, check=True, text=True)
+        lines = x.stdout.split('\n')
+        for line in filter(lambda l : l.startswith(prefix), lines):
+            prop, _, value = line.partition(':\t')
+            key = prop.split(':')[0]
+            props[key] = value
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        # Fallback to a safe color scheme (Gruvbox) if reading fails (e.g., on Wayland)
+        return {
+            "*.background": "#282828", "*.foreground": "#ebdbb2",
+            "*.color0": "#282828", "*.color1": "#cc241d", "*.color2": "#98971a",
+            "*.color3": "#d79921", "*.color4": "#458588", "*.color5": "#b16286",
+            "*.color6": "#689d6a", "*.color7": "#a89984", "*.color8": "#928374",
+            "*.color9": "#fb4934", "*.color10": "#b8bb26", "*.color11": "#fabd2f",
+            "*.color12": "#83a598", "*.color13": "#d3869b", "*.color14": "#8ec07c",
+            "*.color15": "#ebdbb2",
+        }
     return props
 
 xresources = read_xresources("*")
 
-c.colors.statusbar.normal.bg = "#00000000"
-c.colors.statusbar.command.bg = "#00000000"
-# c.colors.statusbar.normal.bg = xresources["*.background"]
-# c.colors.statusbar.command.bg = xresources["*.background"]
+# --- Apply Dynamic Theme (from the second file) ---
+
+# Status Bar
+c.colors.statusbar.normal.bg = xresources["*.background"]
+c.colors.statusbar.command.bg = xresources["*.background"]
+c.colors.statusbar.normal.fg = xresources["*.foreground"]
 c.colors.statusbar.command.fg = xresources["*.foreground"]
-c.colors.statusbar.normal.fg = xresources["*color14"]
-c.colors.statusbar.passthrough.fg = xresources["*color14"]
-c.colors.statusbar.url.fg = xresources["*color13"]
-c.colors.statusbar.url.success.https.fg = xresources["*color13"]
-c.colors.statusbar.url.hover.fg = xresources["*color12"]
-# c.statusbar.show = "always"
-c.colors.tabs.even.bg = "#00000000" # transparent tabs!!
+c.colors.statusbar.passthrough.fg = xresources["*.color14"]
+c.colors.statusbar.url.fg = xresources["*.color13"]
+c.colors.statusbar.url.success.https.fg = xresources["*.color10"]
+c.colors.statusbar.url.hover.fg = xresources["*.color12"]
+
+# Tabs
+# Using transparency for a consistent look with transparent terminals. Requires a compositor like 'picom'.
+c.colors.tabs.even.bg = "#00000000"
 c.colors.tabs.odd.bg = "#00000000"
 c.colors.tabs.bar.bg = "#00000000"
+# If you don't use a compositor, uncomment the following lines:
 # c.colors.tabs.even.bg = xresources["*.background"]
 # c.colors.tabs.odd.bg = xresources["*.background"]
-c.colors.tabs.even.fg = xresources["*.color0"]
-c.colors.tabs.odd.fg = xresources["*.color0"]
-c.colors.tabs.selected.even.bg = xresources["*.foreground"]
-c.colors.tabs.selected.odd.bg = xresources["*.foreground"]
+# c.colors.tabs.bar.bg = xresources["*.background"]
+
+c.colors.tabs.even.fg = xresources["*.color8"]
+c.colors.tabs.odd.fg = xresources["*.color8"]
+c.colors.tabs.selected.even.bg = xresources["*.color12"]
+c.colors.tabs.selected.odd.bg = xresources["*.color12"]
 c.colors.tabs.selected.even.fg = xresources["*.background"]
 c.colors.tabs.selected.odd.fg = xresources["*.background"]
-c.colors.hints.bg = xresources["*.background"]
-c.colors.hints.fg = xresources["*.foreground"]
-c.tabs.show = "multiple"
 
-c.colors.completion.item.selected.match.fg = xresources["*color6"]
-c.colors.completion.match.fg = xresources["*color6"]
-
-c.colors.tabs.indicator.start = xresources["*color10"]
-c.colors.tabs.indicator.stop = xresources["*color8"]
-c.colors.completion.odd.bg = xresources["*.background"]
-c.colors.completion.even.bg = xresources["*.background"]
+# Completion Menu
 c.colors.completion.fg = xresources["*.foreground"]
-c.colors.completion.category.bg = xresources["*.background"]
-c.colors.completion.category.fg = xresources["*.foreground"]
-c.colors.completion.item.selected.bg = xresources["*.background"]
+c.colors.completion.odd.bg = xresources["*.color0"]
+c.colors.completion.even.bg = xresources["*.color0"]
+c.colors.completion.category.fg = xresources["*.color11"]
+c.colors.completion.category.bg = xresources["*.color0"]
 c.colors.completion.item.selected.fg = xresources["*.foreground"]
+c.colors.completion.item.selected.bg = xresources["*.color4"]
+c.colors.completion.match.fg = xresources["*.color10"]
 
-c.colors.messages.info.bg = xresources["*.background"]
-c.colors.messages.info.fg = xresources["*.foreground"]
-c.colors.messages.error.bg = xresources["*.background"]
-c.colors.messages.error.fg = xresources["*.foreground"]
-c.colors.downloads.error.bg = xresources["*.background"]
-c.colors.downloads.error.fg = xresources["*.foreground"]
+# Hints
+c.colors.hints.bg = xresources["*.color3"]
+c.colors.hints.fg = xresources["*.background"]
+c.hints.border = "1px solid " + xresources["*.foreground"]
 
-c.colors.downloads.bar.bg = xresources["*.background"]
-c.colors.downloads.start.bg = xresources["*.color10"]
-c.colors.downloads.start.fg = xresources["*.foreground"]
-c.colors.downloads.stop.bg = xresources["*.color8"]
-c.colors.downloads.stop.fg = xresources["*.foreground"]
 
-c.colors.tooltip.bg = xresources["*.background"]
-c.colors.webpage.bg = xresources["*.background"]
-c.hints.border = xresources["*.foreground"]
+# --- Miscellaneous Settings (merged from both files) ---
 
-# c.url.start_pages = ""
-# c.url.default_page = ""
+# Do not load autoconfig.yml to avoid conflicts
+config.load_autoconfig(False)
 
+# Vim-like command aliases (from the first file)
+c.aliases = {'q': 'quit', 'w': 'session-save', 'wq': 'quit --save'}
+
+# Fonts (from the second file, with better Arabic support)
+c.fonts.default_family = ["Noto Sans Arabic", "DejaVu Sans", "JetBrainsMono Nerd Font", "monospace"]
+c.fonts.default_size = '11pt'
+c.fonts.web.family.standard = "Noto Sans"
+c.fonts.web.family.serif = "Noto Serif"
+c.fonts.web.family.sans_serif = "Noto Sans"
+c.fonts.web.family.fixed = "JetBrainsMono Nerd Font, monospace"
+c.fonts.web.size.default = 18
+c.fonts.web.size.default_fixed = 16
+
+# Start and default pages (from the first file)
+c.url.default_page = 'https://distro.tube/'
+c.url.start_pages = 'https://distro.tube/'
+
+# General Browser Behavior
+c.auto_save.session = True
+c.tabs.show = "multiple"
+c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
+c.tabs.indicator.width = 1
+c.tabs.width = '10%'
 c.tabs.title.format = "{audio}{current_title}"
-c.fonts.web.size.default = 20
+c.downloads.location.directory = '~/Downloads'
 
+# Webpage Dark Mode (from the second file)
+c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
+c.colors.webpage.darkmode.policy.images = 'never'
+config.set('colors.webpage.darkmode.enabled', False, 'file://*') # Disable for local files
+
+# Search Engines (merged list from both files)
 c.url.searchengines = {
-# note - if you use duckduckgo, you can make use of its built in bangs, of which there are many! https://duckduckgo.com/bangs
-        'DEFAULT': 'https://duckduckgo.com/?q={}',
-        '!aw': 'https://wiki.archlinux.org/?search={}',
-        '!apkg': 'https://archlinux.org/packages/?sort=&q={}&maintainer=&flagged=',
-        '!gh': 'https://github.com/search?o=desc&q={}&s=stars',
-        '!yt': 'https://www.youtube.com/results?search_query={}',
-        }
-
+    'DEFAULT': 'https://duckduckgo.com/?q={}',
+    'am': 'https://www.amazon.com/s?k={}',
+    'aw': 'https://wiki.archlinux.org/?search={}',
+    'goog': 'https://www.google.com/search?q={}',
+    'hoog': 'https://hoogle.haskell.org/?hoogle={}',
+    're': 'https://www.reddit.com/r/{}',
+    'ub': 'https://www.urbandictionary.com/define.php?term={}',
+    'wiki': 'https://en.wikipedia.org/wiki/{}',
+    'yt': 'https://www.youtube.com/results?search_query={}',
+    '!apkg': 'https://archlinux.org/packages/?sort=&q={}&maintainer=&flagged=',
+    '!gh': 'https://github.com/search?o=desc&q={}&s=stars',
+}
 c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
 
-config.load_autoconfig() # load settings done via the gui
+# Privacy Settings (from the second file)
+config.set("content.webgl", False, "*")
+config.set("content.canvas_reading", False)
+config.set("content.geolocation", False)
+config.set("content.webrtc_ip_handling_policy", "default-public-interface-only")
 
-c.auto_save.session = True # save tabs on quit/restart
+# Adblocking
+c.content.blocking.enabled = True
+# c.content.blocking.method = 'adblock' # Uncomment if python-adblock is installed
 
-# keybinding changes
-config.bind('=', 'cmd-set-text -s :open')
+# User Agent settings (added from the first file to ensure compatibility)
+config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko) {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}', 'https://web.whatsapp.com/')
+config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:71.0) Gecko/20100101 Firefox/71.0', 'https://accounts.google.com/*')
+config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99 Safari/537.36', 'https://*.slack.com/*')
+config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:71.0) Gecko/20100101 Firefox/71.0', 'https://docs.google.com/*')
+config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:71.0) Gecko/20100101 Firefox/71.0', 'https://drive.google.com/*')
+
+# Allow notifications for specific sites (from the first file)
+config.set('content.notifications.enabled', True, 'https://www.reddit.com')
+config.set('content.notifications.enabled', True, 'https://www.youtube.com')
+# --- Keybindings (merged from both files) ---
+# Priority is given to the preferred keybindings from the first file.
+
+# (NEW) Add current page to bookmarks (prompts for title)
+config.bind('B', 'set-cmd-text -s :bookmark-add --title "{title}"')
+
+# (Added from the first file) to play videos in mpv
+config.bind('M', 'hint links spawn mpv {hint-url}')
+# (Added from the first file) to download videos with youtube-dl
+config.bind('Z', 'hint links spawn st -e youtube-dl {hint-url}')
+# (Added from the first file) to open a new tab
+config.bind('t', 'set-cmd-text -s :open -t')
+
+# (From the second file)
+config.bind('=', 'set-cmd-text -s :open')
 config.bind('h', 'history')
-config.bind('cs', 'cmd-set-text -s :config-source')
+config.bind('cs', 'config-source')
 config.bind('tH', 'config-cycle tabs.show multiple never')
 config.bind('sH', 'config-cycle statusbar.show always never')
-config.bind('T', 'hint links tab')
+config.bind('T', 'hint links tab-bg') # Using tab-bg to open the tab in the background
 config.bind('pP', 'open -- {primary}')
 config.bind('pp', 'open -- {clipboard}')
 config.bind('pt', 'open -t -- {clipboard}')
 config.bind('qm', 'macro-record')
-config.bind('<ctrl-y>', 'spawn --userscript ytdl.sh')
+config.bind('<ctrl-y>', 'spawn --userscript ytdl.sh') # Alternative for video download
 config.bind('tT', 'config-cycle tabs.position top left')
 config.bind('gJ', 'tab-move +')
 config.bind('gK', 'tab-move -')
 config.bind('gm', 'tab-move')
 
-# dark mode setup
-c.colors.webpage.darkmode.enabled = True
-c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
-c.colors.webpage.darkmode.policy.images = 'never'
-config.set('colors.webpage.darkmode.enabled', False, 'file://*')
-
-# styles, cosmetics
-# c.content.user_stylesheets = ["~/.config/qutebrowser/styles/youtube-tweaks.css"]
-c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
-c.tabs.indicator.width = 0 # no tab indicators
-# c.window.transparent = True # apparently not needed
-c.tabs.width = '7%'
-
-# fonts
-c.fonts.default_family = []
-c.fonts.default_size = '13pt'
-c.fonts.web.family.fixed = 'monospace'
-c.fonts.web.family.sans_serif = 'monospace'
-c.fonts.web.family.serif = 'monospace'
-c.fonts.web.family.standard = 'monospace'
-
-# privacy - adjust these settings based on your preference
-# config.set("completion.cmd_history_max_items", 0)
-# config.set("content.private_browsing", True)
-config.set("content.webgl", False, "*")
-config.set("content.canvas_reading", False)
-config.set("content.geolocation", False)
-config.set("content.webrtc_ip_handling_policy", "default-public-interface-only")
-config.set("content.cookies.accept", "all")
-config.set("content.cookies.store", True)
-# config.set("content.javascript.enabled", False) # tsh keybind to toggle
-
-# Adblocking info -->
-# For yt ads: place the greasemonkey script yt-ads.js in your greasemonkey folder (~/.config/qutebrowser/greasemonkey).
-# The script skips through the entire ad, so all you have to do is click the skip button.
-# Yeah it's not ublock origin, but if you want a minimal browser, this is a solution for the tradeoff.
-# You can also watch yt vids directly in mpv, see qutebrowser FAQ for how to do that.
-# If you want additional blocklists, you can get the python-adblock package, or you can uncomment the ublock lists here.
-c.content.blocking.enabled = True
-# c.content.blocking.method = 'adblock' # uncomment this if you install python-adblock
-# c.content.blocking.adblock.lists = [
-#         "https://github.com/ewpratten/youtube_ad_blocklist/blob/master/blocklist.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/legacy.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2020.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2021.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2022.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2023.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2024.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badware.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/privacy.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badlists.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances-cookies.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances-others.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badlists.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/quick-fixes.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt",
-#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt"]
+print("Custom merged config loaded successfully!")
