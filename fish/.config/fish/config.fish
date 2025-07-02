@@ -47,3 +47,5 @@ set -x OLLAMA_ORIGINS "app://obsidian.md*"
 
 
 set -x GOOGLE_API_KEY 'AIzaSyD-eDpgu35LVH7gpFPtxLnkbqgUrnXGins'
+
+set -x GOOGLE_CLOUD_PROJECT "869371682686"
