@@ -1,0 +1,25 @@
+# Default values
+[theme]
+fg = "#ebc17a"
+fg_dim = "#8b7653"
+fg_bright = "#f7f7f7"
+bg = "#1c1c1c"
+bg_dim = "#232323"
+ok = "#909d63"
+ok_dim = "#5e6547"
+alert = "#bc5653"
+alert_dim = "#74423f"
+warn = "#bc5653"
+warn_dim = "#74423f"
+bright = "#cacaca"
+bright_dim = "#828282"
+accent = "#bc5653"
+
+[font]
+font_family = "Terminess Nerd Font"
+font_size = "16px"
+font_weight = "bold"
+
+[bar]
+height = 30
+position = "Top" # Top or Bottom

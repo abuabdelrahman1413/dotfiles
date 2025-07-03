@@ -1,11 +1,17 @@
 #! /bin/sh
-
+# Terminate already running bar instances
+killall -q polybar 
+# Wait until the processes have been shut down
+# while pgrep -x polybar >/dev/null; do sleep 1; done
+# Launch
+polybar -c ~/.config/polybar/config.ini &
+sxhkd &
 pgrep -x sxhkd > /dev/null || sxhkd &
-picom &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
-
+# Keep the Arch Linux container running in the background for instant app startup
+distrobox-enter arch-box -- sh -c "while true; do sleep infinity; done" &
 
 #### BSPWM configuration ####
 # hover with mouse
@@ -21,7 +27,4 @@ bspc config urgent_border_color 	      "#dd2727"
 
 
 
-# تجاهل اللوحة وعدم التحكم بها
-bspc rule -a Mate-Panel state=floating sticky=on layer=above
-
-~/.local/bin/restart_mate_panel.sh &
+bspc rule -a mpv desktop='^4'

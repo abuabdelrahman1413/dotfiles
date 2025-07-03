@@ -63,7 +63,6 @@ c.hints.border = f"1px solid {fg}"
 
 # --- Misc Settings ---
 config.load_autoconfig(False)
-
 # Aliases
 c.aliases = {'q': 'quit', 'w': 'session-save', 'wq': 'quit --save'}
 
@@ -78,12 +77,12 @@ c.fonts.web.size.default = 18
 c.fonts.web.size.default_fixed = 16
 
 # Start & Default Page
-c.url.default_page = 'https://distro.tube/'
-c.url.start_pages = 'https://distro.tube/'
+# c.url.default_page = 'https://distro.tube/'
+# c.url.start_pages = 'https://distro.tube/'
 
 # Tabs
-c.auto_save.session = True
-c.tabs.show = "multiple"
+c.auto_save.session = False
+# c.tabs.show = "multiple"
 c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
 c.tabs.indicator.width = 1
 c.tabs.width = '10%'
@@ -137,7 +136,9 @@ config.set('content.notifications.enabled', True, 'https://www.youtube.com')
 
 # --- Keybindings ---
 config.bind('B', 'set-cmd-text -s :bookmark-add --title "{title}"')
-config.bind('M', 'hint links spawn mpv {hint-url}')
+# 'YV' for YouTube Video (360p)
+config.bind('M', 'hint links spawn mpv --ytdl-format="bestvideo[height<=360]+bestaudio/best[height<=360]" {hint-url}')
+config.bind('ym', 'hint links spawn mpv --no-video --force-window=immediate {hint-url}')
 config.bind('Z', 'hint links spawn st -e youtube-dl {hint-url}')
 config.bind('t', 'set-cmd-text -s :open -t')
 config.bind('=', 'set-cmd-text -s :open')
@@ -155,5 +156,20 @@ config.bind('tT', 'config-cycle tabs.position top left')
 config.bind('gJ', 'tab-move +')
 config.bind('gK', 'tab-move -')
 config.bind('gm', 'tab-move')
+# --- Keybindings ---
 
+# ... (your other bindings) ...
+
+
+# Bind 'm3' to play video in mpv at 360p
+config.bind('p3', 'hint links spawn mpv --force-window=immediate --ytdl-format="bestvideo[height<=360]+bestaudio/best[height<=360]" {hint-url}')
+
+# Bind 'p4' to play video in mpv at 480p
+config.bind('m4', 'hint links spawn mpv --ytdl-format="bestvideo[height<=480]+bestaudio/best[height<=480]" {hint-url}')
+
+# Bind 'p7' to play video in mpv at 720p
+config.bind('m7', 'hint links spawn mpv --ytdl-format="bestvideo[height<=720]+bestaudio/best[height<=720]" {hint-url}')
+
+# Bind 'pa' to play AUDIO ONLY in the background
+config.bind('ma', 'hint links spawn --detach mpv --no-video {hint-url}')
 print("Custom static-theme config loaded successfully!")
