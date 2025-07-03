@@ -1,0 +1,38 @@
+-- Xmobar config used by XMonad
+Config {
+    -- Appearance
+    font = "xft:FiraCode Nerd Font:size=11:antialias=true:hinting=true",
+    bgColor = "#282a36",
+    fgColor = "#f8f8f2",
+    position = Top,
+    lowerOnStart = True,
+    hideOnStart = False,
+    allDesktops = True,
+    persistent = True,
+
+    -- Layout
+    -- This template is where the magic happens.
+    -- `%StdinReader%` reads the output from XMonad's logHook.
+    template = " %StdinReader% } { %cpu% | %memory% * %swap% | %date% ",
+
+    -- Commands to be executed
+    -- These are the plugins on the right side of the bar.
+    commands = [
+        -- Read data from stdin (sent by xmonad)
+        Run StdinReader,
+
+        -- CPU usage
+        Run Cpu ["-L", "3", "-H", "50", "--normal", "#f8f8f2", "--high", "#ff5555"] 10,
+
+        -- Memory usage
+        Run Memory ["-t", "Mem: <usedratio>%"] 10,
+
+        -- Swap usage
+        Run Swap [] 10,
+
+        -- Date and time
+        Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+    ],
+    sepChar = '%',
+    alignSep = "}{"
+}
