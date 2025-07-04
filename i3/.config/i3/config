@@ -41,18 +41,8 @@ exec --no-startup-id dex --autostart --environment i3
 
 # Start necessary applications on startup
 exec --no-startup-id xbindkeys
-exec --no-startup-id picom --config ~/.config/picom/picom.conf
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id nm-applet
-exec --no-startup-id ./secondscreen.sh
 exec xinput set-prop 14 "libinput Tapping Enabled" 1  # Or the command with the name
-
-# Set keyboard layout (removed duplicate command)
-exec --no-startup-id setxkbmap -layout us,ara -option 'grp:alt_shift_toggle'
-
-# Set wallpaper (consider a darker one for the theme!)
-exec_always --no-startup-id feh --bg-scale /home/mohammed/Pictures/your-dark-wallpaper.jpg
-
 
 # --- Keybindings ---
 
