@@ -6,7 +6,6 @@
 
 config_version: 2
 settings:
-  content.javascript.clipboard:
-    https://chatgpt.com: access-paste
-  content.media.audio_capture:
-    https://web.whatsapp.com: true
+  content.headers.user_agent:
+    global: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
+      Chrome/137.0.0.0 Safari/537.36
