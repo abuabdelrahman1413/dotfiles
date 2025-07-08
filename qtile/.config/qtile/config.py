@@ -1,5 +1,5 @@
 import os
-
+from libqtile.extension import Dmenu
 import libqtile.resources
 from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
@@ -28,7 +28,7 @@ dmenu = "dmenu_run"
 
 # Key bindings
 keys = [
-    Key([mod], "d", lazy.spawn(dmenu), desc="Launch dmenu"),
+    Key([mod], "d", lazy.spawn("j4-dmenu-desktop "),desc="Dmenu"),    
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
@@ -52,8 +52,22 @@ keys = [
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn command prompt"),
+      # Brightness controls
+    Key([mod], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
+    Key([mod], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+
+    # Screenshot with maim and xclip
+    Key([], "Print", lazy.spawn('sh -c "maim -s -u | xclip -selection clipboard -t image/png -i"')),
+    # Pause mpv with mod+p
+    Key([mod], "p", lazy.spawn("sh ~/.config/mpv/pause")),
 ]
 
+keys += [
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +10%")),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -10%")),
+    Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
+    Key([], "XF86AudioMicMute", lazy.spawn("pactl set-source-mute @DEFAULT_SOURCE@ toggle")),
+]
 # VT switching on Wayland
 for vt in range(1, 8):
     keys.append(
