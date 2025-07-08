@@ -1,11 +1,31 @@
 import os
 from libqtile.extension import Dmenu
 import libqtile.resources
-from libqtile import bar, layout, qtile, widget
+from libqtile import bar, layout, qtile, widget, hook
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+
+groups = [
+    Group("1"),
+    Group("2"),
+    Group("3"),
+    Group("4"), 
+]
+
+# Make sure workspace 4 is defined
+groups.append(Group("4"))
+
+# Automatically move any new mpv window to workspace 4
+@hook.subscribe.client_new
+def move_mpv_to_group(client):
+    # Check if window class contains 'mpv'
+    if client.window.get_wm_class() and "mpv" in client.window.get_wm_class():
+        # Move the client to group "4"
+        client.togroup("4")
+        # Switch the screen focus to workspace 4 (index 3, zero-based)
+        client.group.qtile.cmd_to_screen(3)
 # Tokyo Night color palette
 tokyo = {
     "bg": "#1a1b26",
@@ -57,7 +77,7 @@ keys = [
     Key([mod], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 
     # Screenshot with maim and xclip
-    Key([], "Print", lazy.spawn('sh -c "maim -s -u | xclip -selection clipboard -t image/png -i"')),
+Key([], "Print", lazy.spawn('sh -c \'maim -s -u | tee "$HOME/screenshots/$(date +%s).png" | xclip -selection clipboard -t image/png\'')),
     # Pause mpv with mod+p
     Key([mod], "p", lazy.spawn("sh ~/.config/mpv/pause")),
 ]
@@ -103,6 +123,7 @@ layouts = [
         num_columns=4,
         grow_amount=10,
     ),
+    layout.TreeTab(),
 ]
 
 # Widget defaults
