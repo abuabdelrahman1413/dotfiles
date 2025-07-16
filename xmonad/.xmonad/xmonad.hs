@@ -1,87 +1,171 @@
--- ################################################################### -- ##                          IMPORTS                              ## -- ###################################################################
+-- ~/.xmonad/xmonad.hs
 
-import XMonad import qualified XMonad.StackSet as W
+-- | Imports | --
+import XMonad
+import System.Exit (exitSuccess)
+import qualified XMonad.StackSet as W
+import Data.Default (def)
+import System.IO (hPutStrLn)
+import XMonad.Util.Run (spawnPipe)
 
--- Core utilities import XMonad.Util.Run (spawnPipe) import XMonad.Util.EZConfig (additionalKeysP)
+-- Utilities
+import XMonad.Util.SpawnOnce (spawnOnce)
+import XMonad.Util.EZConfig (additionalKeysP)
+import XMonad.Util.NamedScratchpad
 
--- Hooks for managing windows and bars import XMonad.Hooks.ManageDocks (docks, manageDocks, avoidStruts) import XMonad.Hooks.DynamicLog    (dynamicLogWithPP, xmobarPP, xmobarColor, shorten, PP(..))
+-- Hooks
+import XMonad.Hooks.EwmhDesktops (ewmh)
+import XMonad.Hooks.ManageHelpers (isFullscreen, doFullFloat)
+import XMonad.Hooks.StatusBar
+import XMonad.Hooks.StatusBar.PP
+import XMonad.Hooks.DynamicLog
 
--- Layouts import XMonad.Layout.BinarySpacePartition (emptyBSP) import XMonad.Layout.ThreeColumns         (ThreeColMid(..))
+-- Layouts
+import XMonad.Layout.Renamed
+import XMonad.Layout.NoBorders (smartBorders, noBorders)
+import XMonad.Hooks.ManageDocks (avoidStruts)
+import XMonad.Layout.Tabbed
+import XMonad.Layout.MultiToggle (mkToggle, EOT(EOT), Toggle(..), (??))
+import XMonad.Layout.MultiToggle.Instances (StdTransformers(NBFULL, MIRROR))
 
--- Layout modifiers import XMonad.Layout.Spacing    (spacingRaw, Border(..)) import XMonad.Layout.NoBorders  (smartBorders)
+-- Actions
+import XMonad.Actions.CycleWS (nextScreen, prevScreen)
+import XMonad.Actions.PhysicalScreens (viewScreen, PhysicalScreen(..))
 
--- ################################################################### -- ##                         VARIABLES                             ## -- ###################################################################
+-- For Volume/Brightness keys
+import Graphics.X11.ExtraTypes.XF86
 
-myModMask :: KeyMask myModMask = mod4Mask  -- Use Super/Windows key
+-- | Variables | --
+myModMask       = mod4Mask
+myTerminal      = "kitty"
+myBorderWidth   = 2
 
-myTerminal :: String myTerminal = "alacritty"  -- Or st, kitty, etc.
+myWorkspaces :: [String]
+myWorkspaces = map show [1..10]
 
-myBorderWidth :: Dimension myBorderWidth = 2  -- Border width in pixels
+-- Tokyo Night Theme
+myBackground      = "#1a1b26"
+myForeground      = "#c0caf5"
+myUnfocusedBorder = "#1f2335"
+myInactiveText    = "#5c6370"
+myFocusedBorder   = "#7aa2f7"
+myUrgentBorder    = "#f7768e"
 
-myNormalBorderColor :: String myNormalBorderColor = "#282a36"  -- Unfocused windows
+-- Tabbed Theme
+myTabTheme = def
+    { fontName              = "xft:DejaVu Sans Mono:size=11"
+    , activeColor           = myFocusedBorder
+    , inactiveColor         = myBackground
+    , activeBorderColor     = myFocusedBorder
+    , inactiveBorderColor   = myBackground
+    , activeTextColor       = myBackground
+    , inactiveTextColor     = myInactiveText
+    }
 
-myFocusedBorderColor :: String myFocusedBorderColor = "#bd93f9"  -- Focused window
+-- | Layouts | --
+myLayout = smartBorders . mkToggle (NBFULL ?? EOT) $ myLayouts
 
--- Numeric workspaces 1 through 9\ nmyWorkspaces :: [String] myWorkspaces = map show [1..9]
+myLayouts =
+       renamed [Replace "Tall"] tiled
+    ||| renamed [Replace "Mirror Tall"] (Mirror tiled)
+    ||| renamed [Replace "Tabbed"] (avoidStruts $ noBorders $ tabbed shrinkText myTabTheme)
+    ||| renamed [Replace "Full"] Full
+  where
+    tiled = Tall 1 (3/100) (1/2)
 
--- ################################################################### -- ##                        KEYBINDINGS                            ## -- ###################################################################
+-- | Scratchpads | --
+myScratchpads =
+    [ NS "terminal" "kitty --name scratchpad"
+        (resource =? "scratchpad")
+        (customFloating $ W.RationalRect (1/4) (1/4) (1/2) (1/2))
+    ]
 
-myKeys :: [(String, X ())] myKeys = [ -- Launch terminal ("M-S-<Return>", spawn myTerminal)
+-- | ManageHook | --
+myManageHook = composeAll
+    [ manageHook def
+    , isFullscreen --> doFullFloat
+    , className =? "mpv" --> doShift (myWorkspaces !! 3)
+    , namedScratchpadManageHook myScratchpads
+    ]
 
--- Application launcher
-, ("M-p", spawn "dmenu_run -p 'Run:'")
+-- | Keybindings | --
+myKeys =
+    [ ("M-S-<Return>", spawn "rofi -show combi")
+    , ("M-d", spawn "dmenu_run")
+    , ("M-<Return>", spawn myTerminal)
+    , ("M-S-f", spawn "nemo")
+    , ("M-t", spawn "flatpak run io.github.kukuruzka165.materialgram")
+    , ("M-p", spawn "sh ~/.config/mpv/pause")
+    , ("M-q", kill)
+    , ("M-f", sendMessage $ Toggle NBFULL)
+    , ("M-S-<Space>", withFocused $ windows . W.sink)
 
-  -- Close focused window
-, ("M-S-c", kill)
+    -- Layout Switching
+    , ("M-w", sendMessage $ JumpToLayout "Tabbed")
+    , ("M-z", sendMessage $ JumpToLayout "Tall")
+    , ("M-v", sendMessage $ JumpToLayout "Mirror Tall")
+    , ("M-x", sendMessage $ JumpToLayout "Full")
 
-  -- Switch layout
-, ("M-<Space>", sendMessage NextLayout)
-, ("M-S-<Space>", setLayout $ XMonad.layoutHook conf)
+    -- Resize
+    , ("M-h", sendMessage Shrink)
+    , ("M-l", sendMessage Expand)
 
-  -- Move focus
-, ("M-j", windows W.focusDown)
-, ("M-k", windows W.focusUp)
+    -- Focus
+    , ("M-j", windows W.focusDown)
+    , ("M-k", windows W.focusUp)
+    , ("M-a", windows W.focusMaster)
+    , ("M-<Tab>", windows W.focusDown)
 
-  -- Swap windows
-, ("M-<Return>", windows W.swapMaster)
-, ("M-S-j", windows W.swapDown)
-, ("M-S-k", windows W.swapUp)
+    -- Move
+    , ("M-S-j", windows W.swapDown)
+    , ("M-S-k", windows W.swapUp)
 
-  -- Adjust master area
-, ("M-h", sendMessage Shrink)
-, ("M-l", sendMessage Expand)
+    -- Scratchpad
+    , ("M-n", namedScratchpadAction myScratchpads "terminal")
+    , ("M-S-n", namedScratchpadAction myScratchpads "terminal")
 
-  -- Restart XMonad
-, ("M-q", spawn "xmonad --recompile && xmonad --restart")
-]
+    -- System Controls
+    , ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ +5%")
+    , ("<XF86AudioLowerVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ -5%")
+    , ("<XF86AudioMute>", spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle")
+    , ("<XF86AudioMicMute>", spawn "pactl set-source-mute @DEFAULT_SOURCE@ toggle")
+    , ("<XF86MonBrightnessUp>", spawn "brightnessctl set +10%")
+    , ("<XF86MonBrightnessDown>", spawn "brightnessctl set 10%-")
+    , ("<Print>", spawn "maim -s -u | tee \"$HOME/screenshots/$(date +%s).png\" | xclip -selection clipboard -t image/png")
 
-where conf = def { layoutHook = myLayoutHook }
+    -- XMonad
+    , ("M-S-q", io exitSuccess)
+    , ("M-S-r", spawn "xmonad --recompile && xmonad --restart")
+    ] ++
+    [ ("M-" ++ key, viewScreen def sc)
+      | (key, sc) <- zip ["w", "r"] [P 0, P 1]
+    ]
 
--- ################################################################### -- ##                           LAYOUTS                             ## -- ###################################################################
+-- | Startup | --
+myStartupHook = do
+    spawnOnce "dex --autostart --environment i3"
+    spawnOnce "xbindkeys"
+    spawnOnce "xss-lock --transfer-sleep-lock -- i3lock --nofork"
+    spawnOnce "xinput set-prop 14 \"libinput Tapping Enabled\" 1"
 
--- Add gaps: top, right, bottom, left; window gaps gaps :: l a -> ModifiedLayout Spacing l a gaps = spacingRaw True (Border 5 5 5 5) True (Border 5 5 5 5) True
-
-myLayoutHook = avoidStruts $ smartBorders $ gaps emptyBSP ||| gaps (Tall 1 (3/100) (1/2)) ||| gaps (ThreeColMid 1 (3/100) (1/2)) ||| Full
-
--- ################################################################### -- ##                      MANAGE HOOK                              ## -- ###################################################################
-
-myManageHook = manageDocks <+> composeAll [ className =? "Gimp" --> doFloat , className =? "mpv"  --> doFloat ]
-
--- ################################################################### -- ##                           MAIN                                ## -- ###################################################################
-
-main :: IO () main = do xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc" xmonad $ docks def { terminal           = myTerminal , modMask            = myModMask , workspaces         = myWorkspaces , borderWidth        = myBorderWidth , normalBorderColor  = myNormalBorderColor , focusedBorderColor = myFocusedBorderColor
-
-, layoutHook         = myLayoutHook
-    , manageHook         = myManageHook
-    , logHook            = dynamicLogWithPP xmobarPP
-                            { ppOutput          = hPutStrLn xmproc
-                            , ppCurrent         = xmobarColor "#50fa7b" "" . pad
-                            , ppVisible         = xmobarColor "#6272a4" "" . pad
-                            , ppHidden          = xmobarColor "#bd93f9" "" . pad
-                            , ppHiddenNoWindows = xmobarColor "#6272a4" "" . pad
-                            , ppTitle           = xmobarColor "#f8f8f2" "" . shorten 60
-                            , ppSep             = " | "
-                            , ppWsSep           = " "
-                            }
-    } `additionalKeysP` myKeys
-
+-- | Main | --
+main :: IO ()
+main = do
+    xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
+    xmonad $ ewmh $ def
+        { modMask            = myModMask
+        , terminal           = myTerminal
+        , layoutHook         = myLayout
+        , manageHook         = myManageHook
+        , startupHook        = myStartupHook
+        , workspaces         = myWorkspaces
+        , borderWidth        = myBorderWidth
+        , normalBorderColor  = myUnfocusedBorder
+        , focusedBorderColor = myFocusedBorder
+        , logHook = dynamicLogWithPP xmobarPP
+            { ppOutput = hPutStrLn xmproc
+            , ppCurrent = xmobarColor "#f7768e" "" . wrap "[" "]"
+            , ppTitle   = xmobarColor "#7aa2f7" "" . shorten 50
+            , ppSep     = " | "
+            }
+        } `additionalKeysP` myKeys

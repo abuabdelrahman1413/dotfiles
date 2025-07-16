@@ -1,6 +1,8 @@
-$ ghc --make xmonad.hs -i -ilib -fforce-recomp -main-is main -dynamic -v0 -outputdir /home/mohammed/.xmonad/build-x86_64-linux -o /home/mohammed/.xmonad/xmonad-x86_64-linux
+$ stack build --silent --stack-yaml /home/mohammed/dotfiles/fish/.config/xmonad/stack.yaml
+$ stack ghc --stack-yaml /home/mohammed/dotfiles/fish/.config/xmonad/stack.yaml -- --make xmonad.hs -i -ilib -fforce-recomp -main-is main -v0 -outputdir /home/mohammed/.xmonad/build-x86_64-linux -o /home/mohammed/.xmonad/xmonad-x86_64-linux
 
-xmonad.hs:3:15: error: parse error on input ‘import’
-  |
-3 | import XMonad import qualified XMonad.StackSet as W
-  |               ^^^^^^
+Warning: Stack has not been tested with GHC versions 9.10 and above, and
+         using 9.10.2, this may fail.
+
+Warning: Stack has not been tested with Cabal versions 3.12 and above, but
+         version 3.12.1.0 was found, this may fail.
