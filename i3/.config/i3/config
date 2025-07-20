@@ -1,13 +1,11 @@
+# --- Variables ---
 # Set Mod key to "Mod4" (usually the Super/Windows key)
 set $mod Mod4
 
 # Set screen variables (MAKE SURE THESE ARE CORRECT FOR YOUR SETUP)
-# You need to define $screen1 and $screen2, for example:
+# Find your screen names by running `xrandr` in a terminal.
 # set $screen1 "DP-1"
 # set $screen2 "HDMI-1"
-# Find your screen names by running `xrandr` in a terminal.
-# I've left them as variables so your existing setup doesn't break.
-
 
 # --- Tokyo Night Theme Colors ---
 # Source: https://github.com/enkia/tokyo-night-vscode-theme
@@ -18,15 +16,16 @@ set $inactive_text       #5c6370
 set $focused_border      #7aa2f7
 set $urgent_border       #f7768e
 
-# Colors for window borders and background
-#                       <border>  <background> <text> <indicator> <child_border>
-client.focused          $focused_border $background $foreground $focused_border $focused_border
-client.focused_inactive $unfocused_border $background $inactive_text $unfocused_border $unfocused_border
-client.unfocused        $unfocused_border $background $inactive_text $unfocused_border $unfocused_border
-client.urgent           $urgent_border $background $foreground $urgent_border $urgent_border
-client.placeholder      #000000   #0c0c0c      #ffffff #000000   #0c0c0c
-client.background       $background
 
+# --- Window and Border Appearence ---
+# Colors for window borders and background
+#                       <border>        <background> <text>      <indicator>     <child_border>
+client.focused          $focused_border $background  $foreground $focused_border $focused_border
+client.focused_inactive $unfocused_border $background  $inactive_text  $unfocused_border $unfocused_border
+client.unfocused        $unfocused_border $background  $inactive_text  $unfocused_border $unfocused_border
+client.urgent           $urgent_border  $background  $foreground $urgent_border  $urgent_border
+client.placeholder      #000000         #0c0c0c      #ffffff     #000000         #0c0c0c
+client.background       $background
 
 # Font settings
 font pango:DejaVu Sans Mono 11
@@ -35,23 +34,26 @@ font pango:DejaVu Sans Mono 11
 for_window [class="^.*"] border pixel 2
 smart_borders on
 
-# --- Startup Applications ---
-# Start XDG autostart .desktop files using dex
-exec --no-startup-id dex --autostart --environment i3
-
-# Start necessary applications on startup
-exec --no-startup-id xbindkeys
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec xinput set-prop 14 "libinput Tapping Enabled" 1  # Or the command with the name
-
 # --- Keybindings ---
 
-# PulseAudio volume controls
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# Application Launchers
+bindsym $mod+Return exec wezterm
+bindsym $mod+d exec --no-startup-id rofi -show combi # Changed from dmenu to rofi
+bindsym $mod+b exec --no-startup-id brave-browser # Lanuches Brave Browser
+bindsym $mod+o exec --no-startup-id qutebrowser # Launches qutebrowser
+bindsym $mod+Shift+f exec --no-startup-id nemo
+bindsym $mod+t exec --no-startup-id telegram
+
+# Kill focused window
+bindsym $mod+q kill
+
+# Media and System Controls
+# Note: Replaced pactl with wpactl for Wayland compatibility.
+# The refresh command for i3status might need adjustment based on your status bar setup.
+bindsym XF86AudioRaiseVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+ && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioLowerVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%- && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioMicMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && pkill -RTMIN+11 i3blocks
 
 # Brightness controls
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
@@ -60,24 +62,11 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 # Screenshot
 bindsym Print exec --no-startup-id sh -c 'maim -s -u | tee "$HOME/screenshots/$(date +%s).png" | xclip -selection clipboard -t image/png'
 
-# Start a terminal
-bindsym $mod+Return exec kitty
-
-# pause mpv
+# MPV control
 bindsym $mod+p exec sh ~/.config/mpv/pause
 
-# Kill focused window
-bindsym $mod+q kill
-
-# Application launcher
-bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+Shift+Return exec --no-startup-id rofi -show combi
-
-# Open applications
-bindsym $mod+Shift+f exec --no-startup-id nemo
-bindsym $mod+t exec --no-startup-id flatpak run io.github.kukuruzka165.materialgram
-
-# Change focus
+# Focus and Window Movement
+# Focus window
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
@@ -92,7 +81,6 @@ bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-# Also using arrow keys
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -128,9 +116,6 @@ tiling_drag modifier titlebar
 bindsym $mod+n move scratchpad
 bindsym $mod+Shift+n scratchpad show, floating disable
 
-# Toggle the i3bar visibility
-bindsym $mod+b bar mode toggle
-
 
 # --- Workspace Management ---
 set $ws1 "1"
@@ -145,8 +130,6 @@ set $ws9 "9"
 set $ws10 "10"
 
 # Assign workspaces to specific monitors
-# This is cleaner than repeating it for each workspace.
-# Your setup implies you want ws 1-5 on screen1 and 6-9 on screen2.
 workspace $ws1 output $screen1
 workspace $ws2 output $screen1
 workspace $ws3 output $screen1
@@ -182,19 +165,19 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# Cycle through workspaces on current monitor
+# Cycle through workspaces
 bindsym $mod+Control+l workspace next_on_output
 bindsym $mod+Control+h workspace prev_on_output
-# Cycle through all workspaces
 bindsym $mod+Control+Right workspace next
 bindsym $mod+Control+Left workspace prev
 
+
 # --- i3 Modes ---
 
-# Reload and restart i3
+# Reload, restart, and exit i3
 bindsym $mod+Shift+c reload
-bindsym $mod+Shift+q exec i3-msg exit
 bindsym $mod+Shift+r restart
+bindsym $mod+Shift+q exec i3-msg exit
 
 # Resize mode
 mode "resize" {
@@ -216,8 +199,8 @@ bindsym $mod+r mode "resize"
 bindsym $mod+equal resize grow width 10 px
 bindsym $mod+minus resize shrink width 10 px
 
-# --- i3bar Configuration ---
 
+# --- i3bar Configuration ---
 bar {
     status_command i3status
     # --- Tokyo Night Theme for i3bar ---
@@ -226,12 +209,13 @@ bar {
         statusline $foreground
         separator  $unfocused_border
 
-        #                        <border>  <background> <text>
+        #                        <border>        <background>   <text>
         focused_workspace        $focused_border $focused_border $background
-        active_workspace         #394b70 #394b70 $foreground
-        inactive_workspace       $background $background $inactive_text
-        urgent_workspace         $urgent_border $urgent_border $background
+        active_workspace         #394b70        #394b70        $foreground
+        inactive_workspace       $background     $background     $inactive_text
+        urgent_workspace         $urgent_border  $urgent_border  $background
     }
 }
 
+# --- Application Specific Rules ---
 for_window [class="mpv"] move to workspace 4; workspace 4
