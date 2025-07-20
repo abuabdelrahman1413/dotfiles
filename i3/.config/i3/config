@@ -50,8 +50,8 @@ bindsym $mod+q kill
 # Media and System Controls
 # Note: Replaced pactl with wpactl for Wayland compatibility.
 # The refresh command for i3status might need adjustment based on your status bar setup.
-bindsym XF86AudioRaiseVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+ && pkill -RTMIN+10 i3blocks
-bindsym XF86AudioLowerVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%- && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioRaiseVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioLowerVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioMicMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && pkill -RTMIN+11 i3blocks
 
@@ -117,6 +117,8 @@ bindsym $mod+n move scratchpad
 bindsym $mod+Shift+n scratchpad show, floating disable
 
 
+
+
 # --- Workspace Management ---
 set $ws1 "1"
 set $ws2 "2"
@@ -130,15 +132,15 @@ set $ws9 "9"
 set $ws10 "10"
 
 # Assign workspaces to specific monitors
-workspace $ws1 output $screen1
-workspace $ws2 output $screen1
-workspace $ws3 output $screen1
-workspace $ws4 output $screen1
-workspace $ws5 output $screen1
-workspace $ws6 output $screen2
-workspace $ws7 output $screen2
-workspace $ws8 output $screen2
-workspace $ws9 output $screen2
+# workspace $ws1 output $screen1
+# workspace $ws2 output $screen1
+# workspace $ws3 output $screen1
+# workspace $ws4 output $screen1
+# workspace $ws5 output $screen1
+# workspace $ws6 output $screen2
+# workspace $ws7 output $screen2
+# workspace $ws8 output $screen2
+# workspace $ws9 output $screen2
 # Note: Workspace 10 will appear on the focused monitor by default.
 
 # Switch to workspace
@@ -218,4 +220,5 @@ bar {
 }
 
 # --- Application Specific Rules ---
+# for_window [class="^.*"] exec --no-startup-id ~/.config/i3/scripts/master-stack.sh
 for_window [class="mpv"] move to workspace 4; workspace 4
