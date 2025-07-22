@@ -37,11 +37,11 @@ smart_borders on
 # --- Keybindings ---
 
 # Application Launchers
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec kitty
 bindsym $mod+d exec --no-startup-id rofi -show combi # Changed from dmenu to rofi
 bindsym $mod+b exec --no-startup-id brave-browser # Lanuches Brave Browser
 bindsym $mod+o exec --no-startup-id qutebrowser # Launches qutebrowser
-bindsym $mod+Shift+f exec --no-startup-id nemo
+bindsym $mod+Shift+f exec --no-startup-id thunar
 bindsym $mod+t exec --no-startup-id telegram
 
 # Kill focused window
@@ -60,7 +60,7 @@ bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 
 # Screenshot
-bindsym Print exec --no-startup-id sh -c 'maim -s -u | tee "$HOME/screenshots/$(date +%s).png" | xclip -selection clipboard -t image/png'
+bindsym Print exec --no-startup-id sh -c 'maim -s -u | tee "$HOME/Screenshots/$(date +%s).png" | xclip -selection clipboard -t image/png'
 
 # MPV control
 bindsym $mod+p exec sh ~/.config/mpv/pause
@@ -179,6 +179,7 @@ bindsym $mod+Control+Left workspace prev
 # Reload, restart, and exit i3
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exec --no-startup-id /home/mohammed/dotfiles/rofi/powermenu.sh
 bindsym $mod+Shift+q exec i3-msg exit
 
 # Resize mode

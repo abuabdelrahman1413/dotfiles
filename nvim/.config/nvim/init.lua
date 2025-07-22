@@ -14,9 +14,12 @@ end
 local vim = vim
 local Plug = vim.fn['plug#']
 
+vim.g.start_time = vim.fn.reltime()
+vim.loader.enable() --  SPEEEEEEEEEEED 
 vim.call('plug#begin')
 
 Plug('catppuccin/nvim', { ['as'] = 'catppuccin' }) --colorscheme
+Plug('ellisonleao/gruvbox.nvim', { ['as'] = 'gruvbox' }) --colorscheme 2
 Plug('uZer/pywal16.nvim', { [ 'as' ] = 'pywal16' }) --or, pywal colorscheme
 Plug('nvim-lualine/lualine.nvim') --statusline
 Plug('nvim-tree/nvim-web-devicons') --pretty icons
@@ -32,6 +35,10 @@ Plug('numToStr/Comment.nvim') --easier comments
 Plug('norcalli/nvim-colorizer.lua') --color highlight
 Plug('ibhagwan/fzf-lua') --fuzzy finder and grep
 Plug('numToStr/FTerm.nvim') --floating terminal
+Plug('ron-rs/ron.vim') --ron syntax highlighting
+Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
+Plug('emmanueltouzery/decisive.nvim') --view csv files
+Plug('folke/twilight.nvim') --surrounding dim
 
 vim.call('plug#end')
 
@@ -42,43 +49,33 @@ require("config.options")
 require("config.autocmd")
 
 require("plugins.alpha")
-require("plugins.autopairs")
+-- require("plugins.autopairs")
 require("plugins.barbar")
 require("plugins.colorizer")
 require("plugins.colorscheme")
 require("plugins.comment")
-require("plugins.fterm")
-require("plugins.fzf-lua")
+-- require("plugins.fterm")
+-- require("plugins.fzf-lua")
 require("plugins.gitsigns")
 require("plugins.lualine")
 require("plugins.nvim-lint")
+-- require("plugins.nvim-tree")
+require("plugins.render-markdown")
+-- require("plugins.treesitter")
+-- require("plugins.twilight")
+-- require("plugins.which-key")
+
+vim.defer_fn(function() 
+		--defer non-essential configs,
+		--purely for experimental purposes:
+		--this only makes a difference of +-10ms on initial startup
+require("plugins.autopairs")
+require("plugins.fterm")
+require("plugins.fzf-lua")
 require("plugins.nvim-tree")
 require("plugins.treesitter")
+require("plugins.twilight")
 require("plugins.which-key")
+end, 100)
 
 load_theme()
-
--- ~/.config/nvim
--- ├── init.lua
--- └── lua
---     ├── config
---     │   ├── autocmd.lua
---     │   ├── mappings.lua
---     │   ├── options.lua
---     │   ├── saved_theme
---     │   └── theme.lua
---     └── plugins
---         ├── alpha.lua
---         ├── autopairs.lua
---         ├── barbar.lua
---         ├── colorizer.lua
---         ├── colorscheme.lua
---         ├── comment.lua
---         ├── fterm.lua
---         ├── fzf-lua.lua
---         ├── gitsigns.lua
---         ├── lualine.lua
---         ├── nvim-lint.lua
---         ├── nvim-tree.lua
---         ├── treesitter.lua
---         └── which-key.lua

@@ -67,6 +67,13 @@ map("n", "<leader>R", ":so %<CR>") --reload neovim config
 map("n", "<leader>u", ':silent !xdg-open "<cWORD>" &<CR>') --open a url under cursor
 map("v", "<leader>i", "=gv") --auto indent
 map("n", "<leader>W", ":set wrap!<CR>") --toggle wrap
+map("n", "<leader>l", ":Twilight<CR>") --surrounding dim
+
+-- decisive csv
+map("n", "<leader>csa", ":lua require('decisive').align_csv({})<cr>")
+map("n", "<leader>csA", ":lua require('decisive').align_csv_clear({})<cr>")
+map("n", "[c", ":lua require('decisive').align_csv_prev_col()<cr>")
+map("n", "]c", ":lua require('decisive').align_csv_next_col()<cr>")
 
 
 map("n", "<leader>H", function() --toggle htop in term

@@ -8,16 +8,18 @@
 
 # Terminal emulator
 super + Return
-	alacritty
+	kitty
 
 # Program launcher (dmenu)
 super + d
-	dmenu_run
+	rofi -show combi # Changed from dmenu to rofi
 
 # Web browser
-super + w
+super + o
 	qutebrowser
 
+super + b
+    brave-browser
 # -------------------------------------------------------------------
 # WM & Hotkey Management
 # -------------------------------------------------------------------

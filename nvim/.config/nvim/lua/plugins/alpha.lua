@@ -21,9 +21,9 @@ dashboard.section.buttons.val = {
 	dashboard.button("q", "󰅙  Quit", ":q!<CR>"),
 }
 
-dashboard.section.footer.val = {
-	[[  ]],
-}
+dashboard.section.footer.val = function()
+  return vim.g.startup_time_ms or "[[  ]]"
+end
 
 dashboard.section.buttons.opts.hl = "Keyword"
 dashboard.opts.opts.noautocmd = true
