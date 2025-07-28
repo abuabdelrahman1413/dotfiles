@@ -48,31 +48,6 @@ fish_add_path --universal "$ANDROID_HOME/platform-tools"
 # Simple aliases for commands without arguments, and functions for commands
 # that need arguments and autocompletion.
 
-# -- Aliases (No arguments needed) --
-alias upd='sudo nala update && sudo nala upgrade -y'
-alias clean='sudo nala autoremove -y && sudo nala clean'
-alias xmysql='sudo /opt/lampp/bin/mysql -u root -p'
-alias php='sudo /opt/lampp/bin/php-8.2.4'
-
-# -- Functions (For autocompletion with arguments) --
-
-# Install package(s)
-function inst
-    sudo nala install -y $argv
-end
-complete -c inst -w nala
-
-# Remove package(s)
-function rmv
-    sudo nala remove -y $argv
-end
-complete -c rmv -w nala
-
-# Search for a package
-function srch
-    nala search $argv
-end
-complete -c srch -w nala
 
 
 # --- Sourcing External Configurations ---
