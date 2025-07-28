@@ -1,0 +1,213 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Hyprland Configuration based on User's i3 config                       #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+################
+### MONITORS ###
+################
+monitor=,preferred,auto,auto
+
+#############################
+### ENVIRONMENT VARIABLES ###
+#############################
+env = XCURSOR_SIZE,24
+env = HYPRCURSOR_THEME,Adwaita
+env = HYPRCURSOR_SIZE,24
+
+###################
+### MY PROGRAMS ###
+###################
+$terminal = kitty
+$fileManager = nautilus
+$menu = wofi --show drun
+
+#################
+### AUTOSTART ###
+#################
+exec-once = waybar &
+exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 # For authentication dialogs
+exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP # For app compatibility
+# exec-once = nm-applet & # If you need a network manager applet
+
+#####################
+### LOOK AND FEEL ###
+#####################
+
+# General settings
+general {
+    gaps_in = 5
+    gaps_out = 10
+    border_size = 2
+    
+    # --- Tokyo Night Theme Colors ---
+    # Converted from i3 config
+    col.active_border = rgba(7aa2f7ff) # $focused_border
+    col.inactive_border = rgba(1f2335aa) # $unfocused_border
+
+    layout = dwindle
+    allow_tearing = false
+}
+
+# Decoration (rounding, shadows, blur)
+decoration {
+    rounding = 8
+    
+    active_opacity = 1.0
+    inactive_opacity = 0.9
+
+    blur {
+        enabled = true
+        size = 3
+        passes = 2
+        new_optimizations = true
+        xray = true
+    }
+
+    drop_shadow = yes
+    shadow_range = 10
+    shadow_render_power = 3
+    col.shadow = rgba(1a1b26ee) # $background with alpha
+}
+
+# Animations
+animations {
+    enabled = yes
+    bezier = myBezier, 0.05, 0.9, 0.1, 1.05
+    animation = windows, 1, 7, myBezier
+    animation = windowsOut, 1, 7, default, popin 80%
+    animation = border, 1, 10, default
+    animation = fade, 1, 7, default
+    animation = workspaces, 1, 6, default
+}
+
+# Layouts
+dwindle {
+    pseudotile = yes
+    preserve_split = yes
+}
+
+master {
+    new_is_master = true
+}
+
+#############
+### INPUT ###
+#############
+input {
+    kb_layout = us # Change to your keyboard layout
+    follow_mouse = 1
+    sensitivity = 0 # -1.0 to 1.0
+
+    touchpad {
+        natural_scroll = no
+    }
+}
+
+gestures {
+    workspace_swipe = on
+}
+
+###################
+### KEYBINDINGS ###
+###################
+$mainMod = SUPER # Super/Windows key
+
+# --- Application Launchers (from i3 config) ---
+bind = $mainMod, RETURN, exec, $terminal
+bind = $mainMod, D, exec, $menu
+bind = $mainMod SHIFT, F, exec, $fileManager
+# Add other app launchers here if needed, e.g.,
+# bind = $mainMod, B, exec, brave-browser
+
+# --- Window Management ---
+bind = $mainMod, Q, killactive,
+bind = $mainMod, F, fullscreen,
+bind = $mainMod SHIFT, SPACE, togglefloating,
+
+# --- Layout Control (emulating i3) ---
+bind = $mainMod, J, togglesplit, # Switches between vertical/horizontal split for the next window
+# Hyprland doesn't have stacking/tabbed layouts in the same way. Dwindle is the default.
+# You can explore other layouts like `master` if you wish.
+
+# --- Focus & Move Windows ---
+# Focus
+bind = $mainMod, h, movefocus, l
+bind = $mainMod, j, movefocus, d
+bind = $mainMod, k, movefocus, u
+bind = $mainMod, l, movefocus, r
+# Move
+bind = $mainMod SHIFT, H, movewindow, l
+bind = $mainMod SHIFT, J, movewindow, d
+bind = $mainMod SHIFT, K, movewindow, u
+bind = $mainMod SHIFT, L, movewindow, r
+
+# --- Workspace Management ---
+# Switch to workspace
+bind = $mainMod, 1, workspace, 1
+bind = $mainMod, 2, workspace, 2
+bind = $mainMod, 3, workspace, 3
+bind = $mainMod, 4, workspace, 4
+bind = $mainMod, 5, workspace, 5
+bind = $mainMod, 6, workspace, 6
+bind = $mainMod, 7, workspace, 7
+bind = $mainMod, 8, workspace, 8
+bind = $mainMod, 9, workspace, 9
+bind = $mainMod, 0, workspace, 10
+# Move active window to workspace
+bind = $mainMod SHIFT, 1, movetoworkspace, 1
+bind = $mainMod SHIFT, 2, movetoworkspace, 2
+bind = $mainMod SHIFT, 3, movetoworkspace, 3
+bind = $mainMod SHIFT, 4, movetoworkspace, 4
+bind = $mainMod SHIFT, 5, movetoworkspace, 5
+bind = $mainMod SHIFT, 6, movetoworkspace, 6
+bind = $mainMod SHIFT, 7, movetoworkspace, 7
+bind = $mainMod SHIFT, 8, movetoworkspace, 8
+bind = $mainMod SHIFT, 9, movetoworkspace, 9
+bind = $mainMod SHIFT, 0, movetoworkspace, 10
+# Scroll through workspaces
+bind = $mainMod, mouse_down, workspace, e+1
+bind = $mainMod, mouse_up, workspace, e-1
+
+# --- System and Media Keys ---
+# Volume (requires wpctl)
+binde = , XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+binde = , XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bind = , XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bind = , XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+# Brightness (requires brightnessctl)
+binde = , XF86MonBrightnessUp, exec, brightnessctl set 10%+
+binde = , XF86MonBrightnessDown, exec, brightnessctl set 10%-
+# Media Player (requires playerctl)
+bind = , XF86AudioPlay, exec, playerctl play-pause
+bind = , XF86AudioNext, exec, playerctl next
+bind = , XF86AudioPrev, exec, playerctl previous
+
+# --- Screenshot (requires grim, slurp, wl-clipboard) ---
+bind = , PRINT, exec, grim -g "$(slurp)" - | wl-copy
+
+# --- Exit, Reload, Power Menu ---
+bind = $mainMod, M, exit, # Exit Hyprland session
+bind = $mainMod SHIFT, C, exec, hyprctl reload # Reload Hyprland config
+# For a power menu like in i3, you can use a rofi/wofi script.
+# For now, let's bind it to your old script path, assuming you adapt it for wofi.
+bind = $mainMod SHIFT, E, exec, wofi-powermenu # You will need to find or create a script like this
+
+# --- Resize Mode (Submap) ---
+# Enters a submap for resizing windows.
+bind = $mainMod, R, submap, resize
+
+# Define the resize submap
+submap = resize
+# Arrow keys to resize
+binde = , l, resizeactive, 10 0
+binde = , h, resizeactive, -10 0
+binde = , k, resizeactive, 0 -10
+binde = , j, resizeactive, 0 10
+# Exit the submap
+bind = , escape, submap, reset
+submap = reset
+
+
+# Assign apps to workspaces (like i3's 'assign')
+windowrulev2 = workspace 4, class:^(mpv)$
+# Example: windowrulev2 = workspace 2, class:^(Brave-browser)$

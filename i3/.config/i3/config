@@ -7,23 +7,34 @@ set $mod Mod4
 # set $screen1 "DP-1"
 # set $screen2 "HDMI-1"
 
-# --- Tokyo Night Theme Colors ---
-# Source: https://github.com/enkia/tokyo-night-vscode-theme
-set $background          #1a1b26
-set $foreground          #c0caf5
-set $unfocused_border    #1f2335
-set $inactive_text       #5c6370
-set $focused_border      #7aa2f7
-set $urgent_border       #f7768e
+# Doom One theme
+set $background #282c34
+set $foreground #bbc2cf
+set $color0 #282c34
+set $color1 #ff6c6b
+set $color2 #98be65
+set $color3 #da8548
+set $color4 #51afef
+set $color5 #c678dd
+set $color6 #5699af
+set $color7 #bbc2cf
+set $color8 #5b6268
+set $color9 #ff6c6b
+set $color10 #98be65
+set $color11 #da8548
+set $color12 #51afef
+set $color13 #c678dd
+set $color14 #5699af
+set $color15 #ffffff
+
 
 
 # --- Window and Border Appearence ---
 # Colors for window borders and background
-#                       <border>        <background> <text>      <indicator>     <child_border>
-client.focused          $focused_border $background  $foreground $focused_border $focused_border
-client.focused_inactive $unfocused_border $background  $inactive_text  $unfocused_border $unfocused_border
-client.unfocused        $unfocused_border $background  $inactive_text  $unfocused_border $unfocused_border
-client.urgent           $urgent_border  $background  $foreground $urgent_border  $urgent_border
+client.focused          $color4 $background $foreground $color2 $color4
+client.focused_inactive $color8 $background $foreground $color8 $color8
+client.unfocused        $color8 $background $foreground $color8 $color8
+client.urgent           $color1 $background $foreground $color1 $color1
 client.placeholder      #000000         #0c0c0c      #ffffff     #000000         #0c0c0c
 client.background       $background
 
@@ -34,15 +45,18 @@ font pango:DejaVu Sans Mono 11
 for_window [class="^.*"] border pixel 2
 smart_borders on
 
+# --- Autostart ---
+exec --no-startup-id /home/mohammed/.config/i3/scripts/pywal.sh
+
 # --- Keybindings ---
 
 # Application Launchers
 bindsym $mod+Return exec kitty
 bindsym $mod+d exec --no-startup-id rofi -show combi # Changed from dmenu to rofi
-bindsym $mod+b exec --no-startup-id brave-browser # Lanuches Brave Browser
+bindsym $mod+b exec --no-startup-id brave # Lanuches Brave Browser
 bindsym $mod+o exec --no-startup-id qutebrowser # Launches qutebrowser
 bindsym $mod+Shift+f exec --no-startup-id thunar
-bindsym $mod+t exec --no-startup-id telegram
+bindsym $mod+t exec --no-startup-id Telegram
 
 # Kill focused window
 bindsym $mod+q kill
@@ -210,13 +224,13 @@ bar {
     colors {
         background $background
         statusline $foreground
-        separator  $unfocused_border
+        separator  $color8
 
         #                        <border>        <background>   <text>
-        focused_workspace        $focused_border $focused_border $background
-        active_workspace         #394b70        #394b70        $foreground
-        inactive_workspace       $background     $background     $inactive_text
-        urgent_workspace         $urgent_border  $urgent_border  $background
+        focused_workspace        $color4 $color4 $background
+        active_workspace         $color8        $color8        $foreground
+        inactive_workspace       $background     $background     $color8
+        urgent_workspace         $color1  $color1  $background
     }
 }
 

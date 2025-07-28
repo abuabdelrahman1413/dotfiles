@@ -88,3 +88,31 @@ end
 # Commands to run at the end of shell initialization.
 
 fastfetch
+
+
+
+# --- Aliases for pacman ---
+alias install='sudo pacman -Syu'          # Update system (sync + upgrade)
+alias del='sudo pacman -Rns'          # Remove package(s) with dependencies and config
+alias clean='sudo pacman -Sc'        # Clean package cache
+alias pacsearch='pacman -Ss'            # Search packages
+alias update='sudo pacman -Syyu'
+
+# --- Functions for pacman with autocompletion ---
+
+# Install package(s)
+function pacinst
+    sudo pacman -S $argv
+end
+complete -c pacinst -a '(pacman -Ss | awk "{print \$1}" | sort -u)'
+
+# Remove package(s)
+function pacrmv
+    sudo pacman -Rns $argv
+end
+complete -c pacrmv -a '(pacman -Qqe)'
+
+# Upgrade system (no args)
+function pacupgr
+    sudo pacman -Syu
+end
